@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!-- saved from url=(0100)https://pr4e.dr-chuck.com/tsugi/mod/python-data/index.php?PHPSESSID=d740af36efa59edc672211cb92064f7e -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PR4E</title>
+        <!-- Le styles -->
+        <link href="./assignment 11.1_files/bootstrap.min.css" rel="stylesheet">
+        <link href="./assignment 11.1_files/bootstrap-theme.min.css" rel="stylesheet">
+        <link href="./assignment 11.1_files/jquery-ui.min.css" rel="stylesheet">
+        <link href="./assignment 11.1_files/font-awesome.min.css" rel="stylesheet">
+
+    <style> <!-- from navbar.css -->
+    body {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .navbar {
+      margin-bottom: 20px;
+    }
+    </style>
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://pr4e.dr-chuck.com/tsugi/static/html5shiv/html5shiv.js"></script>
+          <script src="https://pr4e.dr-chuck.com/tsugi/static/respond/respond.min.js"></script>
+        <![endif]-->
+
+    <script type="text/javascript" async="" src="./assignment 11.1_files/dc.js"></script><script type="text/javascript">CSRF_TOKEN = "5673fddcec707";</script>
+
+</head>
+<body style="padding: 15px 15px 15px 15px;">
+<span style="position: fixed; right: 10px; top: 5px;"><button onclick="$(&#39;#settings&#39;).modal();return false;" type="button" class="btn btn-default"><span class="glyphicon glyphicon-pencil"></span></button>
+<a href="https://pr4e.dr-chuck.com/tsugi/mod/python-data/index.php?PHPSESSID=d740af36efa59edc672211cb92064f7e#" onclick="window.close();" class="btn btn-success">Exit</a>
+</span><div class="modal fade" id="settings">
+  <div class="modal-dialog">
+    <div class="modal-content">
+            <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title">Configure        Extracting Data With Regular Expressions        </h4>
+      </div><!-- / .modal-header -->
+      <div class="modal-body">
+        <img id="settings_spinner" src="./assignment 11.1_files/spinner.gif" style="display: none">
+        <span id="save_fail" style="display:none; color:red">Unable to save settings</span>
+        <p></p>
+            <p>Exercise is set to Sum with a Regular Expression</p><p>There is currently no due date/time for this assignment.</p>
+      </div><!-- / .modal-body -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div><!-- / .modal-footer -->
+        </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<p>Welcome Stephanie from Using Python to Access Web Data</p>
+<p class="alert alert-info">Your current grade on this assignment is: 100%</p>
+<p>
+<b>Finding Numbers in a Haystack</b>
+</p><p>
+In this assignment you will read through and parse a file with text and numbers.  You will extract all the numbers
+in the file and compute the sum of the numbers.
+</p>
+<b>Data Files</b>
+<p>
+We provide two files for this assignment.  One is a sample file where we give you the sum for your
+testing and the other is the actual data you need to process for the assignment.  
+</p><ul>
+<li> Sample data: <a href="http://python-data.dr-chuck.net/regex_sum_42.txt" target="_blank">http://python-data.dr-chuck.net/regex_sum_42.txt</a> 
+(There are 116 values with a sum=597873) </li>
+<li> Actual data: <a href="http://python-data.dr-chuck.net/regex_sum_211806.txt" target="_blank">http://python-data.dr-chuck.net/regex_sum_211806.txt</a> 
+(There are 84 values and the sum ends with 546)<br> </li>
+</ul>
+These links open in a new window.
+Make sure to save the file into the same folder as you will be writing your Python program.
+<b>Note:</b> Each student will have a distinct data file for the assignment - so only use your
+own data file for analysis.
+<p></p>
+<b>Data Format</b>
+<p>
+The file contains much of the text from the introduction of the textbook
+except that random numbers are inserted throughout the text.  Here is a sample of the output you might see:
+</p><pre>Why should you learn to write programs? 7746
+12 1929 8827
+Writing programs (or programming) is a very creative 
+7 and rewarding activity.  You can write programs for 
+many reasons, ranging from making your living to solving
+8837 a difficult data analysis problem to having fun to helping 128
+someone else solve a problem.  This book assumes that 
+everyone needs to know how to program ...
+</pre>
+The sum for the sample text above is <b>27486</b>.
+The numbers can appear anywhere in the line.  There can be any number of 
+numbers in each line (including none).
+<p></p>
+<b>Handling The Data</b>
+<p>
+The basic outline of this problem is to read the file, look for integers using the
+<b>re.findall()</b>, looking for a regular expression of <b>'[0-9]+'</b> and then 
+converting the extracted strings to integers and summing up the integers.
+</p>
+<p>
+<b>Turn in Assignent</b>
+</p><form method="post"><input type="hidden" name="PHPSESSID" value="d740af36efa59edc672211cb92064f7e">
+Enter the sum from the actual data and your Python code below:<br>
+Sum: <input type="text" size="20" name="sum"> (ends with 546)
+<input type="submit" value="Submit Assignment"><br>
+Python code:<br>
+<textarea rows="20" style="width: 90%" name="code"></textarea><br>
+</form>
+<p></p>
+<b>Optional: Just for Fun</b>
+<p>
+There are a number of different ways to approach this problem.  While we don't recommend trying
+to write the most compact code possible, it can sometimes be a fun exercise.  Here is a 
+a redacted version of two-line version of this program using list comprehension:
+</p><pre>import re
+print sum( [ ****** *** * in **********('[0-9]+',**************************.read()) ] )
+</pre>
+Please don't waste a lot of time trying to figure out the shortest solution until you 
+have completed the homework.   List comprehension is mentioned in Chapter 10 and the 
+<b>read()</b> method is covered in Chapter 7.
+<p></p>
+
+<script src="./assignment 11.1_files/jquery-1.11.3.js"></script>
+<script src="./assignment 11.1_files/bootstrap.min.js"></script>
+<script src="./assignment 11.1_files/jquery-ui.min.js"></script>
+<script src="./assignment 11.1_files/handlebars-v4.0.2.js"></script>
+<script src="./assignment 11.1_files/tsugiscripts.js"></script>
+    <script type="text/javascript">
+    HEARTBEAT_URL = 'https://pr4e.dr-chuck.com/tsugi/core/util/heartbeat.php?PHPSESSID=d740af36efa59edc672211cb92064f7e';
+    HEARTBEAT_INTERVAL = setInterval(doHeartBeat, 720000);
+    </script>
+        <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-423997-17']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        // ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    _gaq.push(['_setCustomVar', 1, 'consumer_key', 'csev@coursera.org', 2]);
+_gaq.push(['_setCustomVar', 2, 'context_id', '20', 2]);
+_gaq.push(['_setCustomVar', 3, 'context_title', 'Using Python to Access Web Data', 2]);
+</script>
+
+
+
+</body></html>
