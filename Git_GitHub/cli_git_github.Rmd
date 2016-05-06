@@ -1,0 +1,559 @@
+---
+title: "Command Line Interface, Git and GitHub"
+author: "Stephanie Canovas"
+date: "January 2016"
+output:
+  html_document:
+    highlight: pygments
+    theme: readable
+    toc: yes
+    toc_depth: 3
+  pdf_document:
+    latex_engine: xelatex
+    toc: yes
+    toc_depth: 3
+  word_document:
+    highlight: pygments
+---
+
+## Command Line Interface
+### CLI overview
+
+**What is the Command Line Interface?**  
+
+- Old **text-based interface** for interacting with applications and operating systems.  
+- GUI (Graphical User Interface) used in the latest operating systems.  
+- **Windows:** Git Bash, **MAC OS/Linux:** Terminal.  
+
+- **What can the CLI do?**
+    - *Navigate* folders (= directories)
+    - *Create* and *edit* files, folders and programs
+    - *Run* computer programs
+
+- **Basics of directories**
+    - Directories are organized like a tree.
+    - Root directory (top of the tree): `/`
+    - Home directory: `~`
+    - *Path*: set of directories up to the root directory
+
+### CLI commands
+
+- Recipe: **command**, **flags**, **arguments**
+    - *command*: does specific task
+    - *flags*: options to trigger certains behaviors (preceded by `-`). They can be combined
+    - *arguments*: what will be modified or other options
+    - There can be zero or more flags and arguments
+- `pwd`: print working directory
+- `clear`: clear out commands in window
+- `ls`: lists files and folders
+    - `-a`: see all (hidden and unhidden)
+    - `-al`: details for all
+- `cd`: takes to home directory
+    - `<path>`: change directory
+    - `..`: change directory one level up
+- `mkdir <new directory name>`: make (create) directory
+- `touch <new file name>`: create an empty file
+- `cp`: copy
+    - `cp <file> <path>`: copy file to a directory
+    - `cp -r <copied directory> <directory>`: copy the contents of a directory to another one
+- `vi <file>`: make changes to a file directly in the console 
+- `rm <file>`: remove a file
+    - `rm -r`: delete entires directories and their contents (no undo!)
+- `mv <file> <directory>`: move file from cwd to directory
+    - `mv <file> <new file name>`: rename file
+- `echo <argument>`: print argument
+- `date`: print today's date
+- Handling directories' names containing spaces: use`\ `
+
+## Version control
+### Version control overview
+
+- **What is Version control (VC) ?**
+    - System that records changes to a file or set of files over time. You can recall specific version later.
+- **Different Version Control Systems**
+    - **Local** (issue: keep file versions and avoid mistakes):
+        - Simple database on the local computer that keeps all changes to files under revision control
+        - *RCS* (most popular) keeps patch sets (differences between files) to recreate files at any version  
+
+```{r echo = FALSE, fig.width = 4, fig.height = 3, fig.align = 'center', message=FALSE, warning=FALSE}
+library(png); library(grid)
+grid.raster(readPNG("figures/1.png"))
+```
+
+- **Centralized** (issue: collaboration with other systems):
+    - Single server that contains all the versioned files
+    - *Advantages*: everyone knows what everyone else is doing and administrators have control
+    - *Downsides*: losing all in case of failure of the centralized server
+
+```{r echo = FALSE, fig.width = 4, fig.height = 3, fig.align = 'center', message=FALSE, warning=FALSE}
+grid.raster(readPNG("figures/2.png"))
+```
+
+- **Distributed (DVCS)** (issue: efficiency and back up. **Git**)
+    - Every collaborator's checkout is a full backup/copy of all the data (locally)
+    - Collaborators can work on the same documents at the same time
+    - They can work offline
+    
+```{r echo = FALSE, fig.width = 5, fig.height = 5, fig.align = 'center', message=FALSE, warning=FALSE}
+grid.raster(readPNG("figures/3.png"))
+```
+
+## Git
+### Git overview
+
+- **What is Git?**
+    - Free open source distributed version control system that handles small and large projects with speed and efficiency
+    - Created by Linux's team. Most popular VC.
+    - Everything stored in local repositories on the computer
+    - Operated from command line
+    - `$`: type a command
+- **Git structure**
+    - **workspace**: directory you are currently working in on the files
+    - **index** (or **staging area**): files that should be controlled under VC
+    - **local repository**: files that are stored under VC on your local computer
+    - **remote repository**: hosted on GitHub (or other)
+- **Git workflow**
+    - Make changes to files in workspace (Git works with changes, not files)
+    - **Add** files to the staging area: update index
+    - **Commit** changes from workspace to local repository
+    - **Push** commits to remote repository
+- **How to share?**
+    - push local repository to a remote repository
+    - people can pull that repository down, make changes and push back up their changes
+    - Access control configuration: taken care by remote repository hosting solution (Git doesn't care about access control)
+    - Hosted solutions: GitHub or GitBucket
+    - Self-managed: Gitosis or Gitorious
+    
+```{r echo = FALSE, fig.width = 4, fig.height = 4, fig.align = 'center', message=FALSE, warning=FALSE}
+library(jpeg)
+grid.raster(readJPEG("figures/4.jpg"))
+```
+
+### Git commands
+
+- **Git set up**
+    - 3 levels of configuration depending on your needs
+        - `--local`: set configuration for a single repo (e.g. set local email if using a di???erent (personal) GitHub account)
+        - `--global`: set configuration for your user (most of the time)
+        - `--system`: set configuration for all users (e.g. colorizing display for all users of the system)
+    - `git config`: set configuration variables that control how Git looks and operates
+        - `git config --global user.name <"Your name">`: config your name
+        - `git config --global user.email <Your email>`: config your email
+- **View configuration**
+    - `git config --global --list`: view global configuration
+        - `cat ~/.gitconfig`: alternative for global config, show .gitconfig file contents
+    - `git config --local --list`: view local configuration
+        - `cat .git/config`: alternative for local config
+- **Further configuration**
+        - `git config --global core.autocrlf true`: set up line endings for windows (auto carriage return/line feed handling). *true* adds the CRs back in when you check ???les out to the working directory, making them easier to edit in some Windows apps that require CRs
+            - `git config --global core.autocrlf input`: set up line endings for Linux/Mac
+        - `git config --global core.safecrlf warn`: get a warning when CRLF. If *true* fatal error, if *false* nothing
+        - `git config --global color.ui true`: colorizes output to improve readability
+        - `git config --global core.editor "'C:/Program Files (x86)/Notepad++/notepad++.exe' -multiInst -nosession"`: config your editor (here notepad++ on windows x64)
+        - `vi ~/.gitconfig`: print .gitconfig file contents and allows you to change global configuration directly in console
+        - `git config --global push.default simple`: config push default to simple (just pushes current branch up to GitHub), however default in Git 2.0 and later. Otherwise: Matching - Pushes all matching branches up to GitHuh
+        - `git config --global pull.rebase true`: config pull default to *pull --rebase* (fetch + rebase instead of merge)
+- **Con???guring Reuse Recorded Resolution (ReReRe)**
+    - Records all ???xes to merge con???icts
+    - Reuses them automatically if the same con???ict recurs
+    - `git config --global rerere.enabled true`
+    - Particularly useful when cherry picking to multiple branches or constantly rebasing
+- **Sharing configuration**
+    - Configuration are specific to the machine you are on. To share config with team members:
+        - Wiki page
+        - Put dot ???les into a repo
+- **Git basics commands**
+    - `git help`: list Git commands
+        - `git help <command>`: get details about the command
+    - `exit`: close Git
+    - `HEAD`: points to the last commit on the current branch/timeline we are on
+    - `git status`: what has changed since last commit. Good to run regularly to avoid any mistake
+    - `cat <file>`: print file contents
+- **Start a repository**
+    - `mkdir <new directory>`:create a directory
+    - `cd <new directory>`: change to the new directory
+    - `git init`: create an empty git repository (git metadata stored in the hidden Users/Steph/store/.git/) here (new directory)
+        - `git init <new repository>`: create a new local repository
+- **Clone a repository**
+    - `git clone <url>`: Download repository into a newly-created local directory (with entire version history and same folder name). Add the "origin" remote pointing to that clone url. Check out the initial branch (likely master) and set the HEAD. "url" available on GitHub.
+        - `git clone <url> <directory name>`: same with directory renamed
+    - If you are the repo owner or added as a collaborator, you can clone, commit and push to the repo. If you are not, you can only clone and commit, but you can't push (no permission)
+- **Add files to staging area (= index)**
+    - `git add <file>`: add file to staging area/update index (let Git know to track it). File ready to be committed.
+        - `git add <list of files>`: add the list of files. "list of files": file names separated by a space
+        - `git add .`: add all the changes to the files in the current directory and below ("." current directory)
+        - `git add -u`: updates tracking for files that changed names/were deleted
+        - `git add -A`: does both
+        - `git add --all`: add all new and modified files
+        - `git add <"*.txt">`: add all text files in the whole project
+        - `git add <*.txt>`: add all text files in current directory
+        - `git add <directory/*.txt>`: add all text files in specified directory
+        - `git add <directory>`: add all files in specified directory
+- **Unstage changes**
+    - `git reset <file or path/file>`: unstaged changes on the file
+        - `git reset HEAD <file>`: unstaged last change
+- **Commit changes**
+    - `git commit -m <"message">`: commit changes to local repo with "message" (what work has been done?)
+        - `git commit -a -m <"message">`: add changes from all tracked files. Doesn't add new (untracked) files
+- **Undo a commit** (don't do this after pushing)
+    - `git reset --soft HEAD^`: undo the last commit and puts changes into staging. "--soft" resets into staging and "HEAD^" move to commit before HEAD.
+    - `git reset --hard HEAD^`: undo last commit and all changes
+        - `git reset --hard HEAD^^`: undo last 2 commits and all changes
+- **Add a new file to a commit** (don't do this after pushing)
+    - `git add`: stage what you want to add
+    - `git commit --amend -m <"new message">`: whatever has been just staged is added to last commit. "--amend" add to last commit. "new message" new commit message overwrites the previous one
+- **Discarding changes**
+    - `git checkout -- <file or list of files>`: discard/undo changes to the file since last commit (careful!). "--": there is no more options (different from branch change)
+- **Timeline history - log** ([More details](http://gitimmersion.com/lab_10.html))
+    - `git log`: list all of the changes committed inside the repo
+        - `git log --summary`: get more information for each commit
+        - `git log --pretty=oneline`: one line log with SHA + commit message
+        - `git log --oneline`: one line with abbreviated SHA + commit message
+        - `git log --pretty=format:"%h %ad- %s [%an]"`: fancy display
+        - `git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short`: fancier display (my alias: *git hist*)
+        - `git config --global alias.lg "log --oneline --decorate --all --graph"`: useful for rebase & merge (alias: *git lg*)
+        - `git log --oneline -p`: details about files modified (line added/deleted)
+        - `git log --oneline --stat`: number of insertions and deletions for each file & commit
+        - `git log --oneline --graph`: visual representation of branches and commits
+        - `git log --until=1.minute.ago`: until
+        - `git log --since=1.day.ago`: since (days)
+        - `git log --since=1.hour.ago`: since (hours)
+        - `git log --since=1.month.ago --until=2.weeks.ago`: since & until (relative)
+        - `git log --since=2000-01-01 --until=2012-12-21`: since & until (absolute)
+        
+- **Shortcuts (aliases)** (add the following to .gitconfig file)
+    - `git config --global alias.<chosen alias> <shell command (no git)>`: set an alias for the command. E.g. "git config --global alias.co commit" for using git co (=git commit)
+
+```{r echo = FALSE, fig.width = 4, fig.height = 2, fig.align = 'center', message=FALSE, warning=FALSE}
+grid.raster(readPNG("figures/5.png"))
+```
+    
+- **Initialize remote repository** (GitHub)
+    - Create a new empty repository on GitHub. We can have multiple remotes (production, test...)
+    - `git remote add <remote repo name> <repository URL.git>`: add (= bookmark) a new remote repository. "remote name" can be anything ("origin" for the main/official repo)
+    - `git remote -v`: list remote repositories that our local git repository knows about
+- **Remove remote**
+    - `git remote rm <remote>`: remove specified remote
+- **Pushing remotely**
+    - `git push -u <remote> <branch>`: put our commit remotely. "-u"" remembers the parameters (remote + branch), next time "git push" only. "branch" is usually "master". "rejected" output message: our branch is behind its remote counterpart (someone has pushed some changes before you). Pull first (fetch and merge) and push again
+        - `git push`
+- **Pulling remotely**
+    - `git pull`: pull changes down from the remote
+        1. fetch
+        2. merge (add merge commit)
+        - `git pull <remote name> master`: pull down new changes from the remote
+    - `git pull --rebase`: pull changes down from the remote. Fetch + rebase instead of merge, to avoid useless merge commit. Better
+- **Differences**
+    - `git diff`: Show unstaged differences between last commit & current state (lines added/removed)
+        - `git diff HEAD`: show staged and unstaged differences since last commit
+        - `git diff --staged`: show staged differences (changes just staged)
+        - `git diff HEAD^`: differences from parent of latest commit
+        - `git diff HEAD^^`: differences from grand-parent of latest commit
+        - `git diff HEAD~5`: differences from 5 commits ago
+        - `git diff HEAD^..HEAD`: second most recent commit vs msot recent
+        - `git diff f5a6sdfsfsdfsdfff9..4sdsdfsdfsdfsdffb063f`: differences between two specific commits (using SHAs)
+        - `git diff f5a6sdf..4sdsdfs`: differences between two specific commits (using abbreviated SHAs)
+        - `git diff <branch1> <branch2>`: differences between two branches
+        - `git diff --since=1.week.ago --until=1.minute.ago`: time-based difference
+- **Blame** (clear view of log)
+    - `git blame <file> --date short`: clear view of log with commit hash (abbreviated SHAs), author, date, line #, content.
+- **Branches**
+    - branch: When working on multiple features (like bugs) developers create copies (aka. branches) of their code they can work on and commit to them separately. When done they can merge this branch back into their main master branch.
+    - `git branch`: list branches
+    - `git branch <new branch>`: create a new branch (new timeline)
+    - `git checkout <branch>`: switch to the branch. We are now working on the branch timeline. The following commands won't impact the master branch until we switch back to it
+        - `git checkout -b <new branch>`: both create and switch to the new branch
+- **Remove files/folders/branches**
+    - `git rm <file>`: remove file from local filesystem (disk) and untrack it. Then `git commit -m <"message">` to confirm.
+    - `git rm -r <directory>`: recursively remove all folders and files from the given directory
+    - `git commit -am <"message">`: auto remove deleted files with the commit (if "git rm" forgotten)
+- **Untrack files**
+    - `git rm --cached <file>`: untrack file (deleted from Git only)
+- **Merge** (bring one branch's changes into another)
+    - `git checkout master`: go back to the master branch
+    - `git merge <branch>`: merges changes of the branch into the master branch. "fast-forward" in the output message: nothing new has been done on the master branch, easy merge. When changes have been made on the master branch, git message.
+    - `git checkout -b <branch>`: create and check out branch
+    - `git branch -d <branch>`: delete specified branch when fast forward merge
+        - `git branch -D <branch>`: delete a branch that hasn't been merged
+
+```{r echo = FALSE, fig.width = 5, fig.height = 2, fig.align = 'center', message=FALSE, warning=FALSE}
+grid.raster(readPNG("figures/13.png"))
+```
+
+- **Merge conflict** (two people edited the same file)
+    - "git pull" when merge conflict output message, Git modifies the file with the diff (two modification on the same file). "git log" to know which file to modify. Edit file locally. `git add`
+    - `git commit -a`: merge the changes. The editor takes care of the message (including merge conflict). Then `git push`
+- **Create remote branch**
+    - any branch that will last more than a day. You need other people to work on it
+    - `git checkout -b <local branch>`
+    - `git push origin <local branch>`: links local branch to the remote branch (start tracking it). If we do some work on local branch (add & commit), We can then push it to the linked remote branch
+- **Remote branch**
+    - `git branch -r`: list the remote branches
+    - `git remote show origin <or other remote name>`: show remote branches and local branches configured for "git pull" and "git push"
+    - `git fetch`: update/sync local branch information (pull down any change - download all branches from GitHub) but don't merge (if new remote branches have been created for example)
+- **Pull new remote branch** (if someone else created a new remote branch)
+    - `git pull`: output message precise the new remote branch (not yet locally)
+    - `git checkout <new remote branch`: track and switch to remote branch. Now available locally: we can contribute and push
+- **Removing a remote branch**
+    - `git push origin :<branch name>`: delete remote branch (not locally though)
+    - `git branch -d <branch name>`: delete branch locally
+        - `git branch -D <branch name>`: delete branch locally (hard way, if hasn't been merged)
+    - `git remote prune origin`: clean up deleted remote branch (delete references, if someone else has deleted remote branches). Good for large projects.
+- **Tagging**
+    - A tag is a reference to a commit (used mostly for release versioning).
+    - `git tag`: list all tags
+    - `git checkout <tag>`: check out code at commit (code version when tag has been created)
+    - `git tag -a <tag> -m <"message such as version...">`: add a new tag
+    - `git push --tags`: push new tags (GitHub)
+- **Remote branch rebase**
+    - `git fetch`: pull down any change but don't merge it
+    - `git rebase`: don't merge, run all commits one at a time
+        - 1.  Move all changes to master which are not in origin/master to a temporary area
+        - 2. Run all origin/master commits on our master
+        - 3. Run all commits in the temporary area, one at a time (on our master?)
+- **Rebase conflict** (if conflict when running "git rebase")
+    - `git rebase --continue`: after you've resolved the issue
+    - `git rebase --skip`: skip this patch
+    - `git rebase --abort`: check out the original branch and stop rebasing
+- **Local branch rebase**
+    - `git checkout <branch>`: switch to branch
+    - `git rebase master`: move branch commits to a temporary area, run master commits in branch, run branch commits on top of master commits in branch (back from temp area)
+    - `git checkout master`: switch to master branch
+    - `git merge <branch>`: merge from branch back into master (= fast-forward). Add branch commits to master
+- **Interactive rebase**
+    - `git rebase -i HEAD^`: interactive rebase ("-i"). HEAD (~ any number) commit to replay onto. The editor will open with commits in default chronological order. Replace "pick" with any specified commands to make changes
+        - **Reorder commits**: in the editor, keep "pick" and change commits order as you wish. Save and close editor
+        - **Change commit message**: in the editor, use "reword", save to close editor. Next editor, update commit message, save and close
+        - **Split commit**: in the editor, use "edit", save and close. "reset" command, commit separately and `git rebase --continue`
+        - **Squash commits** (two commits in one): in the editor, use "squash" on 2nd commit (will squash with previous one), save and close. Next editor, enter new commit message (delete previous messages), save and close.
+- **Merge or rebase**
+    - Rebase appears clearer, running commits one at a time but not the answer all the time
+    - branch with lots of changes/long time: merge to get log/more details of the changes
+- **Exclude files or pattern** (local repo only)
+    - write file/folder name or pattern (e.g. *.mp4) into .git/info/exclude file. It will exclude the file/folderfrom local git repo (made invisible) but not from elsewhere. Good when files you don't want to share with other coworkers.
+- **Exclude from all copies** (local repo and all)
+    - write file (or other) into .gitignore file. It will exclude from all. E.g. logs/*.log as log files should never be included into local repo.
+- **Stashing**
+    - Store files (that do not make up a full commit) in a temporary area (stash stack/list) to restore them later. Good when urgency.
+    - `git stash save` or `git stash`: save modified file in stash list and restore state at last commit. Normally, only tracked files get stashed (not newly created)
+        - `git stash save <"message">`: include a stash message that can be seen in the list
+    - `git stash apply`: after retruning to the feature branch. Bring stash files back. Ready to continue previous work. "stash@{0}" (last stash) is applied by default when not stash specified
+        -`git stash apply stash@{1}`: restore specified stash file
+    - `git stash list`: show stash list with names (e.g. stash@{0}) and last commit before stash. "WIP" = Work In Progress. Can take any option "git log" can
+        - `git stash list --stat`: summarize file changes
+    - `git stash drop`: delete last stash from list
+    - `git stash pop`: run "git stash apply", then "git stash drop"
+    - `git stash show`: show most recent stash. Can take any option of "git log"
+        - `git stash stash@{1}`: show specified stash
+        - `git stash show --patch`: show file diffs
+    - `git stash save --keep-index`: when you have both staged changes you want to commit and unstaged changes you want to stash. It will only stash unstaged changes.
+    - `git stash save --include-untracked`: stash both tracked and untracked files
+    - `git stash branch <new branch> <stash to pop>`: if we deleted the branch where we stashed, need to restore this stash. Check a new branch out and pop the stash.
+    - `git stash clear`: clear all stash list at once
+- **Stash conflicts** (Conflicts are possible when applying a stash)
+    - "*error: Your local changes to the following files would be overwritten by merge. Please, commit your changes or stash them before you can merge. Aborting*": Commit or reset your changes as appropriate and then stash apply again
+    - "*Auto-merging CONFLICT (content): Merge conflict in...*": doesn't abort so merge the conflicted lines as usual
+- **Purging history**
+    - when we committed file by mistake, even after deletion, file contents will still be visible in history
+    - *Reasons NOT to rewrite history*: why bother? as data already compromised (e.g. change your password if you committed your password file), everyone must update their work to reflect your revised commit (they won't really notice the mistake)
+    - *When you should rewrite history anyway*: Committed ???les violate someone's copyrigh, large binary ???les (e.g. video) are making your repo too big or you're rewriting commits that haven't been made public (local)
+    - `git clone <repo> <backup>`: back up your full repo into "<backup>" as you can lose your work when rewriting history
+    - `cd <backup>`: go to the back up repo
+    - `git filter-branch --tree-filter <shell command>`: Git will check each commit out into working directory, run your command, and re-commit. Operates in working directory
+        - *E.g.*: `--tree-filter 'rm -f passwords.txt'` remove "passwords.txt" from project. "-f" (=force) command doesn't fail if file isn't present.
+        - `git filter-branch --tree-filter <shell command> -- --all`: filter all commits in all branches
+        - `git filter-branch --tree-filter <shell command> -- HEAD`: filter only current branch
+        - `git filter-branch -f --tree-filter <shell command>`: When running filter-branch a second time, force to overwrite the back. By default, you can't run ???lter-branch again because it won't overwrite the backup
+    - `git filter-branch --index-filter <git command>`: Git will run your command against each commit, but without checking it out ???rst (faster than tree). Operates in staging area
+        - *E.g.*: `--index-filter 'git rm --cached --ignore-unmatch passwords.txt'` succeed if file isn't present
+    - `git filter-branch -f --prune-empty -- --all`: drops commits that don't alter any file. Filters can result in some empty commits.
+- **Line endings**
+    - Di???erent Operating Systems (OSs) store line separators di???erently. When retrieving someone else's work, it is important to get the right format for your OS.
+    - *OSX/Linux*: LF (LineFeed. /n)
+    - *Windows*: CR (Carriage Return. /r) and LF pair. /r/n
+    - Git can auto-correct formats for each OS
+    - *OSX/Linux (Unix-like systems)*: `git config --global core.autocrlf input` changes CR/LF to LF on commits (fixes any Windows line endings that get introduced)
+    - *Windows*: `git config --global core.autocrlf true` changes LF to CR/LF on checkout (but convert back to LF on commits)
+    - *On windows-only projects*: `git config core.autocrlf false` does no conversion (conversion isn't needed if everyone expects CR/LF)
+- **Git attributes file** (.gitattributes)
+    - Allows you not to rely on everybody else's config (as they might forget)
+    - Create a *.gitattributes* file in your project root with file types and related conversion settings
+    - *File type* designates which ???les rule applies to
+        - * : matches any type without an extension-speci???c rul
+        - *.html : matches all HTML ???le
+    - *Conversion settings*
+        - *text=auto*: choose conversion automatically
+        - *text*: treat ???les as text - convert to OS's line endings on checkout, back to LF on commit
+        - *text eol=crlf, text eol=lf*: convert to speci???ed format on checkout, back to LF on commit
+        - *binary*: treat ???les as binary - do no conversion
+    - *.gitattributes* file (.sh Unix files, .bat windows files)
+        - * text=auto
+        - *.rb text
+        - *.js text
+        - *.bat text eol=crlf
+        - *.sh text eol=lf
+        - *.png binary
+    
+```{r echo = FALSE, fig.width = 5, fig.height = 2, fig.align = 'center', message=FALSE, warning=FALSE}
+grid.raster(readPNG("figures/6.png"))
+```
+
+- **Cherry-picking**
+    - Copy one or two commits to the current branch (E.g. from development branch to production one) when there are many commits. Will change the commit SHA
+    - `git cherry-pick <abbreviated commit SHA>`: after checking out to the right branch (the one we want to copy to), copy the specified commit to the branch
+        - `git cherry-pick --edit <abbreviated commit SHA>`: lets you edit the commit message via editor
+    - `git cherry-pick --no-commit <ab. commit1 SHA> <ab. commit2 SHA>`: cherry-pick and combine two commits. Pulls in changes and stages them, but doesn't commit!
+        - `git commit -m <"message">`: commit the changes. Now we cherry-picked the changes from two commits and made a single commit
+    - `git cherry-pick -x <ab. SHA>`: *-x* adds source SHA to commit message. When we want to track which commit we cherry-picked from. Only useful with public branches; don't use for local branches as people don't have access to your local branch
+    - `git cherry-pick --signoff <ab. SHA>`: *--signo???* adds current user's name to commit message. When we want to track who cherry-picked the commit along with the original committer
+- **Submodules - share libraries**
+    - *Bad ways of sharing libraries*
+        - Copy the libraries into the projects: library quickly gets outdated as you might make changes locally on a project but can't push them easily to update rest of projects
+        - Post libraries on a central server: can't make library changes without a project to test it in
+    - *Submodules: A Git repo inside a Git repo* (way to easily share libraries accross projects)
+        - Pull down updates easily
+        - Test your changes with an actual dependent project
+        - Share changes easily
+        - History independent of containing repo
+
+```{r echo = FALSE, fig.width = 5, fig.height = 2, fig.align = 'center', message=FALSE, warning=FALSE}
+grid.raster(readPNG("figures/7.png"))
+```
+
+- **Adding a submodule to a project**
+    1. Create a Git repo (can be down on GitHub)
+    2. `git submodule add <git repo address containing submodule>`: before, go to the project that will use the submodule and type command. Will clone the project into a directory (called as git repo cloned) inside current repo (it created a submodule file: *.gitmodules*)
+    3. `git add .`: stage changes
+    4. `git commit -m <"message">` and `git push`
+- **Gitmodules file configuration**
+
+```{r echo = FALSE, fig.width = 5, fig.height = 2, fig.align = 'center', message=FALSE, warning=FALSE}
+grid.raster(readPNG("figures/8.png"))
+```
+
+- **Modify a submodule**
+    1. `cd <submodule>` and `git checkout master` (submodule don't start out on a branch)
+    2. Make changes to your files, commit and push
+    3. Update parent directory: `cd ..` `git add <submodule>`, commit and push
+        - `git push --recurse-submodules=check`: abort a push if you haven't pushed a submodule (if you ran from the parent directory)
+        - `git push --recurse-submodules=on-demand`: push all repositories (even submodules). No worries about the steps.
+- **Cloning projects with submodule**
+    1. `git clone git@example.com:<git repo address containing submodule>`: get project files, .gitmodules file and submodules that are empty directories
+    2. `git submodule init`: to get the submodules, we need to initialize them. Git reads the .gitmodules ???le and adds an entry to local config (./git/config) for each submodule
+    3. `git submodule update`: for each submodule, it clones the repo and check out the commit speci???ed by the parent project. Now your submodules have files
+- **Submodules update** (retrieve changes that someone else has pushed)
+    - `git submodule update`: from the parent projects, retrieves the submodule's file updates
+- **Restoring commits**
+    - `git reflog`: Git keeps a *reflog* (second log, only in local repo) with all commits log: SHA, reflog shortname, commit info
+    - `git reset --hard <ab. commit SHA>`: restore the commit
+        - `git reset --harh <reflog commit shortname>`: alternative
+- **Restoring branches**
+    - `git log --walk-reflogs`: see reflog info in full log format
+    - `git branch <new branch> <most recent commit from the deleted branch>`: create new branch and points it at the specified commit, restoring the deleted branch
+        - `git branch <new branch> <reflog commit shortname>`: alternative
+
+## GitHub
+### GitHub overview
+GitHub is not just a file store, it is a tool for:  
+
+- Sharing
+- Discussing
+- Reviewing your code
+
+- **Forking a repo** (Fork based workflows/collaboration - contribute to a project)
+    - if not the owner or collaborator, you can fork the repo for your user account. Fork includes all, branches, tags and history. As you own the fork, you can clone the repo, make changes commit and push to the fork.
+    - *add a collaborator on GitHub*: settings -> collaborators -> search  
+    
+```{r echo = FALSE, fig.width = 5, fig.height = 2, fig.align = 'center', message=FALSE, warning=FALSE}
+grid.raster(readPNG("figures/9.png"))
+```
+
+- **Submitting a pull request** (Fork based workflows)
+    - When you have done work on your fork and want to update the original project with your changes. You can submit a pull request to the owner/collaborator asking to review your changes (on your fork master branch) and accept/reject to merge it into the master branch of original project.
+    - On your GitHub fork: Pull requests -> New pull request -> Create pull request -> enter information -> Send pull request. Now the owner can view your pull request
+    - *From <branch> to <master>*: in Github, base = <master>, compare = <branch>
+    - When merge is done, the pull request closes
+    - On public repo:
+        - Anyone can review and comment on a pull request (PR)
+        - They can checkout your branch, test your code, commit and add their changes to your PR
+        - Any collaborator can merge in your PR
+    - When commenting on a PR, the PR requester receives an email with the comment
+    - As the PR points to a branch, not a commit, the PR requester (or collaborators if public project) can still push changes to the branch (fork). Changes will be part of PR
+    - When accepted, the owner/collaborator can *Merge pull request*
+
+```{r echo = FALSE, fig.width = 5, fig.height = 2, fig.align = 'center', message=FALSE, warning=FALSE}
+grid.raster(readPNG("figures/10.png"))
+```
+
+- **Updating your fork** (Fork based workflows)
+    - When collaborating using forks, it is important to update your fork to capture collaborators' changes.
+    - *upstream*: default name we give to the initial project repo. Collaborators will create downstream forks of that
+    - Update every time a pull request gets accepted to the upstream repo as you don't get your fork updated automatically
+    - Steps for update:
+        1. `git remote add upstream <path_to_repo>`: add remote for upstream
+        2. `git fetch upstream`: fetch changes
+        3. `git merge upstream/master master`: merge them into master
+            - `git pull upstream master`: 2 + 3
+        4. `git push origin master`: push them to your remote
+
+```{r echo = FALSE, fig.width = 5, fig.height = 2, fig.align = 'center', message=FALSE, warning=FALSE}
+grid.raster(readPNG("figures/11.png"))
+```
+
+- **Single repository workflows/collaboration**
+    - *Fork based collaboration* is great for occasional contributors but if you are working with a team on a regular basis, it is better to work on a single repository as fork based workflows is a lot to keep track of
+    - Everyone work on a clone of the single repository and can pull/push on it and get everyone else's updates
+    - *Feature branch for independant development*: everyone should work independently on their own branch in order to avoid the conflicts that would happen if everyone work on the master branch
+    - Multiple developers can  collaborate on each  feature branch: `git fetch` (sync from main repo), `git branch -a` (look up all branches), `git checkout <branch>` (check any branch)
+    - Any collaborator can check a feature and merge it in the master branch
+    - `git push --set-upstream origin <branch>`: push the new branch to the upstream
+    
+```{r echo = FALSE, fig.width = 5, fig.height = 2, fig.align = 'center', message=FALSE, warning=FALSE}
+grid.raster(readPNG("figures/12.png"))
+```
+
+- **Collaborating on pull request**
+    - When collaborating on a single repo, you can merge your pull request without feedback from rest of the team. Bad idea, however. Better to wait for feebacks (comments)
+    - *Types of comments on pull requests*: on a pull request, on a commit, on a line
+    - When commenting, use **@collaborator-username**: git notifies the collaborator by email
+- **Reviewing a pull request**
+    1. `git fetch`: download all branches from GitHub
+    2. `git branch -a`: view all the branches
+    3. `git checkout <branch>`: checkout a local copy of a remote branch
+    4. make changes, `git commit`, `git push`: test code, make any changes and then commit and push changes
+- **Considerations when merging a pull request**
+    - *Interactively rebase to simplify history?*: Only when it leaves enough context. Only remove commits (squash) that don't add value to the project
+    - *Rebase to create a linear history?*: If your team is comfortable with it. It is not always thruthful but generally more useful: creates simpler history, makes it look like features delivered one at a time. Changes commit hashes so your team needs to know what they're doing. `git checkout <feature_branch>`, `git rebase master`
+    - *Use a fast-forward or recursive merge?*: Recursive provides more clarity. Fast forward: less commits but hard to tell what commit was made on what feature branch. Recursive: clear what was done on a branch, single commit to revert. `git merge --no-ff <feature_branch>`: make sure to use recursive merge.
+
+###Tags
+
+Tags are documentation. A tag points to a single commit. Use tags every time you push to production to keep track of all production releases. Unless every commit on master goes to production.
+
+**Three different types of tags**
+
+- **Lightweight** - just a tag pointing to a particular commit, no message or tagger
+    - `git tag`
+- **Signed** - uses public key to prove identity of tagger
+    - `git tag -s`
+- **Annotated** - adds info on who tagged, when and why. Type mostly used
+    1. `git checkout <commit sha>` HEAD to the commit you want to tag (if not already there)
+    2. `git tag -a <name> -m <"tag message">`
+    3. `git push --tags` push changes and new tags
+    
+**Best practices for naming tags:** Semantic versioning is a best practice. *Release: major.minor.patch* [semver.org](http://semver.org/)
+
+- *major release* when making substantial changes to the application
+- *minor release* when adding functionality
+- *patch release* when fixing bug
+
+###Release branches
+
+
+
+
+## Sources
+- [Git immersion](http://gitimmersion.com/index.html)
+- The data scientist's toolbox, Johns Hopkins University
+- [Code school Git path](https://www.codeschool.com/paths/git)
+    
