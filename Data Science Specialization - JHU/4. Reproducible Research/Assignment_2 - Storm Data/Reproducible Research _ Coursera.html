@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<!-- saved from url=(0098)https://class.coursera.org/repdata-035/human_grading/view/courses/975148/assessments/4/submissions -->
+<html xmlns:fb="http://ogp.me/ns/fb#" itemtype="http://schema.org" class="supports-svg loading-polyfills polyfill-important long-loading-polyfills"><script type="text/javascript" async="" src="./Reproducible Research _ Coursera_files/MathJax.js"></script><script type="text/javascript" async="" src="./Reproducible Research _ Coursera_files/ga.js"></script><script type="text/javascript">window["_gaUserPrefs"] = { ioo : function() { return true; } }</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=IE7"><meta name="fragment" content="!"><meta name="robots" content="NOODP"><meta charset="utf-8"><meta property="og:title" content="Coursera"><meta property="og:type" content="website"><meta property="og:image" content="http://s3.amazonaws.com/coursera/media/Coursera_Computer_Narrow.png"><meta property="og:url" content="https://www.coursera.org/"><meta property="og:site_name" content="Coursera"><meta property="og:locale" content="en_US"><meta property="og:description" content="Take free online classes from 80+ top universities and organizations. Coursera is a social entrepreneurship company partnering with Stanford University, Yale University, Princeton University and others around the world to offer courses online for anyone to take, for free. We believe in connecting people to a great education so that anyone around the world can learn without limits."><meta property="fb:admins" content="727836538,4807654"><meta property="fb:app_id" content="274998519252278"><meta name="twitter:site" content="Coursera"><meta name="twitter:app:name:iphone" content="Coursera"><meta name="twitter:app:name:ipad" content="Coursera"><meta name="twitter:app:name:googleplay" content="Coursera"><meta name="twitter:app:id:iphone" content="id736535961"><meta name="twitter:app:id:ipad" content="id736535961"><meta name="twitter:app:id:googleplay" content="org.coursera.android"><meta name="description" content="Take free online classes from 80+ top universities and organizations. Coursera is a social entrepreneurship company partnering with Stanford University, Yale University, Princeton University and others around the world to offer courses online for anyone to take, for free. We believe in connecting people to a great education so that anyone around the world can learn without limits."><meta name="image" content="http://s3.amazonaws.com/coursera/media/Coursera_Computer_Narrow.png"><meta name="apple-itunes-app" content="app-id=736535961"><title>Reproducible Research | Coursera</title>    <link rel="stylesheet" href="./Reproducible Research _ Coursera_files/shim.css"><link href="./Reproducible Research _ Coursera_files/spark.main.css" rel="stylesheet" type="text/css">
+      <link href="./Reproducible Research _ Coursera_files/course.css" rel="stylesheet" type="text/css">
+      <link href="./Reproducible Research _ Coursera_files/hg.css" rel="stylesheet" type="text/css">
+    <link href="https://spark-public.s3.amazonaws.com/repdata/static/images/favicon.ico" rel="icon">
+<style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pages/hg/js/app/routes" src="./Reproducible Research _ Coursera_files/routes.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="js/lib/204" src="./Reproducible Research _ Coursera_files/204.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="js/lib/400" src="./Reproducible Research _ Coursera_files/400.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pages/spark/views/template/header" src="./Reproducible Research _ Coursera_files/header.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pages/spark-survey/catalogApi" src="./Reproducible Research _ Coursera_files/catalogApi.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="js/lib/readme" src="./Reproducible Research _ Coursera_files/readme.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pages/spark/views/template/header.html" src="./Reproducible Research _ Coursera_files/header.html.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pages/analytics/models/LearnerStoriesCollection" src="./Reproducible Research _ Coursera_files/LearnerStoriesCollection.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pages/spark/views/template/sidebar" src="./Reproducible Research _ Coursera_files/sidebar.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pages/analytics/models/LearnerStoryModel" src="./Reproducible Research _ Coursera_files/LearnerStoryModel.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pages/spark-survey/assessApi" src="./Reproducible Research _ Coursera_files/assessApi.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pages/spark-survey/util/abUtils" src="./Reproducible Research _ Coursera_files/abUtils.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pages/spark/views/template/sidebar.html" src="./Reproducible Research _ Coursera_files/sidebar.html.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="spark/app/signature/js/signature_track" src="./Reproducible Research _ Coursera_files/signature_track.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="spark/app/signature/js/signatureTrackLastChanceModal.html" src="./Reproducible Research _ Coursera_files/signatureTrackLastChanceModal.html.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="spark/app/signature/js/flexjoinLastChanceModal.html" src="./Reproducible Research _ Coursera_files/flexjoinLastChanceModal.html.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="js/lib/path" src="./Reproducible Research _ Coursera_files/path.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pages/spark/views/template/nls/header" src="./Reproducible Research _ Coursera_files/header(1).js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pages/spark/views/template/nls/sidebar" src="./Reproducible Research _ Coursera_files/sidebar(1).js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="shims/form-core.js" src="./Reproducible Research _ Coursera_files/form-core.js"></script><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuTitle {background-color: #CCCCCC; margin: -1px -1px 1px -1px; text-align: center; font-style: italic; font-size: 80%; color: #444444; padding: 2px 0; overflow: hidden}
+.MathJax_MenuArrow {position: absolute; right: .5em; color: #666666}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_Menu_Close {position: absolute; width: 31px; height: 31px; top: -15px; left: -15px}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style></head><body><div id="MathJax_Message" style="display: none;"></div><div id="fb-root"></div><div id="spark-help" class="hide"></div><a href="https://learner.coursera.help/hc/requests/new" target="_blank"><div style="z-index: 1" data-networkprioritysupportwidget="" role="button" class="helpwidget-tab hide">Premium Support</div></a><!-- - track IE8 and less browser for eventing purposes--><!--[if lte IE 8]><script>window._204 = window._204 || [];
+window._gaq = window._gaq || [];
+window._gaq.push(
+    ['_setAccount', 'UA-28377374-1'],
+    ['_setDomainName', window.location.hostname],
+    ['_setAllowLinker', true],
+    ['_trackPageview', window.location.pathname]);
+window._204.push(
+  ['client', 'home'],
+  {key:"pageview", value:window.location.pathname});</script><script src="https://dw0ugk4msqulk.cloudfront.net/57fad30084ce4d6fa7892cc427893819a64a7df7/js/lib/204.js"></script><script src="https://ssl.google-analytics.com/ga.js"></script><![endif]--><div id="fb-root"></div><div id="origami" data-js="origami"><div><div><div class="coursera-page"><div role="menubar" class="coursera-header"><div class="hidden">This page features MathJax technology to render mathematical formulae.
+If you are using a screen reader, please visit <a href="http://www.dessci.com/en/products/mathplayer/">MathPlayer</a> to download the plugin for your browser. Please note that this is an Internet Explorer-only plugin at this time.</div><h1 class="hidden">Reproducible Research</h1><!-- UNTIL dashboard announcement expires 2014-12-01 (then delete this code)--><div class="helpcenter-announcement"><div data-readme="helpcenter-announcement" data-readme-show-count="1" data-readme-show-until-closed="data-readme-show-until-closed" data-readme-expires="Mar 31, 2015" class="readme" style="visibility: visible; display: none;"><div>Need technical help? Visit our new <a href="https://learner.coursera.help/" data-readme-close="data-readme-close">Learner Help Center!</a></div><div data-readme-close="data-readme-close" class="readme-close-icon"><span class="icon-remove"></span></div></div></div><div role="banner" class="course-topbar container-fluid"><div class="row-fluid"><div class="span3"><a href="https://www.coursera.org/" data-if-linkable="add-referrer" class="course-topbar-logo"></a></div><div style="float:right;" class="course-topbar-nav-container span9"><h2 class="hidden">Top Navigation Bar</h2><ul class="course-topbar-nav-list"><li class="course-topbar-nav-list-item"><a href="https://www.coursera.org/courses" data-if-linkable="add-referrer">Courses</a></li><li tabindex="0" role="button" aria-haspopup="true" aria-expanded="false" aria-owns="course-topbar-my" data-popup="#course-topbar-my" data-popup-bind-open="mouseenter" data-popup-close="data-popup-close" style="cursor:pointer;" data-popup-direction="se" class="course-topbar-nav-list-item"><a data-user-id="10089334">Stephanie<i class="icon-caret-down"></i></a></li></ul></div></div><div id="course-topbar-aboutus" class="course-topbar-sublist"><a href="https://www.coursera.org//about/" target="_new" data-if-linkable="add-referrer" class="internal-about course-topbar-sublist-item">About Us</a><a href="https://www.coursera.org//about/careers" target="_new" data-if-linkable="add-referrer" class="internal-about course-topbar-sublist-item">Careers</a><a href="https://www.coursera.org//about/people" target="_new" data-if-linkable="add-referrer" class="internal-about course-topbar-sublist-item">People</a><a href="https://www.coursera.org//about/contact" target="_new" data-if-linkable="add-referrer" class="internal-about course-topbar-sublist-item">Contact Us</a></div><div id="course-topbar-my" class="course-topbar-sublist"><a data-popup-close="data-popup-close" href="https://www.coursera.org/" target="_new" class="course-topbar-sublist-item">My Courses</a><a data-popup-close="data-popup-close" href="https://www.coursera.org/account/profile" target="_new" class="course-topbar-sublist-item">Profile</a><a data-popup-close="data-popup-close" href="https://www.coursera.org/account/accomplishments" target="_new" class="course-topbar-sublist-item">Course Records</a><a href="https://www.coursera.org/account/settings" target="_new" class="course-topbar-sublist-item">Settings</a><a href="https://class.coursera.org/repdata-035/class/preferences" class="course-topbar-sublist-item">Course Preferences</a><form action="https://class.coursera.org/api/logoutSsr/v1?csrf3-token=1453454321.vOCAk3rGEaEo7oyr" method="post"><button data-popup-close="data-popup-close" type="submit" class="course-topbar-sublist-item">Sign Out</button></form></div></div><div class="course-topbanner-wrapper"><div class="course-topbanner"><div class="course-topbanner-university-logo"><a href="https://www.coursera.org/jhu" target="_blank" data-if-linkable="add-referrer" title="https://www.coursera.org/jhu" class="coursera-university-color"><img src="./Reproducible Research _ Coursera_files/university_logo" alt="jhu"></a></div><h1 class="course-topbanner-header"><a href="https://class.coursera.org/repdata-035/" data-if-linkable="modal-lock" class="course-topbanner-name coursera-university-color">Reproducible Research</a><br><span style="" class="course-topbanner-instructor">by Roger D. Peng, PhD, Jeff Leek, PhD, Brian Caffo, PhD</span></h1></div></div></div><div style="position:relative;" class="container-fluid"><div class="row-fluid"><div id="course-page-sidebar" role="navigation"><div role="menubar" class="coursera-sidebar"><div id="course-page-sidebar" role="navigation"><div class="course-navbar-container"><a href="https://class.coursera.org/repdata-035" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_index"><img src="./Reproducible Research _ Coursera_files/logo" style="width: 205px;height: 116px;margin: -15px 0px 8px 1px; box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05);" alt="Course Home Page"></a><div data-coursera-course-search-nav-widget="data-coursera-course-search-nav-widget" class="input-append course-search-nav-box"><form method="get" action="https://class.coursera.org/repdata-035/class/search" data-js-search-form="data-js-search-form" class="form-inline minimized-search"><label for="course-search-nav-input" class="accessible-text-for-reader">Search this course</label><input id="course-search-nav-input" type="text" name="q" data-js-search-input="data-js-search-input">&nbsp;<button type="submit" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="search" class="btn icon-search"><span class="accessible-text-for-reader">Search</span></button></form></div><h2 class="hidden">Side Navigation Bar</h2><ul class="course-navbar-list"><li class="course-navbar-item"><a href="https://class.coursera.org/repdata-035/class/index" data-if-linkable="modal-lock,gray,lock-icon" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_Announcements" class="coursera-university-color"><span>Announcements </span><span></span></a></li><li class="course-navbar-item"><a href="https://class.coursera.org/repdata-035/wiki/Course_Book" data-if-linkable="modal-lock,gray,lock-icon" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_Course_Books" class="coursera-university-color"><span>Course Books </span><span></span></a></li><li class="course-navbar-item"><h3>Week-by-Week</h3></li><li class="course-navbar-item"><a href="https://class.coursera.org/repdata-035/wiki/Week_1" data-if-linkable="modal-lock,gray,lock-icon" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_Week_1:_Concepts" class="coursera-university-color"><span>Week 1: Concepts </span><span></span></a></li><li class="course-navbar-item"><a href="https://class.coursera.org/repdata-035/wiki/Week_2" data-if-linkable="modal-lock,gray,lock-icon" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_Week_2:_Tools" class="coursera-university-color"><span>Week 2: Tools </span><span></span></a></li><li class="course-navbar-item"><a href="https://class.coursera.org/repdata-035/wiki/Week_3" data-if-linkable="modal-lock,gray,lock-icon" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_Week_3:_Distribution_and_Checklist" class="coursera-university-color"><span>Week 3: Distribution and Checklist </span><span></span></a></li><li class="course-navbar-item"><a href="https://class.coursera.org/repdata-035/wiki/Week_4" data-if-linkable="modal-lock,gray,lock-icon" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_Week_4:_Case_Studies" class="coursera-university-color"><span>Week 4: Case Studies </span><span></span></a></li><li class="course-navbar-item"><h3>Lectures</h3></li><li class="course-navbar-item"><a href="https://class.coursera.org/repdata-035/lecture/index" data-if-linkable="modal-lock,gray,lock-icon" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_Lecture_Videos" class="coursera-university-color"><span>Lecture Videos </span><span></span></a></li><li class="course-navbar-item"><a href="https://github.com/rdpeng/courses/tree/master/05_ReproducibleResearch" target="_blank" data-if-linkable="modal-lock,gray,lock-icon" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_Lecture_Slides_(link_to_GitHub)" class="coursera-university-color"><span>Lecture Slides (link to GitHub) </span><span class="icon-share"></span><span class="accessible-text-for-reader">opens in new browser tab</span></a></li><li class="course-navbar-item"><h3>Exercises</h3></li><li class="course-navbar-item"><a href="https://class.coursera.org/repdata-035/quiz/index" data-if-linkable="modal-lock,gray,lock-icon" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_Quizzes" class="coursera-university-color"><span>Quizzes </span><span></span></a></li><li class="course-navbar-item"><a href="https://class.coursera.org/repdata-035/human_grading/index" data-if-linkable="modal-lock,gray,lock-icon" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_Peer_Assessments_1_&amp;_2" class="coursera-university-color"><span>Peer Assessments 1 &amp; 2 </span><span></span></a></li><li class="course-navbar-item"></li><li class="course-navbar-item"><h3>About the course</h3></li><li class="course-navbar-item"><a href="https://class.coursera.org/repdata-035/wiki/syllabus" data-if-linkable="modal-lock,gray,lock-icon" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_Syllabus" class="coursera-university-color"><span>Syllabus </span><span></span></a></li><li class="course-navbar-item"><a href="https://class.coursera.org/repdata-035/wiki/About_the_Instructor" data-if-linkable="modal-lock,gray,lock-icon" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_About_the_Instructor" class="coursera-university-color"><span>About the Instructor </span><span></span></a></li><li class="course-navbar-item"><h3>Community</h3></li><li class="course-navbar-item"><a href="https://class.coursera.org/repdata-035/forum/index" data-if-linkable="modal-lock,gray,lock-icon" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_Discussion_Forums" class="coursera-university-color"><span>Discussion Forums </span><span></span></a></li><li class="course-navbar-item"><a href="http://datasciencespecialization.github.io/" target="_blank" data-if-linkable="modal-lock,gray,lock-icon" data-ab-user-convert-for="honorcode_to_welcome2" data-ab-user-convert="navclick_DSS_Community_Site" class="coursera-university-color"><span>DSS Community Site </span><span class="icon-share"></span><span class="accessible-text-for-reader">opens in new browser tab</span></a></li></ul><ul style="list-style-type:none;margin-left: 10px;"><li><a href="https://accounts.coursera.org/i/zendesk/courserahelp?return_to=https://learner.coursera.help/hc/" target="_blank" title="Open help articles in new window" class="coursera-university-color"><i class="icon-question-sign"></i>Help Center</a></li></ul><ul style="list-style-type:none;margin-left: 10px;"></ul></div></div></div></div><div id="course-page-content" role="main"><div id="spark" class="hide" style="display: block;"><div id="main"><div id="AssessmentsLayout">
+<div id="hg-data" style="display: none">
+  <input id="hg-data-phase" type="hidden">
+  <input id="hg-data-step" type="hidden">
+  <input id="hg-data-step-page" type="hidden">
+  <input id="hg-data-data" type="hidden">
+</div><a data-coursera-admin-helpwidget-link="data-coursera-admin-helpwidget-link" rel="help" href="https://class.coursera.org/mooc/help/peer" title="Peer Assessments" target="_blank" style="display:none;">Learn more</a>
+<div id="assessmentContainer" aria-live="polite" class="container-fluid">
+  <div id="assessmentNavigationRegion" class="navigationRegion"><div id="AssessmentNavigationView">
+<ul class="breadcrumb">
+  <li><a href="https://class.coursera.org/repdata-035/human_grading/">Peer Assessments</a></li>
+  <li><span class="divider">/</span>Peer Assessment 2</li><a target="_blank" href="https://accounts.coursera.org/i/zendesk/courserahelp?return_to=https://learner.coursera.help/hc" title="Click here if you&#39;re experiencing technical problems or found errors in the course materials." class="coursera-reporter-link">Help Center</a>
+</ul>
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="container">
+      <ul id="hg-nav" class="nav">
+        <li id="hg-nav-phase-submitting" class="hg-nav-phase hg-nav-border-left hg-nav-border-right" data-hg-date-status="past">
+          <div class="hg-nav-top-row">
+            <div class="progress progress-danger">
+              <div class="bar" style="width: 100%;"></div>
+            </div>
+            <div class="hg-asst-interval">
+              <div class="hg-asst-interval-part hg-asst-interval-open" style="display: none;"><span data-livetimer-date-primitive="1449493200000" class="hg-date" data-livetimer-date-original="Mon  7 Dec 2015  5:00 AM PST" title="opened on Mon  7 Dec 2015  5:00 AM PST
+(1 month, 1 week ago)" data-hg-date-status="" style="height: 0px; width: 0px;"><span class="livetimer-absolute" style="display: none;">opened Mon  7 Dec 2015  5:00 AM PST</span><span class="livetimer-relative">opened 1mon 1w ago</span></span></div>
+              <div class="hg-asst-interval-part hg-asst-interval-close"><span data-livetimer-date-primitive="1451262600000" class="hg-date" data-livetimer-date-original="Sun 27 Dec 2015  4:30 PM PST" title="closed on Sun 27 Dec 2015  4:30 PM PST
+(2 weeks, 3 days ago)" data-hg-date-status="past" style="height: 0px; width: 0px;"><span class="livetimer-absolute" style="display: none;">closed Sun 27 Dec 2015  4:30 PM PST</span><span class="livetimer-relative">closed 2wk 3d ago</span></span></div>
+            </div>
+            <div class="hg-asst-phase-reload"><a href="https://class.coursera.org/repdata-035/human_grading/view/courses/975148/assessments/4/submissions#" class="hg-internal hg-reload">Reload</a>&nbsp;to open</div>
+            <div class="hg-nav-phase-header"><span>Submission Phase</span></div>
+          </div>
+          <ul class="nav hg-nav-bottom-row">
+            <li id="hg-nav-step-submitting" class="hg-nav-step active"><a href="./Reproducible Research _ Coursera_files/Reproducible Research _ Coursera.html" class="hg-internal" data-original-title=""><span class="step">1.</span><span>Do assignment</span><span class="hg-nav-step-status hg-nav-step-status-select-todo"><span class="hg-nav-step-status-todo icon-check-empty"></span><span class="hg-nav-step-status-other"></span></span></a></li>
+          </ul>
+        </li>
+        <li id="hg-nav-phase-grading" class="hg-nav-phase hg-nav-border-left hg-nav-border-right" data-hg-date-status="past">
+          <div class="hg-nav-top-row">
+            <div class="progress progress-danger">
+              <div class="bar" style="width: 100%;"></div>
+            </div>
+            <div class="hg-asst-interval">
+              <div class="hg-asst-interval-part hg-asst-interval-open" style="display: none;"><span data-livetimer-date-primitive="1451266200000" class="hg-date" data-livetimer-date-original="Sun 27 Dec 2015  5:30 PM PST" title="opened on Sun 27 Dec 2015  5:30 PM PST
+(2 weeks, 3 days ago)" data-hg-date-status="" style="height: 0px; width: 0px;"><span class="livetimer-absolute" style="display: none;">opened Sun 27 Dec 2015  5:30 PM PST</span><span class="livetimer-relative">opened 2wk 3d ago</span></span></div>
+              <div class="hg-asst-interval-part hg-asst-interval-close"><span data-livetimer-date-primitive="1451867400000" class="hg-date" data-livetimer-date-original="Sun  3 Jan 2016  4:30 PM PST" title="closed on Sun  3 Jan 2016  4:30 PM PST
+(1 week, 3 days ago)" data-hg-date-status="past" style="height: 0px; width: 0px;"><span class="livetimer-absolute" style="display: none;">closed Sun  3 Jan 2016  4:30 PM PST</span><span class="livetimer-relative">closed 1wk 3d ago</span></span></div>
+            </div>
+            <div class="hg-asst-phase-reload"><a href="https://class.coursera.org/repdata-035/human_grading/view/courses/975148/assessments/4/submissions#" class="hg-internal hg-reload">Reload</a>&nbsp;to open</div>
+            <div class="hg-nav-phase-header"><span>Evaluation Phase</span></div>
+          </div>
+          <ul class="nav hg-nav-bottom-row">
+            <li id="hg-nav-step-peerGrading" class="hg-nav-step"><a href="https://class.coursera.org/repdata-035/human_grading/view/courses/975148/assessments/4/peerGradingSets" class="hg-internal disabled" data-original-title="" disabled="disabled"><span class="step">2.</span><span>Evaluate peers</span><span class="hg-nav-step-status hg-nav-step-status-select-other"><span class="hg-nav-step-status-todo icon-check-empty"></span><span class="hg-nav-step-status-other icon-lock"></span></span></a></li>
+          </ul>
+        </li>
+        <li id="hg-nav-phase-results" class="hg-nav-phase hg-nav-border-left hg-nav-border-right hg-phase-active hg-phase-relevant" data-hg-date-status="current">
+          <div class="hg-nav-top-row">
+            <div class="progress progress-info">
+              <div class="bar" style="width: 100%;"></div>
+            </div>
+            <div class="hg-asst-interval">
+              <div class="hg-asst-interval-part hg-asst-interval-available"><span data-livetimer-date-primitive="1451871000000" class="hg-date" data-livetimer-date-original="Sun  3 Jan 2016  5:30 PM PST" title="available since Sun  3 Jan 2016  5:30 PM PST
+(1 week, 3 days ago)" data-hg-date-status="" style="height: 0px; width: 0px;"><span class="livetimer-absolute" style="display: none;">available Sun  3 Jan 2016  5:30 PM PST</span><span class="livetimer-relative"></span></span></div>
+            </div>
+            <div class="hg-asst-phase-reload"><a href="https://class.coursera.org/repdata-035/human_grading/view/courses/975148/assessments/4/submissions#" class="hg-internal hg-reload">Reload</a>&nbsp;to open</div>
+            <div class="hg-nav-phase-header"><span>Results Phase</span></div>
+          </div>
+          <ul class="nav hg-nav-bottom-row">
+            <li id="hg-nav-step-results" class="hg-nav-step"><a href="https://class.coursera.org/repdata-035/human_grading/view/courses/975148/assessments/4/results/mine" class="hg-internal disabled" data-original-title="" disabled="disabled"><span class="step">3.</span><span>See results</span><span class="hg-nav-step-status hg-nav-step-status-select-other"><span class="hg-nav-step-status-other icon-lock"></span></span></a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div></div></div>
+  <div id="assessmentMessages"></div>
+  <div id="assessmentContentRegion" class="contentRegion"><div style="display: block;">
+<!-- h1.assessmentTitle Peer Assessment 2-->
+<div id="assessmentForm">
+  <div id="assessmentFormContent"><div class="evaluationForm"><div id="assessmentHead"><div class="alert alert-box">No work was submitted before the submission deadline. You will not be able to evaluate the work of your peers or receive an evaluation.</div><div id="forumThreadLinkSection"></div></div><div id="evaluatedGroup-dfd7ca9989098260" class="assessmentSection"><div class="assessmentExposition"><div class="assessmentText" dir="auto"><h2>Introduction</h2>
+
+<p>Storms and other severe weather events can cause both public health
+and economic problems for communities and municipalities. Many severe
+events can result in fatalities, injuries, and property damage, and
+preventing such outcomes to the extent possible is a key concern.</p>
+
+<p>This project involves exploring the U.S. National Oceanic and
+Atmospheric Administration's (NOAA) storm database. This database
+tracks characteristics of major storms and weather events in the
+United States, including when and where they occur, as well as
+estimates of any fatalities, injuries, and property damage.</p>
+
+<h2>Data</h2>
+
+<p>The data for this assignment come in the form of a
+comma-separated-value file compressed via the bzip2 algorithm to
+reduce its size. You can download the file from the course web site:</p>
+
+<ul><li><a href="https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2FStormData.csv.bz2">Storm Data</a> [47Mb]</li>
+</ul><p>There is also some documentation of the database available. Here you
+will find how some of the variables are constructed/defined.</p>
+
+<ul><li><p>National Weather Service <a href="https://d396qusza40orc.cloudfront.net/repdata%2Fpeer2_doc%2Fpd01016005curr.pdf">Storm Data Documentation</a></p></li>
+<li><p>National Climatic Data Center Storm Events <a href="https://d396qusza40orc.cloudfront.net/repdata%2Fpeer2_doc%2FNCDC%20Storm%20Events-FAQ%20Page.pdf">FAQ</a></p></li>
+</ul><p>The events in the database start in the year 1950 and end in November
+2011. In the earlier years of the database there are generally fewer
+events recorded, most likely due to a lack of good records. More
+recent years should be considered more complete.</p>
+
+<h2>Assignment</h2>
+
+<p>The basic goal of this assignment is to explore the NOAA Storm
+Database and answer some basic questions about severe weather
+events. You must use the database to answer the questions below and
+show the code for your entire analysis. Your analysis can consist of
+tables, figures, or other summaries. You may use any R package you
+want to support your analysis.</p>
+
+<h3>Questions</h3>
+
+<p>Your data analysis must address the following questions:</p>
+
+<ol><li><p>Across the United States, which types of events (as indicated in the <code>EVTYPE</code> variable) are most harmful with respect to population health?</p></li>
+<li><p>Across the United States, which types of events have the greatest economic consequences?</p></li>
+</ol><p>Consider writing your report as if it were to be read by a government
+or municipal manager who might be responsible for preparing for severe
+weather events and will need to prioritize resources for different
+types of events. However, there is no need to make any specific
+recommendations in your report.</p>
+
+<h3>Requirements</h3>
+
+<p>For this assignment you will need some specific tools</p>
+
+<ul><li><p>RStudio: You will need RStudio to publish your completed analysis
+document to RPubs. You can also use RStudio to edit/write your
+analysis.</p></li>
+<li><p>knitr: You will need the knitr package in order to compile your R
+Markdown document and convert it to HTML</p></li>
+</ul><h3>Document Layout</h3>
+
+<ul><li><p>Language: Your document should be written in English.</p></li>
+<li><p>Title: Your document should have a title that <b>briefly</b> summarizes your
+data analysis</p></li>
+<li><p>Synopsis: Immediately after the title, there should be a
+<b>synopsis</b> which describes and summarizes your analysis in at <b>most
+10 complete sentences</b>.</p></li>
+<li><p>There should be a section titled <b>Data Processing</b> which describes
+(in words and code) how the data were loaded into R and processed
+for analysis. In particular, your analysis <i>must</i> start from the raw
+CSV file containing the data. You cannot do any preprocessing
+outside the document. If preprocessing is time-consuming you may
+consider using the <code>cache = TRUE</code> option for certain code chunks.</p></li>
+<li><p>There should be a section titled <b>Results</b> in which your results
+are presented.</p></li>
+<li><p>You may have other sections in your analysis, but Data Processing
+and Results are <b>required</b>.</p></li>
+<li><p>The analysis document must have <b>at least one figure containing a
+plot</b>.</p></li>
+<li><p>Your analyis must have <b>no more than three figures</b>. Figures may
+have multiple plots in them (i.e. panel plots), but there cannot be
+more than three figures total.</p></li>
+<li><p>You must show all your code for the work in your analysis
+document. This may make the document a bit verbose, but that is
+okay. In general, you should ensure that <code>echo = TRUE</code> for every
+code chunk (this is the default setting in knitr).</p></li>
+</ul><h3>Publishing Your Analysis</h3>
+
+<p>For this assignment you will need to publish your analysis on
+<a href="http://rpubs.com/">RPubs.com</a>. If you do not already have an account,
+then you will have to create a new account. After you have completed
+writing your analysis in RStudio, you can publish it to RPubs by doing
+the following:</p>
+
+<ol><li><p>In RStudio, make sure your R Markdown document (<code>.Rmd</code>) document is loaded in the editor</p></li>
+<li><p>Click the <code>Knit HTML</code> button in the doc toolbar to preview your document.</p></li>
+<li><p>In the preview window, click the <code>Publish</code> button.</p></li>
+</ol><p>Once your document is published to RPubs, you should get a unique URL
+to that document. <b>Make a note of this URL</b> as you will need it to
+submit your assignment.</p><p><strong>NOTE</strong>: If you are having trouble connecting with RPubs due to proxy-related or other issues, you can upload your final analysis document file as a PDF to Coursera instead.<br></p>
+
+<h3>Submitting Your Assignment</h3>
+
+<p>In order to submit this assignment, you must copy the RPubs URL for
+your completed data analysis document in to the peer assessment
+question.</p></div></div></div><div id="evaluatedGroup-19edfa53365a396f" class="assessmentSection"><div id="evaluatedGroup-c30cb9ea2b79a169" class="assessmentGroup"><div class="assessmentExposition"><div id="assessmentText-c30cb9ea2b79a169" class="assessmentText" dir="auto">Please submit the URL from RPubs that points to your full report for this assignment.
+<br><br><strong>NOTE</strong>: The URL for the RPubs document should begin with http:// (not http<b>s</b>://)<br><br><b>NOTE</b>: If you are having trouble connecting with RPubs due to proxy-related or other issues, you can upload your final analysis document file as a PDF to Coursera instead.</div></div><div class="assessmentAnswer" aria-labelledby="assessmentText-c30cb9ea2b79a169"><div class="assessmentText" dir="auto" data-bind="html submission.fields.5272c8841360f076"></div></div></div><div class="evaluationGroup" data-evaluated="evaluatedGroup-c30cb9ea2b79a169"><div class="evaluationGroupHeader"><h3>Evaluation/feedback on the above work</h3><b>Note</b>: this section can only be filled out during the evaluation phase.</div><div id="evaluatedGroup-319e5f2eda93a507" class="assessmentGroup"><div class="assessmentExposition"><div id="assessmentText-319e5f2eda93a507" class="assessmentText" dir="auto">Has either a (1) valid RPubs URL pointing to a data analysis document for this assignment been submitted; or (2) a complete PDF file presenting the data analysis been uploaded?</div></div><div class="assessmentEvaluation" aria-labelledby="assessmentText-319e5f2eda93a507"><div id="77a499818f9e27b3-validationErrorMessage" class="validationErrorMessage"></div><div id="77a499818f9e27b3-validationErrorContainer"><select id="evaluationField-77a499818f9e27b3" disabled="disabled" data-modelbind="evaluation.fields.77a499818f9e27b3" aria-labelledby="assessmentText-319e5f2eda93a507" class="assessmentFormField">  <option value=""></option>  <option value="3493d576f8581f8a">0: No URL or file was submitted</option>  <option value="1ec513c61e665e3">1: Yes, a valid RPubs URL or file was submitted and it points to a data analysis document</option></select></div></div></div></div></div><div class="sectionEvaluationGroup" data-evaluated="evaluatedGroup-19edfa53365a396f"><div class="evaluationGroupHeader"><h3>Overall evaluation/feedback</h3><b>Note</b>: this section can only be filled out during the evaluation phase.</div><div id="evaluatedGroup-8e25445bfd1e70ff" class="assessmentGroup"><div class="assessmentExposition"><div id="assessmentText-8e25445bfd1e70ff" class="assessmentText" dir="auto">Is the document written in English?</div></div><div class="assessmentEvaluation" aria-labelledby="assessmentText-8e25445bfd1e70ff"><div id="d20e3f5da269986e-validationErrorMessage" class="validationErrorMessage"></div><div id="d20e3f5da269986e-validationErrorContainer"><select id="evaluationField-d20e3f5da269986e" disabled="disabled" data-modelbind="evaluation.fields.d20e3f5da269986e" aria-labelledby="assessmentText-8e25445bfd1e70ff" class="assessmentFormField">  <option value=""></option>  <option value="cdd26888aa356c07">0: No, this document is not written in English.</option>  <option value="ae3d88feeb66222c">1: This document is written in English, but it is not understandable or clear.</option>  <option value="727651da3307ac15">2: The analysis is written in clear and understandable English.</option></select></div></div></div><div id="evaluatedGroup-62bdd6a4d9633e53" class="assessmentGroup"><div class="assessmentExposition"><div id="assessmentText-62bdd6a4d9633e53" class="assessmentText" dir="auto">Does the document have a title that briefly summarizes the data analysis?
+</div></div><div class="assessmentEvaluation" aria-labelledby="assessmentText-62bdd6a4d9633e53"><div id="2295f33cc1ee2729-validationErrorMessage" class="validationErrorMessage"></div><div id="2295f33cc1ee2729-validationErrorContainer"><select id="evaluationField-2295f33cc1ee2729" disabled="disabled" data-modelbind="evaluation.fields.2295f33cc1ee2729" aria-labelledby="assessmentText-62bdd6a4d9633e53" class="assessmentFormField">  <option value=""></option>  <option value="92f745c3d1be76ee">0: The document does not have a title at all.</option>  <option value="6debf52a6ec776b6">1: The document has a title, but it is too long</option>  <option value="121bfbe43a9c4940">1: The document has a title, but it is too short</option>  <option value="8f80e8eb9d46e498">2: The document has a title that briefly summarizes the analysis</option></select></div></div></div><div id="evaluatedGroup-7837e171f13614af" class="assessmentGroup"><div class="assessmentExposition"><div id="assessmentText-7837e171f13614af" class="assessmentText" dir="auto">Does the document have a synopsis that describes and summarizes the data analysis in less than 10 sentences? </div></div><div class="assessmentEvaluation" aria-labelledby="assessmentText-7837e171f13614af"><div id="346a92a27523c87f-validationErrorMessage" class="validationErrorMessage"></div><div id="346a92a27523c87f-validationErrorContainer"><select id="evaluationField-346a92a27523c87f" disabled="disabled" data-modelbind="evaluation.fields.346a92a27523c87f" aria-labelledby="assessmentText-7837e171f13614af" class="assessmentFormField">  <option value=""></option>  <option value="d1ba95c6c60d7bed">0: No, there is no synopsis.</option>  <option value="43bba4d196485f1f">1: There is a synopsis, but it is longer than 10 sentences.</option>  <option value="b3c029e36455b48">1: There is a synopsis, but it does not describe the analysis beyond what the title provides.</option>  <option value="cc1a720634fda939">3: There is a synopsis, it is the appropriate length (less than 10 sentences), and gives a summary of the analysis.</option></select></div></div></div><div id="evaluatedGroup-601bbfce2caabe50" class="assessmentGroup"><div class="assessmentExposition"><div id="assessmentText-601bbfce2caabe50" class="assessmentText" dir="auto">Is there a section titled "Data Processing" that describes how the data were loaded into R and processed for analysis?</div></div><div class="assessmentEvaluation" aria-labelledby="assessmentText-601bbfce2caabe50"><div id="53c27a8f9f03232a-validationErrorMessage" class="validationErrorMessage"></div><div id="53c27a8f9f03232a-validationErrorContainer"><select id="evaluationField-53c27a8f9f03232a" disabled="disabled" data-modelbind="evaluation.fields.53c27a8f9f03232a" aria-labelledby="assessmentText-601bbfce2caabe50" class="assessmentFormField">  <option value=""></option>  <option value="e41c0f5e295b1d">0: No, there is no section titled "Data Processing"</option>  <option value="481d5ed94afada40">1: Yes, there is a section titled "Data Processing"</option></select></div></div></div><div id="evaluatedGroup-46825c19d0828d8" class="assessmentGroup"><div class="assessmentExposition"><div id="assessmentText-46825c19d0828d8" class="assessmentText" dir="auto">Is there a section titled "Results" where the main results are presented?</div></div><div class="assessmentEvaluation" aria-labelledby="assessmentText-46825c19d0828d8"><div id="4029a12f8313b146-validationErrorMessage" class="validationErrorMessage"></div><div id="4029a12f8313b146-validationErrorContainer"><select id="evaluationField-4029a12f8313b146" disabled="disabled" data-modelbind="evaluation.fields.4029a12f8313b146" aria-labelledby="assessmentText-46825c19d0828d8" class="assessmentFormField">  <option value=""></option>  <option value="39a96dda2af2a02e">0: No, there is no section titled "Results"</option>  <option value="5dd8aeca8c378fa">1: Yes, there is a section titled "Results"</option></select></div></div></div><div id="evaluatedGroup-7f88798de1dd24b8" class="assessmentGroup"><div class="assessmentExposition"><div id="assessmentText-7f88798de1dd24b8" class="assessmentText" dir="auto">Is there at least one figure in the document that contains a plot?</div></div><div class="assessmentEvaluation" aria-labelledby="assessmentText-7f88798de1dd24b8"><div id="79b62e81e5503b08-validationErrorMessage" class="validationErrorMessage"></div><div id="79b62e81e5503b08-validationErrorContainer"><select id="evaluationField-79b62e81e5503b08" disabled="disabled" data-modelbind="evaluation.fields.79b62e81e5503b08" aria-labelledby="assessmentText-7f88798de1dd24b8" class="assessmentFormField">  <option value=""></option>  <option value="58e11650bdda3dc2">0: No, there are no figures containing plots in this document.</option>  <option value="e9b68832a5f869a1">1: Yes, there is at least one figure.</option></select></div></div></div><div id="evaluatedGroup-ece5d5e91ccdfa4" class="assessmentGroup"><div class="assessmentExposition"><div id="assessmentText-ece5d5e91ccdfa4" class="assessmentText" dir="auto">Are there <b>at most</b> 3 figures in this document?</div></div><div class="assessmentEvaluation" aria-labelledby="assessmentText-ece5d5e91ccdfa4"><div id="293d1256cb24b2b9-validationErrorMessage" class="validationErrorMessage"></div><div id="293d1256cb24b2b9-validationErrorContainer"><select id="evaluationField-293d1256cb24b2b9" disabled="disabled" data-modelbind="evaluation.fields.293d1256cb24b2b9" aria-labelledby="assessmentText-ece5d5e91ccdfa4" class="assessmentFormField">  <option value=""></option>  <option value="6e071bff8b9ab115">0: There are no figures containing plots in this document</option>  <option value="578e4fc161cd99e9">0: There are more than 3 figures in the document</option>  <option value="9379d208f1a3b17f">2: There are no more than 3 figures in the document</option></select></div></div></div><div id="evaluatedGroup-fa48a78add4c23e9" class="assessmentGroup"><div class="assessmentExposition"><div id="assessmentText-fa48a78add4c23e9" class="assessmentText" dir="auto">Does the analysis start from the raw data file (i.e. the original <code>.csv.bz2</code> file)?</div></div><div class="assessmentEvaluation" aria-labelledby="assessmentText-fa48a78add4c23e9"><div id="a2f4d08e0bb39d8-validationErrorMessage" class="validationErrorMessage"></div><div id="a2f4d08e0bb39d8-validationErrorContainer"><select id="evaluationField-a2f4d08e0bb39d8" disabled="disabled" data-modelbind="evaluation.fields.a2f4d08e0bb39d8" aria-labelledby="assessmentText-fa48a78add4c23e9" class="assessmentFormField">  <option value=""></option>  <option value="ce12d6505c168b1a">0: No, the analysis code appears to start from a different file</option>  <option value="3999633925f98621">2: Yes, the analysis code starts from reading in the raw data file</option></select></div></div></div><div id="evaluatedGroup-19c1ebe57c0c7f1c" class="assessmentGroup"><div class="assessmentExposition"><div id="assessmentText-19c1ebe57c0c7f1c" class="assessmentText" dir="auto">Does the analysis address the question of which types of events are most harmful to population health?</div></div><div class="assessmentEvaluation" aria-labelledby="assessmentText-19c1ebe57c0c7f1c"><div id="ca439f859d1f8084-validationErrorMessage" class="validationErrorMessage"></div><div id="ca439f859d1f8084-validationErrorContainer"><select id="evaluationField-ca439f859d1f8084" disabled="disabled" data-modelbind="evaluation.fields.ca439f859d1f8084" aria-labelledby="assessmentText-19c1ebe57c0c7f1c" class="assessmentFormField">  <option value=""></option>  <option value="b5eabb6467e88222">0: The report does not attempt to address this question</option>  <option value="ff2a4f7c7a991fc">1: The report summarizes the data for this question but does not draw any conclusion.</option>  <option value="b6f63b8c6cfe2562">1: The report draws a conclusion for this question but provides little evidence from the data.</option>  <option value="35d668e491aa95f">3: The report addresses this question in detail and provides a concrete conclusion supported with evidence from the data.</option></select></div></div></div><div id="evaluatedGroup-f2ea43e22d23ac73" class="assessmentGroup"><div class="assessmentExposition"><div id="assessmentText-f2ea43e22d23ac73" class="assessmentText" dir="auto">Does the analysis address the question of which types of events have the greatest economic consequences?</div></div><div class="assessmentEvaluation" aria-labelledby="assessmentText-f2ea43e22d23ac73"><div id="958a3a6afd44c735-validationErrorMessage" class="validationErrorMessage"></div><div id="958a3a6afd44c735-validationErrorContainer"><select id="evaluationField-958a3a6afd44c735" disabled="disabled" data-modelbind="evaluation.fields.958a3a6afd44c735" aria-labelledby="assessmentText-f2ea43e22d23ac73" class="assessmentFormField">  <option value=""></option>  <option value="45bb12ca25cc1aa">0: The report does not attempt to address this question</option>  <option value="62f534a351ff26">1: The report summarizes the data for this question but does not draw any conclusion.</option>  <option value="1cbbac2b2c37ec02">1: The report draws a conclusion for this question but provides little evidence from the data.</option>  <option value="efca4edbc04020e1">3: The report addresses this question in detail and provides a concrete conclusion supported with evidence from the data.</option></select></div></div></div><div id="evaluatedGroup-86181512c7e7c3e9" class="assessmentGroup"><div class="assessmentExposition"><div id="assessmentText-86181512c7e7c3e9" class="assessmentText" dir="auto">Do all the results of the analysis (i.e. figures, tables, numerical summaries) appear to be reproducible?</div></div><div class="assessmentEvaluation" aria-labelledby="assessmentText-86181512c7e7c3e9"><div id="13df8905288ea34f-validationErrorMessage" class="validationErrorMessage"></div><div id="13df8905288ea34f-validationErrorContainer"><select id="evaluationField-13df8905288ea34f" disabled="disabled" data-modelbind="evaluation.fields.13df8905288ea34f" aria-labelledby="assessmentText-86181512c7e7c3e9" class="assessmentFormField">  <option value=""></option>  <option value="156ba3a430404e8b">0: There is very little code presented in the document for reproducing results</option>  <option value="778f35c037acc18">1: Some of the results appear to be reproducible, but there are some results that are clearly not reproducible.</option>  <option value="c3c8f12feb01b72">3: All of the results appear to be reproducible from the code presented.</option></select></div></div></div><div id="evaluatedGroup-aee2954d37de8682" class="assessmentGroup"><div class="assessmentExposition"><div id="assessmentText-aee2954d37de8682" class="assessmentText" dir="auto">Do the figure(s) have descriptive captions (i.e. there is a description near the figure of what is happening in the figure)?</div></div><div class="assessmentEvaluation" aria-labelledby="assessmentText-aee2954d37de8682"><div id="f6b66ce4fa473b84-validationErrorMessage" class="validationErrorMessage"></div><div id="f6b66ce4fa473b84-validationErrorContainer"><select id="evaluationField-f6b66ce4fa473b84" disabled="disabled" data-modelbind="evaluation.fields.f6b66ce4fa473b84" aria-labelledby="assessmentText-aee2954d37de8682" class="assessmentFormField">  <option value=""></option>  <option value="1c29366f87e81de">0: None of the figures have any captions</option>  <option value="9d4814f780c6b82">1: Some of the figures have captions</option>  <option value="1f0e6d1ec10f8a47">2: All figures have captions, but they do not describe what is being plotted.</option>  <option value="2ac0f7298e672e2">3: All figures have captions and they accurately describe what is being plotted.</option></select></div></div></div><div id="evaluatedGroup-ed4641cc627d5ce9" class="assessmentGroup"><div class="assessmentExposition"><div id="assessmentText-ed4641cc627d5ce9" class="assessmentText" dir="auto">Does the analysis include description and justification for any data transformations? </div></div><div class="assessmentEvaluation" aria-labelledby="assessmentText-ed4641cc627d5ce9"><div id="b5da3d7e7d132d08-validationErrorMessage" class="validationErrorMessage"></div><div id="b5da3d7e7d132d08-validationErrorContainer"><select id="evaluationField-b5da3d7e7d132d08" disabled="disabled" data-modelbind="evaluation.fields.b5da3d7e7d132d08" aria-labelledby="assessmentText-ed4641cc627d5ce9" class="assessmentFormField">  <option value=""></option>  <option value="77c49b4f28f2f59">0: The analysis does not report transformations that were performed.</option>  <option value="3b42a30a7e528f4">1: The analysis reports transformations that were performed.</option>  <option value="5b73cd5778ffee03">2: The analysis reports transformations that were performed and justifies them.</option></select></div></div></div><div id="evaluatedGroup-beb02b378db8c1c" class="assessmentGroup"><div class="assessmentExposition"><div id="assessmentText-beb02b378db8c1c" class="assessmentText" dir="auto">As far as you can determine, does it appear that the work submitted for this project is the work of the student who submitted it?</div></div><div class="assessmentEvaluation" aria-labelledby="assessmentText-beb02b378db8c1c"><div id="7f25693e882a72c1-validationErrorMessage" class="validationErrorMessage"></div><div id="7f25693e882a72c1-validationErrorContainer"><select id="evaluationField-7f25693e882a72c1" disabled="disabled" data-modelbind="evaluation.fields.7f25693e882a72c1" aria-labelledby="assessmentText-beb02b378db8c1c" class="assessmentFormField">  <option value=""></option>  <option value="df2e7d5efa94269d">0: No</option>  <option value="8f2550f543c02472">1: Yes</option></select></div></div></div><div id="evaluatedGroup-ccb25b79e0e13ae9" class="assessmentGroup"><div class="assessmentExposition"><div id="assessmentText-ccb25b79e0e13ae9" class="assessmentText" dir="auto">Use this space to provide constructive feedback to the student who submitted the work. Point out both strengths and weaknesses in the submission and provide advice about how the work could be improved in the future.&nbsp;<br></div></div><div class="assessmentEvaluation" aria-labelledby="assessmentText-ccb25b79e0e13ae9"><div id="5ebe63f8deb1cc49-validationErrorMessage" class="validationErrorMessage"></div><div id="5ebe63f8deb1cc49-validationErrorContainer"><textarea dir="auto" id="textarea-5ebe63f8deb1cc49" data-modelbind="evaluation.fields.5ebe63f8deb1cc49" disabled="disabled" data-min-words="0" aria-labelledby="assessmentText-ccb25b79e0e13ae9" rows="2" style="width: 100%; resize: vertical" class="assessmentFormField" data-count-words="0"></textarea><div style="text-align:right;"><span id="pg-word-count-5ebe63f8deb1cc49" style="color: black;">You've written 0 words</span></div></div></div></div></div> </div></div>
+</div>
+<div class="coursera-signature-modal"></div>
+<div id="coursera-signature-pending-modal" style="display:none">
+  <div class="coursera-signature-please-complete-modal modal">
+    <div style="height: 2px; background: black; position: relative; width: 558px;">
+      <div class="coursera-signature-modal-header modal-header"><a class="close coursera-signature-close-button">×</a><img src="./Reproducible Research _ Coursera_files/ribbon_stripes.png" class="coursera-signature-modal-ribbon">
+        <p class="coursera-signature-modal-signature-track">Signature Track</p>
+        <p class="coursera-signature-modal-title">Signature Track Profile incomplete</p>
+      </div>
+      <div style="position: relative; top: -10px; margin: 30px 10px 10px 70px;"><i style="margin-left: 60px; color: #c43b3b; font-size: 40px" class="icon-warning-sign"></i><span style="font-weight: bold; font-size: 16px">Oops! You have submitted your work, but you can't authenticate your coursework yet. </span> You still need to complete your Signature Track profile by registering your unique typing patterns and submitting webcam photos. You need to authenticate most of your assignments to get a Verified Certificate.
+        <p style="margin-top: 10px; font-weight: bold;">Please complete your profile as soon as possible.</p>
+      </div>
+      <div style="text-align: center; margin-bottom: 20px;">
+        <h4 style="margin-bottom: 0px;">You will need:</h4>
+        <div style="width: 40%; display: inline-block; vertical-align: top;">
+          <div style="height: 85px;"><img src="./Reproducible Research _ Coursera_files/webcam_keyboard.jpg" alt="Illustration of keyboard and camera" style="height: 85px;"></div>
+          <div> Keyboard and Webcam</div>
+        </div>
+        <div style="width: 40%; display: inline-block; vertical-align: top;">
+          <div style="height: 85px;"><img src="./Reproducible Research _ Coursera_files/government_id.jpg" alt="Illustration of identification card" style="margin-top: 14px"></div>
+          <div>Goverment-issued Photo ID</div>
+        </div>
+      </div>
+      <div style="text-align: center; margin-bottom: 10px;"><a href="https://dw0ugk4msqulk.cloudfront.net/signature/phrase/repdata/975148">
+          <button style="margin-top: 0px; padding: 15px 25px;" class="coursera-signature-next-button">Complete my profile now</button></a></div><a style="font-size: smaller; float: right; margin-right: 20px; margin-bottom: 20px;" class="coursera-signature-nothanks">No thanks, I'll do this later. »</a>
+    </div>
+  </div>
+</div></div></div>
+</div></div></div>
+
+</div></div></div></div></div><div class="coursera-footer"></div></div></div></div><!--[if gte IE 9]><script>document.getElementById("coursera-loading-js").style.display = 'block';</script><![endif]-->
+<!--[if lte IE 8]><script>document.getElementById("coursera-loading-nojs").style.display = 'block';</script><![endif]-->
+<!--[if !IE]> --><script>document.getElementById("coursera-loading-js").style.display = 'block';</script><!-- <![endif]--><script>if (/zh/i.test(window.localStorage ? localStorage.getItem('locale') : '') || '{{ locale }}') {
+  document.getElementById('get-browser-zh').style.display = 'block';
+}</script><!--[if !IE]> --><script>document.getElementById('coursera-loading-js').style.display = 'block';</script><!-- <![endif]-->
+    <script src="./Reproducible Research _ Coursera_files/modernizr-custom.js"></script>
+  <script src="./Reproducible Research _ Coursera_files/require.v2-1-1.js"></script><script data-baseurl="https://dw0ugk4msqulk.cloudfront.net/57fad30084ce4d6fa7892cc427893819a64a7df7/" data-version="57fad30084ce4d6fa7892cc427893819a64a7df7" data-timestamp="1452382312222" data-debug="0" data-locale="en" id="_require">if(document.getElementById('coursera-loading-js').style.display == 'block') {
+  (function(el) {
+     require.config({
+       //enforceDefine: true,
+       waitSeconds: 75,
+       baseUrl: el.getAttribute('data-baseurl'),
+       urlArgs: el.getAttribute('data-debug') == '1' ? 'v=' + el.getAttribute('data-timestamp') : '',
+       shim: {
+          'underscore': {
+             exports: '_'
+          },
+          'backbone': {
+             deps: ['underscore', 'jquery'],
+             exports: 'Backbone',
+             init: function(_, $) {
+               Backbone.$ = $;
+               return Backbone;
+             }
+          },
+          'pages/hg/thirdparty/js/backbone.marionette': {
+            deps: ['backbone']
+          },
+          'pages/hg/thirdparty/js/webshims/polyfiller': {
+            deps: ['jquery']
+          },
+          'pages/hg/thirdparty/js/webshims/extras/mousepress': {
+            deps: ['jquery', 'pages/hg/thirdparty/js/webshims/polyfiller']
+          },
+          'pages/hg/thirdparty/js/jquery.throttle': {
+            deps: ['jquery']
+          },
+          'js/lib/jquery.linkify': {
+            deps: ['jquery']
+          },
+          'pages/hg/thirdparty/js/js/bootstrap/alert': {
+            deps: ['jquery', 'pages/hg/thirdparty/js/bootstrap/transition']
+          },
+          'spark/core/js/jquery_ui': {
+            deps: ['jquery']
+          },
+          'spark/core/js/jquery.history': {
+            deps: ['jquery']
+          },
+          'js/lib/bootstrap.tooltip': {
+            deps: ['jquery']
+          },
+          'pages/hg/thirdparty/js/bootstrap/transition': {
+            deps: ['jquery']
+          },
+          'pages/hg/thirdparty/js/bootstrap/tab': {
+            deps: ['jquery']
+          },
+          'bundles/videojs/lib/video.4.3.0': {
+            exports: 'vjs'
+          }
+       },
+       paths: {
+          'q': 'js/vendor/q.v1-0-1',
+          'react-with-addons': 'js/vendor/react-with-addons.v0-12',
+          'jquery':                         'pages/spark/jquery',
+          'underscore':                     'js/vendor/underscore.v1-5-2',
+          'backbone':                       'js/vendor/backbone.v1-1-0',
+          'backbone.relational':            'js/lib/backbone.relational.0.8.6',
+          'i18n':                           'js/lib/i18n._t',
+          'css':                            'js/vendor/require.css.v0-1-2',
+          'memoize':                        'js/lib/require.memoize.v0-0-1',
+          'pages/spark/models/user.json':   'empty:',
+          'pages/spark/models/course.json': 'empty:',
+          'pages/spark/models/navbar.json': 'empty:'
+       },
+       callback: function() {
+                    require(['pages/hg/js/app/routes']);
+                },
+       config: {
+         i18n: {
+           locale: (window.localStorage ? localStorage.getItem('locale') : '') || el.getAttribute('data-locale')
+         }
+       }
+     });
+  })(document.getElementById('_require'));
+}
+</script><script>define('pages/spark/models/user.json', [], function(){
+      return JSON.parse("{\"id\":10089334,\"email_address\":\"stephanie.can@hotmail.fr\",\"full_name\":\"Stephanie\",\"locale\":null,\"timezone\":\"America\\\/Los_Angeles\",\"access_group_id\":\"4\",\"registration_time\":\"1449140020\",\"last_access_time\":\"1452689439\",\"last_access_ip\":\"109.25.23.50\",\"signature_track_register_time\":\"0\",\"email_announcement\":\"1\",\"email_forum\":\"1\",\"in_signature_track\":\"0\",\"wishes_proctored_exam\":\"0\",\"first_name\":\"Stephanie\",\"permissions\":[\"default\",\"allow_site_access\"],\"group\":\"Student\",\"anonymous\":false,\"forum_title\":\"Student\",\"signature_track_state\":1,\"verified_quizzes\":[],\"submitted_quizzes\":[],\"scheduled_proctored_exam\":null,\"last_chance_modal\":null,\"flexjoin_last_chance_modal\":null}");
+  });
+define('pages/spark/models/course.json', [], function(){
+      return JSON.parse("{\"id\":975148,\"isPrivate\":false,\"type\":\"public\",\"name\":\"Reproducible Research\",\"instructor\":\"Roger D. Peng, PhD, Jeff Leek, PhD, Brian Caffo, PhD\",\"sessionName\":\"repdata-035\",\"externalBaseURL\":\"https:\\\/\\\/www.coursera.org\\\/\",\"shortname\":\"repdata\",\"host\":\"https:\\\/\\\/www.coursera.org\\\/\",\"assetUnversionedLink\":\"https:\\\/\\\/dw0ugk4msqulk.cloudfront.net\\\/\",\"cheggID\":\"\",\"hasLTI\":true,\"badgevilleDomain\":\"\",\"linkable\":false,\"universityShortname\":\"jhu\",\"signatureTrackStatus\":{\"signature_track_enabled\":1},\"courseURLs\":{\"log_in_link\":\"https:\\\/\\\/www.coursera.org\\\/login?post_redirect=https%3A%2F%2Fwww.coursera.org%2Flogin%3Fuser_action%3Dclass%26course_id%3D975148%26post_redirect%3Dhttps%253A%252F%252Fclass.coursera.org%252Frepdata-035%252Fauth%252Fauth_redirector%253Ftype%253Dlogin%2526subtype%253Dnormal%2526visiting%253D\",\"sign_up_link\":\"https:\\\/\\\/www.coursera.org\\\/signup?enroll_cid=975148&enroll_sn=repdata&enroll_n=Reproducible Research\",\"view_course_info_link\":\"https:\\\/\\\/www.coursera.org\\\/course\\\/repdata\",\"sign_up_link_cant_enroll\":\"https:\\\/\\\/www.coursera.org\\\/signup?post_redirect=https%3A%2F%2Fwww.coursera.org%2Fcourse%2Frepdata\"},\"courseBase\":\"https:\\\/\\\/class.coursera.org\\\/repdata-035\\\/\",\"search\":true,\"hideWiki\":true,\"aceStartRegistrationDate\":\"Wed 31 Dec 1969  4:00 PM PST\",\"aceEndRegistrationDate\":\"Wed 31 Dec 1969  4:00 PM PST\",\"aceExamStartDate\":\"Wed 31 Dec 1969  4:00 PM PST\",\"aceExamEndDate\":\"Wed 31 Dec 1969  4:00 PM PST\",\"aceExamRules\":\"\",\"aceExamDuration\":\"\",\"aceBeforeExam\":false,\"aceAfterExam\":true,\"aceHours\":null,\"aceCreditType\":\"\",\"acePrice\":null,\"aceExamID\":null,\"aceEligible\":false,\"canRegisterForACE\":false,\"specialization\":{\"numCourse\":9,\"image\":\"https:\\\/\\\/s3.amazonaws.com\\\/coursera\\\/specializations\\\/jhudatascience\\\/logo_small.png\",\"id\":1,\"short_name\":\"jhudatascience\",\"name\":\"Data Science\"},\"supportForums\":true,\"textbooks\":\"\",\"inVideoQuizV2\":false,\"in_flexjoin\":0,\"honorCodeExtraText\":\"\",\"honorCodeCustomTitle\":\"\",\"honorCodeCustomButton\":\"\",\"studentAccessDisabled\":0,\"disableQQs\":true}");
+  });
+  define('pages/spark/models/navbar.json', [], function(){
+      return JSON.parse("{\"items\":[{\"name\":\"Announcements\",\"icon\":\"home\",\"link_type\":\"circuit\",\"link_data\":\"class:index\"},{\"name\":\"Course Books\",\"icon\":\"\",\"link_type\":\"wiki\",\"link_data\":\"Course_Book\"},{\"name\":\"Week-by-Week\",\"icon\":\"\",\"link_type\":\"heading\",\"link_data\":\"\"},{\"name\":\"Week 1: Concepts\",\"icon\":\"\",\"link_type\":\"wiki\",\"link_data\":\"Week_1\"},{\"name\":\"Week 2: Tools\",\"icon\":\"\",\"link_type\":\"wiki\",\"link_data\":\"Week_2\"},{\"name\":\"Week 3: Distribution and Checklist\",\"icon\":\"\",\"link_type\":\"wiki\",\"link_data\":\"Week_3\"},{\"name\":\"Week 4: Case Studies\",\"icon\":\"\",\"link_type\":\"wiki\",\"link_data\":\"Week_4\"},{\"name\":\"Lectures\",\"icon\":\"\",\"link_type\":\"heading\",\"link_data\":\"\"},{\"name\":\"Lecture Videos\",\"icon\":\"lecture\",\"link_type\":\"circuit\",\"link_data\":\"lecture:index\"},{\"name\":\"Lecture Slides (link to GitHub)\",\"icon\":\"\",\"link_type\":\"window_link\",\"link_data\":\"https:\\\/\\\/github.com\\\/rdpeng\\\/courses\\\/tree\\\/master\\\/05_ReproducibleResearch\"},{\"name\":\"Exercises\",\"icon\":\"\",\"link_type\":\"heading\",\"link_data\":\"\"},{\"name\":\"Quizzes\",\"icon\":\"quiz\",\"link_type\":\"circuit\",\"link_data\":\"quiz:index\"},{\"name\":\"Peer Assessments 1 & 2\",\"icon\":\"assignment\",\"link_type\":\"circuit\",\"link_data\":\"human_grading:index\"},{\"name\":\"\",\"icon\":\"\",\"link_type\":\"circuit\",\"link_data\":\"\"},{\"name\":\"About the course\",\"icon\":\"\",\"link_type\":\"heading\",\"link_data\":\"\"},{\"name\":\"Syllabus\",\"icon\":\"wiki\",\"link_type\":\"wiki\",\"link_data\":\"syllabus\"},{\"name\":\"About the Instructor\",\"icon\":\"\",\"link_type\":\"wiki\",\"link_data\":\"About_the_Instructor\"},{\"name\":\"Community\",\"icon\":\"\",\"link_type\":\"heading\",\"link_data\":\"\"},{\"name\":\"Discussion Forums\",\"icon\":\"forum\",\"link_type\":\"circuit\",\"link_data\":\"forum:index\"},{\"name\":\"DSS Community Site\",\"icon\":\"\",\"link_type\":\"window_link\",\"link_data\":\"http:\\\/\\\/datasciencespecialization.github.io\\\/\"}]}");
+  });
+</script><script>var coursera_enable_new_help_center = true;
+</script><div class="hide confirm-navigation modal"><div class="modal-header"><h3>Confirm Navigation</h3></div><div class="modal-body"><div class="confirm-navigation-message"></div><div>Are you sure you want to leave this page?</div></div><div class="modal-footer"><button data-modal-close="data-modal-close" class="btn confirm-navigation-stay">Stay on this Page</button><button data-modal-close="data-modal-close" class="btn btn-danger confirm-navigation-leave">Leave this Page</button></div></div><div class="coursera-async-message" style="display: none;"></div></body></html>

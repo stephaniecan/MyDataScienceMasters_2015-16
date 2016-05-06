@@ -1,0 +1,147 @@
+---
+title: "Consequences of Weather Events on Health and Economy in the US"
+author: "Stephanie"
+date: "February 2016"
+output:
+  html_document:
+    highlight: pygments
+    theme: readable
+    toc: yes
+    toc_depth: 4
+---
+
+##Synopsis
+
+**Storms and other severe weather events can cause both public health and economic problems** for communities and municipalities. Many severe events can result in fatalities, injuries, and property damage, and preventing such outcomes to the extent possible is a key concern.
+
+This project involves exploring the **U.S. National Oceanic and Atmospheric Administration's (NOAA) storm database**. This database tracks characteristics of major storms and weather events in the United States, including when and where they occur, as well as estimates of any fatalities, injuries, and property damage. The events in the database start in the year 1950 and end in November 2011.
+
+In this data analysis report, we are going to answer **two main questions**:
+
+1. ***Across the United States, which types of events are most harmful with respect to population health?***
+2. ***Across the United States, which types of events have the greatest economic consequences?***
+
+##Data processing
+
+**Data and documentation:**
+
+- The NOAA database (csv file compressed via the bzip2 algorithm): [Storm data](https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2FStormData.csv.bz2)
+- National Weather Service [Storm Data Documentation](https://d396qusza40orc.cloudfront.net/repdata%2Fpeer2_doc%2Fpd01016005curr.pdf)
+- National Climatic Data Center Storm Events [FAQ](https://d396qusza40orc.cloudfront.net/repdata%2Fpeer2_doc%2FNCDC%20Storm%20Events-FAQ%20Page.pdf)
+
+###Load and explore data
+
+First, we load the dataset. `read.csv` allows us to read a **csv.bz2** file directly.
+
+```{r, cache=TRUE}
+stormdata <- read.csv("repdata-data-StormData.csv.bz2", stringsAsFactors = FALSE)
+```
+
+The dataset looks big. Let's look at its dimensions.
+
+```{r, cache=TRUE}
+dim(stormdata)
+```
+
+We have 37 columns (variables) and 902 297 rows.
+
+We can now have a look at the first rows of the dataset, its summary and structure to familiarize ourselves to the dataset.  
+***Note:*** for keeping this report's length acceptable, I only show the code evaluation for the data structure (`str()`)
+
+```{r, eval=FALSE, cache=TRUE}
+head(stormdata)
+summary(stormdata)
+```
+
+```{r}
+str(stormdata)
+```
+
+###Clean data
+
+In order to answer our two main question concerning **harmfulness with respect to population health** and **economic consequences**, we only need these following variables:
+
+- STATE
+- EVTYPE (*types of events*)
+- FATALITIES (= major fatalities -> *harm to population health*)
+- INJURIES (= body injuries -> *harm to population health*)
+- PROPDMG (= property damages -> *economic consequences*)
+- PROPDMGEXP (= property damages -> *economic consequences*)
+- CROPDMG (= crop damages -> *economic consequences*)
+- CROPDMGEXP (= crop damages -> *economic consequences*)
+
+We remove all other variables from our dataset, which will make our data analysis much easier.
+
+```{r}
+newstormdata <- stormdata[,c("STATE", "EVTYPE", "FATALITIES", "INJURIES", "PROPDMG", "PROPDMGEXP", "CROPDMG", "CROPDMGEXP")]
+```
+
+We end up with a dataset of 8 significant variables.
+
+However, we need to do further preprocessing in order to get our dataset ready to answer our two questions.
+
+####Preprocessing: health data
+
+To simplify our further analysis and data visualization, we sum the variables INJURIES an FATALITIES and then aggregate with EVTYPES. We also sort the new *health* in decreasing order.
+
+```{r}
+newstormdata$health <- newstormdata$INJURIES + newstormdata$FATALITIES
+healthpop <- aggregate(health ~ EVTYPE, data = newstormdata, sum)
+healthpop <- healthpop[order(healthpop$health, decreasing = TRUE),]
+```
+
+####Preprocessing: economic data
+
+The numerical variables PROPDMG (= property damages) and CROPDMG (= crop damages) represents the economic consequences. We need multiply these numerical values by the variables PROPDMGEXP and CROPDMGEXP respectively. Let's have a look at these variables.
+
+```{r}
+unique(newstormdata$PROPDMGEXP)
+unique(newstormdata$CROPDMGEXP)
+```
+
+From the data document, the letter "K" stands for thousands, "M" stands for millions and "B" for billions. However, these values are "mixed-up" and we find both upper and lower cases. That's why we have to clean them up.  
+***Note:*** There were some numbers among the values but we don't take them into account since we don't know what they stand for.
+
+```{r}
+newstormdata[newstormdata$PROPDMGEXP == "K", ]$PROPDMG <- newstormdata[newstormdata$PROPDMGEXP == "K", ]$PROPDMG * 1000
+newstormdata[newstormdata$PROPDMGEXP == "M", ]$PROPDMG <- newstormdata[newstormdata$PROPDMGEXP == "M", ]$PROPDMG * 1000000
+newstormdata[newstormdata$PROPDMGEXP == "m", ]$PROPDMG <- newstormdata[newstormdata$PROPDMGEXP == "m", ]$PROPDMG * 1000000
+newstormdata[newstormdata$PROPDMGEXP == "B", ]$PROPDMG <- newstormdata[newstormdata$PROPDMGEXP == "B", ]$PROPDMG * 1000000000
+newstormdata[newstormdata$CROPDMGEXP == "K", ]$CROPDMG <- newstormdata[newstormdata$CROPDMGEXP == "K", ]$CROPDMG * 1000
+newstormdata[newstormdata$CROPDMGEXP == "k", ]$CROPDMG <- newstormdata[newstormdata$CROPDMGEXP == "k", ]$CROPDMG * 1000
+newstormdata[newstormdata$CROPDMGEXP == "M", ]$CROPDMG <- newstormdata[newstormdata$CROPDMGEXP == "M", ]$CROPDMG * 1000000
+newstormdata[newstormdata$CROPDMGEXP == "m", ]$CROPDMG <- newstormdata[newstormdata$CROPDMGEXP == "m", ]$CROPDMG * 1000000
+newstormdata[newstormdata$CROPDMGEXP == "B", ]$CROPDMG <- newstormdata[newstormdata$CROPDMGEXP == "B", ]$CROPDMG * 1000000000
+```
+
+We prepare our dataset for further analysis and visualization as we did previously for the *health impact*
+
+```{r}
+newstormdata$economy <- newstormdata$PROPDMG + newstormdata$CROPDMG
+economyUS <- aggregate(economy ~ EVTYPE, data = newstormdata, sum)
+economyUS <- economyUS[order(economyUS$economy, decreasing = TRUE),]
+```
+
+##Results
+
+Here, we will answer our two main questions thanks to nice data visualization.
+
+###Weather events & Population health
+
+***Question: Across the United States, which types of events are most harmful with respect to population health?***
+
+```{r}
+barplot(healthpop[1:10,2], col = heat.colors(12), legend.text = healthpop[1:10,1], ylab = "Measure of harmfulness (fatalities & injuries)", main = "10 most harmful events with respect to population health in the US")
+```
+
+The plot shows that **tornados** have the greatest negative impact on population health by far, followed by **excessive heat**, **thunderstorm winds** and **floods**.
+
+###Weather events & Economic consequences
+
+***Question: Across the United States, which types of events have the greatest economic consequences?***
+
+```{r}
+barplot(economyUS[1:10,2], col = heat.colors(12), legend.text = economyUS[1:10,1], ylab = "Measure of economic consequences (property & crop damages)", main = "10 events with greatest economic consequences in the US")
+```
+
+The above plot shows that event with greatest economic consequences is **floods** by far, followed by **hurricanes/typhoons**, **tornados** and **storm surges**.
