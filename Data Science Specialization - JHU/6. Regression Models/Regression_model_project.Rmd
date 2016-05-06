@@ -1,0 +1,161 @@
+---
+title: "Regression model course project"
+author: "Stephanie"
+date: "February 2016"
+output:
+  pdf_document:
+    latex_engine: xelatex
+    toc: yes
+    toc_depth: 4
+  html_document:
+    highlight: pygments
+    theme: readable
+    toc: yes
+    toc_depth: 4
+---
+
+##Executive summary
+
+In this report, we will analyze a data set of a collection of cars. The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles. We will explore the relationship between a set of variables and miles per gallon (MPG - outcome) and answer the following two questions:
+
+- Is an automatic or manual transmission better for MPG?
+- Quantify the MPG difference between automatic and manual transmissions
+
+Using some exploratory data and simple linear regression analysis, we will determine that:
+
+- There is a signficant difference between the mean MPG for automatic and manual transmission cars
+- Manual transmissions achieve a higher value of MPG compared to automatic transmission.
+
+**Loading the mtcars data**
+
+```{r}
+data(mtcars)
+```
+
+##Is an automatic or manual transmission better for MPG?
+
+We first look at the data to see if we need to process it.
+
+```{r}
+head(mtcars)
+str(mtcars)
+```
+
+The data looks good enough to use linear regression. All variables are numerical. Though, we will need to convert some variables as factors along the analysis.
+
+**Exploratory data analysis**
+
+Let's now look at the relation between MPG (mpg) and transmission (am) with a plot.
+
+```{r, warning = FALSE}
+library(ggplot2)
+plot1 <- ggplot(mtcars, aes(x = factor(am), y = mpg)) + geom_violin() + labs(title = "MPG vs Transmission (am)")
+plot1
+```
+
+Looking at the plot, we can suppose that manual transmission (am = 1) is associated with a larger MPG.
+
+**Simple linear model**
+
+Let's fit a simple linear regression model to check this assumption.
+
+```{r}
+lin1 <- lm(mpg ~ factor(am), data=mtcars)
+summary(lin1)
+```
+
+Let's understand the  model:
+
+- if the transmission is automatic (am = 0), the prediction is 17.147, which is the mean of MPG for am = 0
+- if the transmission is manual (am = 1), then the prediction is 17.147 + 7.245 = 24.392 which is the mean of MPG for am = 1
+
+**Confidence interval**
+
+Let's calculate a 95% confidence interval for Beta1.
+
+```{r}
+pe <- coef(summary(lin1))[2,1]
+se <- coef(summary(lin1))[2,2]
+pe + c(-1,1)*qt(.975,30)*se # (n = 32 ; n-2 = 30)
+```
+
+**Conclusion**
+
+The p-value (2e10-4 < 0.05) for beta1 is small and the confidence interval does not include zero, so we can reject the null hypothesis in favor of the alternative hypothesis. We therefore assume that there is a significant difference in MPG between the two groups at alpha = 0.05.
+
+## Quantify the MPG difference between automatic and manual transmissions
+
+We have seen that a manual transmission seems to lead to a larger MPG. However, this was a simple model and we need to explore further.
+
+**Exploratory data analysis**
+
+Let's have a look at the relationships between MPG and other features.
+
+```{r}
+plot2 <- ggplot(mtcars, aes(x = factor(am), y = mpg, col = factor(cyl))) + geom_violin(aes(fill = factor(cyl)))
+plot2
+
+plot3 <- ggplot(mtcars, aes(x = wt, y = mpg, col = factor(gear))) + geom_point()
+plot3
+
+plot4 <- ggplot(mtcars, aes(x = disp, y = mpg, col = factor(carb))) + geom_point()
+plot4
+```
+
+**Linear regression models for further exploration**
+
+We will create several models and compare them to each other. First, let's see the correlation between the features to choose which one to include into our models.
+
+```{r}
+cor(mtcars)
+```
+
+The variable the more correlated with MPG is "wt". So we will also add the variable the less correlated with "wt" which is "qsec". And then we add the variable of interest here which is am.
+
+Let's build the models.
+
+```{r}
+lin2 <- lm(mpg ~ wt, data=mtcars)
+lin3 <- lm(mpg ~ wt + qsec, data=mtcars)
+lin4 <- lm(mpg ~ wt + qsec + factor(am), data=mtcars)
+
+anova(lin2, lin3, lin4)
+```
+
+The second (lin3) and third (lin4) models have a p_value very small, which leads us to reject the null hypothesis, and to suppose that these models lead to an improvement in comparison of the model 1.
+
+Let's explore the third model (lin4):
+
+```{r}
+summary(lin4)
+```
+
+All the variables are significant in this model.
+
+**Confidence interval**
+
+Let's calculate a 95% confidence interval for Beta3.
+
+```{r}
+m <- coef(summary(lin4))[4,1]
+se <- coef(summary(lin4))[4,2]
+m + c(-1,1)*qt(.975,30)*se # (n = 32 ; n-2 = 30)
+```
+
+**Conclusion**
+
+The p-value (4e10-2 < 0.05) for beta1 is small and the confidence interval does not include zero, so we can reject the null hypothesis in favor of the alternative hypothesis. We therefore assume that the means of the 2 groups are significantly different at alpha = 0.05.
+
+**Residual plot**
+
+Let's plot this model (lin4) to see the residuals.
+
+```{r}
+par(mfrow=c(2,2))
+plot(lin4)
+```
+
+- *The Residual vs Fitted* and *Scale-Location* plots: there is a slight curve, indicating a slight pattern (to be investigated). And several points seem to be outliers, exercing an influence over the curve, for example Toyota Corolla (row 20)
+- *Normal Q-Q* plot: the residuals tend to follow a normal distribution, so that the points lie on the line, except for the outliers at the top-right.
+- *Residuals vs Leverage*: points out those outliers, but indicates that those outliers are within the confidence interval (so not really outliers).
+

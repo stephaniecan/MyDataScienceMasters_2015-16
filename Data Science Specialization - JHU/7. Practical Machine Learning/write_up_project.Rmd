@@ -1,0 +1,191 @@
+# Practical Machine Learning  
+# Write up assignment
+Stephanie  
+22 August 2015
+
+## Assignment introduction
+Nowadays, lots of people use devices such as Jawbone Up or Nike FuelBand to collect data about their regular personal activity to quantify how much of a particular activity they do. However, these devices rarely quantify how well they do it. 
+
+Our goal here is to use data from accelerometers on the belt, forearm, arm, and dumbell of 6 participants to know if we can use these devices to know/predict the manner in which they did the exercise ("how well"). Participants were asked to perform barbell lifts correctly and incorrectly in 5 different ways.  
+More information: http://groupware.les.inf.puc-rio.br/har (Weight Lifting Exercise section). 
+
+## Get and discover the data
+- training data: https://d396qusza40orc.cloudfront.net/predmachlearn/pml-training.csv  
+- testing data: https://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv
+
+The manner in which participants did the exercise corresponds to the *"classe"* variable in the training data set.
+The *testing data* will be used for the second part of the assignment ("submission").
+
+**Download the training and testing csv files**
+```
+fileURL1 <- "https://d396qusza40orc.cloudfront.net/predmachlearn/pml-training.csv"
+fileURL2 <- "https://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv"
+download.file(fileURL1,destfile="C:/YOURWORKINGDIRECTORY/pml-training.csv")
+download.file(fileURL2,destfile="C:/YOURWORKINGDIRECTORY/pml-testing.csv")
+```
+
+**Read the csv files while setting "NA", "" and "#DIV/0!" as NA values**
+```{r}
+trainpml <- read.csv("pml-training.csv", na.strings = c("NA", "", "#DIV/0!"))
+testpml <- read.csv("pml-testing.csv", na.strings = c("NA", "", "#DIV/0!"))
+```
+
+**Get an idea of the data and the *class* output**
+```{r}
+ncol(trainpml)
+nrow(trainpml)
+str(trainpml, list.len=15)
+table(trainpml$classe)
+```  
+
+## Clean and preprocess the data
+**Remove NAs**  
+We noticed that some columns have lots of NA value. We want to know if we need to impute data with knnimpute or simply delete these columns. For that, we check which columns have NA values and the percentage of their rows that are NAs.
+```{r}
+removeNA <- colSums(is.na(trainpml))
+head(removeNA, n = 15)
+19226/nrow(trainpml)
+```
+Columns have either no NA value or at least 97% NA values. We decide to remove the latter from *trainpml* as they are of no use.
+```{r}
+trainpml <- trainpml[,(removeNA) == 0]
+ncol(trainpml)
+```
+We had 160 columns and we end up with only 60, which is better for building a readable prediction model.   
+
+**Remove useless variables for our prediction**  
+We delete the columns dealing with basic information & time data (the first 7 columns) as they are of no use for predicting the *classe* output.
+```{r}
+trainpml <- trainpml[,c(8:60)]
+ncol(trainpml)
+```
+We have now 52 variables (excluding the *class* output column), which is even nicer.  
+
+**Zero covariates**  
+Is there any zero covariates to remove?
+```{r}
+library(caret)
+nzvar <- nearZeroVar(trainpml,saveMetrics=TRUE)
+any(nzvar$nzv)
+```
+None of the variables are zero covariates.   
+
+**Higly correlated variables**  
+We check if there are some highly correlated variables that we could remove. We first convert integer columns as numeric in order to compute the correlation.
+```{r}
+for (i in 1:ncol(trainpml)) {
+        if(class(trainpml[,i])=="integer"){
+                trainpml[,i] <- as.numeric(trainpml[,i])
+        }
+}
+findCorrelation(cor(trainpml[,-53]), cutoff = 0.8, verbose = FALSE)
+```
+We remove the pair-wise correlations corresponding to the vector of integers returned by *findCorrelation* function. 
+```{r}
+trainpml <- trainpml[,-c(10,1,9,36,8,2,21,34,25,45,31,33,18)]
+ncol(trainpml)
+```
+We now have 39 covariates, which is more "model friendly" than the 159 we had at the beginning.  
+
+## Cross validation
+With over than 19 000 rows, *trainpml* is large enough to be splitted into training and testing set. We use the data splitting method with 60% of the data in the training set and 40% in the test set.
+```{r}
+set.seed(33542)
+intrain <- createDataPartition(y = trainpml$classe, p=0.6, list=FALSE)
+training <- trainpml[intrain,]
+testing <- trainpml[-intrain,]
+nrow(training); nrow(testing)
+```
+We get a training set with 11776 rows and a testing set with 7846 rows.  
+
+## Prediction model
+**Random forest model with 39 covariates**  
+We choose first Random forest model as we have non-linear settings and it is a very performant model.
+Cross validation in model
+```{r}
+library(randomForest)
+set.seed(33833)
+modfit <- randomForest(x=training[,-40],y=training$classe, importance = TRUE)
+print(modfit)
+```
+The **expected out of sample error** corresponding to the "built-in" random forest Out-of-bag (OOB) error is **0.84%**, which is extremely low. Therefore, our model might be overfitting. We'll test this assumption later with the testing set.  
+
+**Variable importance**  
+As we got a very low OOB error with 39 variables, we want to know if we could get a more friendly model with less variables but with still a low OOB error.
+```{r}
+varimp <- varImpPlot(modfit, sort = TRUE, n.var = 10, main = "Variables importance")
+```  
+We choose to keep the following 10 variables according to the mean decrease accuracy: yaw_belt, magnet_dumbbell_z, pitch_forearm, gyros_arm_y, roll_arm, magnet_dumbbell_y, magnet_belt_y, magnet_forearm_z, magnet_belt_x and gyros_belt_z.  
+
+**Random forest model with the 10 most important covariates**
+```{r}
+trainsubset <- training[,grepl("yaw_belt|magnet_dumbbell_z|pitch_forearm|gyros_arm_y|roll_arm|magnet_dumbbell_y|magnet_belt_y|magnet_forearm_z|magnet_belt_x|gyros_belt_z|classe", names(training))]
+set.seed(33833)
+modfit2 <- randomForest(x=trainsubset[,-11],y=training$classe, importance = TRUE)
+print(modfit2)
+```
+The OOB error is **1.67%**, which is still very low.  
+
+**Validate the models on the testing set and accuracy**  
+We now test our two models on the testing set to check the accuracy and be sure that they are not overfitting.  
+
+**Random forest model 1 (39 covariates)**
+```{r}
+pred <- predict(modfit,testing)
+table(pred,testing$classe)
+testing$predRight <- pred==testing$classe
+summary(testing$predRight)
+7781/(65+7781)
+```
+The **accuracy** of the first model tested on the testing set is **99%** which is very high and good! Indeed, our model doesn't appear overfitting.  
+
+**Random forest model 2 (10 covariates)**
+```{r}
+pred2 <- predict(modfit2,testing)
+table(pred2,testing$classe)
+testing$predRight2 <- pred2==testing$classe
+summary(testing$predRight2)
+7724/(122+7724)
+```  
+The **accuracy** of the second model tested on the testing set is **98%** which is also very high.  
+
+## Submission assignment and conclusion
+We choose to use our first model (39 covariates).  
+To validate our model, we submit our predictions for the test set (given at the beginning). This test set contains 20 test cases and doesn't have the *class* output. We have to submit a text file with a single capital letter (A, B, C, D, or E) corresponding to our prediction for the corresponding problem in the test data set.  
+
+**Preprocess the test set**
+```{r testset, results="hide"}
+testset <- testpml[,colSums(is.na(testpml)) == 0]
+testset <- testset[,c(8:60)]
+for (i in 2:ncol(testset)) {
+        if(class(testset[,i])=="integer"){
+                testset[,i] <- as.numeric(testset[,i])
+        }
+}
+testset <- testset[,-c(10,1,9,36,8,2,21,34,25,45,31,33,18)]
+ncol(testset)
+```
+**Predict the *class* output and save it in a character vector**
+```{r predtest, results="hide"}
+predtest <- predict(modfit, testset)
+predtest <- as.character(predtest)
+print(predtest)
+```
+**Function to create a submission file for each of the 20 test cases**
+```{r write, results="hide"}
+pml_write_files = function(x){
+        n = length(x)
+        for(i in 1:n){
+                filename = paste0("problem_id_",i,".txt")
+                write.table(x[i],file=filename,quote=FALSE,row.names=FALSE,col.names=FALSE)
+        }
+}
+```
+### Conclusion
+We submit our 20 submission files and we get 20/20! This means that our model accuracy is good without too much overfitting.
+With such a high accuracy (99%) and low out of sample error (0.81%), we can consider the following:  
+- The study has been well performed (very obedient participants...)
+- The devices are very accurate and it is very encouraging to inform people on the quality of their exercises  
+However, to confirm the accuracy of the devices to tell **how well people do an exercise** they have to conduct other studies on other types of exercise.
+
+
