@@ -126,6 +126,7 @@ Below is the program I've followed from March 2015 (one course end of 2014) to A
 - [Data Science at Scale Specialization - University of Washington](https://www.coursera.org/specializations/data-science)
 - [Strategic Business Analytics Specialization - ESSEC Business School](https://www.coursera.org/specializations/strategic-analytics)
 - [Capstone: Retrieving, Processing, and Visualizing Data with Python - University of Michigan](https://www.coursera.org/learn/python-capstone/)
+- [Internet History, Technology, and Security - University of Michigan](https://www.coursera.org/learn/internet-history/)
 - Working with Big Data: Hadoop, Spark, Pig, Hyve, MapReduce
 - Deep Learning (Neural Networks)
 - Security & privacy of data
