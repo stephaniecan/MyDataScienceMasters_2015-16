@@ -1,0 +1,1992 @@
+        by chris guillebeau
+       unconventionalgiudes.com
+
+
+
+
+The UNCONVENTIONAL GUIDE To
+WoRkINGfor
+YoURsElf
+
+      Creating Personal Freedom
+     Through a Very Small Business
+
+tAbLE of contEntS                               28 Your Own Photography Business
+                                                   (but not what you think)
+                                                29 Your Own Photography Business (Part II)
+1  Letter from Chris                            30 Consulting
+2  Introduction                                 30 Start a Continuity Program or Membership Site
+3  Journey Part I: Beginnings                   33 Affiliate Income 2.0
+                                                34 Using Adsense for Scalability
+
+sTrATeGy                                           (or "The Best $1.26 I Ever Made")
+                                                   Highly-Overrated Businesses
+6                                               36
+   Multiple Streams (blah, blah, blah)
+                                                   Miscellaneous (4 Final Possibilities
+7                                               39
+   The Hardware Store, Google, and Your            that Require Additional Research)
+   Small Business
+                                                   My Journey, Stage Three:
+7                                               40
+   Three Levels of Entrepreneurship                Information Products and the Road Ahead
+10 Top 6 Mistakes of New Entrepreneurs
+14 Other Balls to Keep in the Air              puTTinG iT All ToGeTher
+                                                41 How to Get Paid
+TAcTics                                         45 Creating Launch Event
+15 Journey Part II: Web Sites, Consulting,      47 The Ultimate Scaling Up
+   and Moonlighting                             49 Frequently Asked Questions
+16 Creating and Selling Information Products    51 Want More?
+19 Building an Information Portal               52 Survey & Closing Words
+22 Blogging for Dollars
+24 Creating an Immediate Income with eBay
+
+Dear Fellow Entrepreneur,                                      After you've read the report, would you do me one favor? I'd
+                                                               really like to know what you thought of the information, so
+Thanks so much for picking up the Unconventional Guide         that we can make this and future Unconventional Guides
+to Working for Yourself. I hope it rocks your world. And by    even more amazing for you.
+the way, if you didn't know you were an entrepreneur before,
+well, now you are. Congratulations.                            (And by the way, against the conventional wisdom of
+                                                               marketing, all future updates for this one will be completely
+First, a fair warning: I did not write the guide to create     FREE for you. We will be contacting all UGWY owners by
+internet millionaires. If that becomes your story one day,     email whenever an updated version comes out.)
+that's great--feel free to send me a small royalty check from
+your yacht in the Aegean. But to be honest, I don't know       To send your feedback, write to feedback@chrisguillebeau.
+much about doing that... and if I did, it probably wouldn't be com, or follow the survey link at the end of the guide.
+smart to write a low-priced guide about it.
+                                                               OK, that's all. Enjoy, and stay sane out there.
+Instead, I wrote the guide to help regular people set up a
+working microbusiness for the first (or possibly the second
+or third) time. As I mentioned in the pre-launch campaign
+for this guide, I want to help a large number of people begin  Chris Guillebeau
+generating revenue streams of at least $200 a month.           Chrisguillebeau.com / UnconventionalGuides.com
+
+I realize that $200 a month isn't necessarily a lot of money,
+but it's $200 more than you had before. Also, once you get
+one $200-a-month project going, it's not hard to start more
+projects with less work and better results. Then, when you
+have a few of them on track, you go back to the one that's
+working the best. Most of the time, there are several things
+you can do to scale your most successful microbusiness up
+to a significantly higher level.
+
+But I don't mean to get ahead of myself. We have a lot to      The Unconventional Guide to Working for Yourself
+cover, and it all starts on the next page.                     Copyright © 2008 Chris Guillebeau. All rights reserved.
+
+                                                               Layout by Reese Spykerman
+
+
+                                                              3
+                                    the unconventional guide to working for yourself
+
+IntroductIon                                                  Thus, I have an imperative to be able to work from wherever
+                                                              I am, whether it's an Estonian ferry (where I'm writing this
+                                                              introduction), a train in India, an airplane over the Pacific,
+                                                              or any number of other locations.
+Several times a week, if not every day, a number of people
+ask me the same two questions:                                A Few DisclAimers
+
+"How do you pay for all your travel?"                         1. I haven't figured everything out yet (far from it).
+                                                              I include a lot of mistakes here so you can learn from them.
+and                                                           But along the way, I've also learned some things, and I
+                                                              offer them for you here as well. My reading philosophy is
+"How do you make a living without a `real job'"?              to always take what is most relevant to me and not worry
+                                                              about the rest. Don't get overwhelmed ­ focus on what is
+I began the answer to the first question in the Frequent      meaningful to you at this time in your life.
+Flyer Master, and Travel Ninja guides, showing that
+international travel does not need to be nearly as expensive  2. Creating an online microbusiness is not that complex, but it does take
+as most people expect. In the next couple of months, I'll     some time.
+release another travel-related guide that goes into more      If you are interested in a ten-minute business, this is not
+advanced travel topics like Round-the-World airfare,          for you. I wish it were that easy... but it's not. If you want
+creative lodging, and Frequent Flyer maximization.            to succeed, be prepared to spend significant time on
+                                                              developing your project and advancing your knowledge in
+This guide provides the answer to the second question         several areas. Most projects will require additional research,
+­ how I earn a living without a job. However, while I'll tell although as they say, it's not rocket science.
+you a number of personal stories, the guide will focus on
+how you can do this too ­ and in your own way.                3. I'm not really an expert in any one specific business skill, and that has both
+                                                              helped and harmed me over the years.
+By the way, the two answers are related. As much as
+possible, my entrepreneurial life and my passion for          To become a true expert in one of the strategies or tactics I
+
+travel are connected. This is partly due to my desire for     outline for you here, you'll need to do a lot more reading. I
+
+convergence, but also out of simple necessity. I am away      can take you part of the way (and it should be far enough
+
+from my home in the U.S. for at least 12 weeks a year, and I  to be profitable for you), but you'll need to study further on
+
+don't want to change that.                                    your own to optimize whatever it is you end up doing.
+
+
+
+                                                             4
+                                  the unconventional guide to working for yourself
+
+4. The target group of readers for this report is people interested in starting a  (I am a firm believer that each of us should be engaged
+very small, online business that creates income for them without requiring an      in meaningful work. If you've found it in a company or
+all-new job.                                                                       organization, that's great. But since you're reading this, I
+Therefore, I am expecting that your specific knowledge and                         assume you're at least interested in adding some more funds to
+experience is low to intermediate in these areas. If you're                        your monthly net income ­ also a valid and useful goal.)
+already an online marketing guru, this report will not help
+you a lot. There are plenty of other resources out there
+that will help you further develop your skills. Most of                            At several points throughout this guide, I'm going to
+them start out at about $1,000, and if you already have a                          share personal stories and examples from my own
+successful business, that may not be too much to spend                             journey. The first one starts below, and then we'll get
+on making it better.                                                               right to the strategy section.
+
+But if you're just getting started, you don't need the $1,000
+study course. You need to know how to build something                                 my Journey, sTAGe one:
+right now, without going into debt or making simple                                   The BeGinninG
+things complicated.
+                                                                                      I told a longer version of how I got started in
+On the other hand, if you don't know what a blog is, or how                           business in an earlier blog post. In short, my
+Google makes money, or what an affiliate program is, you                              life in business was a direct result of a need
+may need to do some more research of your own before you                              for income combined with a dissatisfaction of
+understand everything in the guide. Again, look for what is                           having a regular schedule where I reported to a
+meaningful to you, then research that further and save the                            job and did what someone else told me to.
+rest for later.                                                                       Specifically, I was in desperate need of cash
+
+As I see it, there are two kinds of readers for this report:                          to pay some bills, and my manual labor night
+                                                                                      shift job wasn't cutting it. Despite the fact that
+first, those who want to break free of the tyranny of working                         it didn't pay well, I also had to get up in the
+a "real job." Trust me, I completely identify. Second, those                          morning to go to school after working until 2:00
+who are relatively happy with their current job, but want to                          a.m. the night before. You can survive like that
+create an additional source of income. I totally respect that                         for a short time, but it will wear you down after a
+as well.                                                                              few weeks.
+
+
+
+
+                                                                                  5
+                                               the unconventional guide to working for yourself
+
+Without understanding anything about business,             a job, but since I was working for myself, it was
+I started selling things on eBay during the site's         the best one I ever had!
+early days (this was back in 1999 and 2000). I
+found that without much effort, I could easily             Big Mistakes
+make about twice as much money as I made on                I did not plan well for competition (too many
+the night shift job. I never went back.                    coffee sellers on eBay), did not optimize
+                                                           anything, and created a job for myself instead of
+I began by selling old stuff from around my                a sustainable source of income.
+apartment that I didn't need anymore. Just like
+working the night shift job, that approach works
+fine for a short time, but then after a while you
+run out of things to sell. After experimenting
+with different products, I ended up specializing
+in coffee. I imported coffee from Jamaica that
+sold at retail for up to $30 a pound. I bought in lots
+of 30-50 pounds, and sorted it all in my apartment.
+
+It was a lot of fun. Over the next year I kept
+selling the coffee, and also branched out to
+anything else I could get a good wholesale
+source for. I ended up selling Legos, laptop
+cases, cigars, promotional items, and books. It
+wasn't targeted at all, but it worked for a while.
+I made more money than I ever had, and set
+my own schedule. I invested in the business,
+buying a good computer, a nice desk, and all the
+supplies I needed.
+
+I was in business for myself, and after a couple of
+months, I couldn't imagine doing it any differently.
+
+What Went Well
+I established freedom as my primary value ­ after
+this, I knew I couldn't go back. It was essentially
+
+
+
+                                                        6
+                               the unconventional guide to working for yourself
+
+StrAtEGY                                                       Hard work, however, is a prerequisite. And arguably, so
+                                                               is goal-setting.
+
+                                                               As you read this report, I'd like to ask you to set at least two
+                                                               measurable goals. I realize you've just paid for the words on
+The strategy section may contain some ideas you are            this page, and now I am asking you to do something else.
+already familiar with. I still recommend you read it first,    But trust me... this is for your own good.
+because it will set the tone for the tactics section and
+reinforce some good principles. But if you've been doing       Too much information gets consumed without being
+this for a while and just want to skip ahead, hey, it's your   acted on. The reason why I created the Incredibly
+guide. Use it as it suits you.                                 Convincing Guarantee was so I knew people would use
+                                                               the information.
+Let's start with a basic premise:
+                                                               It is in your best interest to set the goals. If you can't do
+It has never been easier to start a small, online business     that, do us both a favor. Close the report down, delete the
+from home that creates income without requiring a full-        file, and send me a note with your purchase details. You'll
+time job.                                                      get a 100% refund whenever I get back from wherever in the
+                                                               world I am at the moment.
+I've been working online since 1999, and have never had a
+"real job" where I reported to a job site eight hours a day    The thing is, you probably don't want to do that. You want
+and worked for someone else.                                   to get started earning money without a job. You want to set
+                                                               up that project that earns money while you sleep.
+The opportunities change frequently, but the strategies and
+processes change a lot slower. Most of what I learned about    To do that, you need some goals of your own.
+marketing back in 1999 and 2000 is still fundamentally
+the same--and back then, I was learning from people who        Here's a few Sample Goals:
+learned the lessons at least 10 or 20 years previously.
+                                                               »       Earn x dollars (or pounds, euros, gold coins,
+You don't need to be especially intelligent to set up a                whatever) a month
+microbusiness. In fact, some of the best small business
+opportunities don't require much intelligence at all.          »       Set up 2-3 new income sources in 6 months
+
+
+
+
+                                                              7
+                                   the unconventional guide to working for yourself
+
+»       Create a small information product and generate 10       Some books use this strategy to go off on a tangent about
+        initial sales                                            real estate investing ­ although lately that isn't so popular,
+                                                                 thankfully ­ but the general idea is still a good one: you
+»       Set up a blog to earn Adsense or affiliate income        don't want all your eggs in one basket.
+
+»       Build an Online Business Empire                          It's nice to get checks in the mail, or PayPal payments in
+                                                                 your Inbox, from different sources. You can roll your eyes
+(Note: no matter how good it is, an ebook will not provide       at the phrase multiple streams because it has become trite
+everything you need to know to build a complete empire. If       from overuse, but that doesn't mean it lacks value. In short, I
+this first guide is successful, I'll consider doing a higher-end think it's better to make a little money from a lot of sources
+"Empire Building" project at some point.)                        than a lot of money from one source like a paycheck ­ and
+                                                                 that's what multiple streams of income simply means,
+The final disclaimer: I should warn you that the goals you       without all the hype.
+set will be far more beneficial to you if they are aligned with
+your overall life goals. But in the end, that's up to you. Use   The hArDwAre sTore, GooGle,
+your powers for good.                                            AnD your smAll Business
+
+mulTiple sTreAms oF income                                       When most people think about starting an online business,
+(BlAh, BlAh, BlAh)                                               they imagine going through a long series of steps to build
+                                                                 one enterprise over a number of years. Consciously or not,
+If you've ever read any business or finance book before,         they're thinking of the family hardware store model ­ you
+you've probably heard of the `Multiple Streams of Income'        know, the one where grandpa had a store that he inherited
+concept. I'm not going to say much about it here, except to      from his father, it gets passed down from generation to
+agree that the idea is solid.                                    generation, and the whole family spends all their time
+                                                                 thinking about nails and plywood.
+In short, this idea refers to setting up multiple small
+businesses (often very small) that each produce a small-         In other words, whether they intend to or not, people
+to-medium source of regular income for you. If one project       learning about online business for the first time tend to
+fails, the idea goes, you will still have the income from other  carry over an idealized view of the way things used to be.
+sources. Also, some projects will be more successful than        You start one business, work at it with all you've got, and
+others, so if you have several of them going, hopefully at       then one day, son, all of this will be yours.
+least one will end up doing very well.
+
+
+                                                                8
+                                      the unconventional guide to working for yourself
+
+That's a wonderful idea for some people. I have a friend who  ignore any experts who prematurely predict the demise of
+is in medical school now, and last year he was getting ready  your potential self-employment.
+to take the competitive MCAT (the test for med school) that
+would determine whether he would get in or not. He studied     Expanding on Success
+for more than nine hours a day, usually non-stop.             When you have a lot of projects going, it's tempting to get
+I was amazed to hear this, but then I wasn't surprised when   distracted by all the plates in the air. I tend to believe that
+he got into the program and is now training to become         it's okay to let some of them fall. When you start several
+a doctor. He's the kind of doctor I'd want to have ­ not      projects (even at the same time), naturally some of them
+someone like me who gets easily bored.                        will be more successful than others.
+
+If you can study nine hours a day without breaks, then you    Just as it's better to improve your core strengths instead of
+can probably build the next Google or something. You          focusing on your weaknesses, in business it's better to play
+should spend your time doing that, and one day you'll be a    off the successes and not worry about the failures. If you
+doctor or start a company that gets you millions of dollars   keep trying, eventually you are going to succeed--believe
+in stock options.                                             me, if I can do it, so can you.
+
+But many of us are not like that, and there's always a        In other words, don't be average. Being well-rounded is
+chance that the hyper-attentive people might end up           boring. Figure out what you're best at and kick ass at it.
+building the wrong kind of business.
+                                                              Three levels oF
+It wouldn't be fun to spend years of your life creating       enTrepreneurship
+something that turned out to be worth very little, right?
+
+Every once in a while a new business guru proclaims the       Entrepreneurial ventures of all kinds can generally be
+death of the very small business. The argument is that        structured in three rough categories: trading time for money,
+larger businesses have greater scale, and as they get more    developing business systems, and creating passive income.
+technically sophisticated and harness the tools of direct
+marketing, they'll put the small players out of business. But  1. Trading time for money
+I believe the opposite: that the underdog and basic "work     Most small business owners that you think of will probably
+for yourself" renegade has the advantage in any basic         fit into this category ­ the self-employed hairdresser,
+microbusiness. You can use this to your own advantage, and    the guy with the independent coffee shop, and so on.
+
+
+
+
+                                                             9
+                                  the unconventional guide to working for yourself
+
+Essentially, they have lemonade stands that need to be             All of the following activities represent systems development:
+minded. If they weren't around all the time, no lemonade
+would be sold.                                                     »        Writing down recurring task lists
+
+Even if they have employees to sell the lemonade, the owner        »        Focusing on any kind of business development
+still has to be around to order the supplies, set the schedule,    »        Training others (employees, contractors, partners) to
+and generally maintain operations most of the time. This is                 do specific tasks for your business
+effectively trading time for money, whether you are paid $4
+a day or $200 an hour.                                             »        Expansion planning
+
+Note that having a lemonade stand is not a bad thing. If           »        Creating additional products
+people like lemonade and you like selling it, there's no
+good reason to stop. I have to write three times a week on         »        Outsourcing (but see the warning later on)
+my blog, because I committed to my readers that I would.
+For me, it's kind of like running -- most of the time, I like it.  The classic book that inspires a lot of the strategy for
+When I don't, I do it anyway because it's important to me.         systems development is The E-Myth Revisited by Michael
+                                                                   Gerber. The author has a strange fixation with pies (you'll
+With that in mind, however, trading time for money is not          see if you read it) and can be a bit condescending towards
+the best way to build a sustainable business that will last a      the reader, but don't let that stop you ­ there are some good,
+long time.                                                         timeless lessons from that book.
+
+2. Developing business systems                                     3. Creating passive income
+Devoting active attention to developing systems in your            Passive income represents the apex of creating systems
+business is the natural step up from trading time for              in your business. If you have income that comes in month
+money. This is when you step out from selling lemonade             after month no matter what you do, that's passive income. If
+all the time (I'll lose the analogy soon, I promise) and start     you have to do stuff for it to come in, then it falls into one of
+building up the store so that a lot more stuff can happen          the other two categories.
+without you.
+                                                                   Examples of passive income include money from
+                                                                   investments, rental income (but only as long as you don't
+                                                                   have to do something for it), royalties, and subscription
+                                                                   revenue that someone else is responsible for managing.
+
+
+                                                                  10
+                                    the unconventional guide to working for yourself
+
+Getting this going is easier said than done. In fact, if you    But actually, there is something to passive income, and
+read much about Multiple Streams of Income or passive           it has nothing to do with the questionable approach
+income in general, you'll get the impression that creating      proffered by the real estate lecturers.
+passive income can be set up. One day, you're strapped
+to the cubicle, grinding away... the next, you're sitting on    For real entrepreneurs who work hard and develop systems-
+the beach, daiquiri in hand, as you glance over thick bank      oriented businesses, you can indeed achieve genuine
+statements that arrive month after month.                       passive income that arrives in your bank account every day
+                                                                without having to do much for it.
+This is simply not how it works for most people. And
+among the few people who do sit on the beach all day while      If you haven't experienced this before, you can probably
+the money comes in, most (if not all) have usually devoted a    imagine what a nice feeling this is. Havi Brooks, a writer
+great deal of work to getting in the position where they can    and teacher with a unique voice, told me about this one day
+do it.                                                          when we were emailing back and forth about her work.
+
+My friend Jonathan Fields once wrote an interesting blog           "In general, having information products and
+post called How Not To Get Super-Rich, where he showed             working towards a business that sells without
+how most wealthy people became wealthy by working very             you is just smart. It makes you look `biggified'
+hard. There is nothing passive about it at all.                    and lends you some expert status. It gives
+                                                                   people a way to sample you and keep working
+When I read Jonathan's post, it reminded me of all the             with your thoughts and ideas. It's not always
+times I've seen "passive income gurus" speaking on a stage         100% "passive" but it's pretty much as close to
+somewhere. One time I was sitting next to another small            passive as it gets. I mean, it's nice to wake up
+
+business owner during one of these talks ­ the speaker             and have several hundred dollars come out of
+                                                                   nowhere."
+was going on and on about how much money he earns
+without working ­ and the guy next to me said, "You             Remember, you can start, operate, and succeed in a lot of
+know, if passive income is the cause of his success, what       small businesses without focusing on passive income. The
+is he doing on the stage?"                                      other two categories are perfectly acceptable ­ it's your
+                                                                business, right? But if you choose to think more about this
+I thought that was pretty funny, but also true ­ if someone     third category, your work may be rewarded as you stretch
+preaches that passive income (often related to real estate)     beyond your comfort zone.
+is the way to go, why are they hawking all kinds of stuff that
+requires their time and energy to sell? Keep this in mind the
+next time you hear someone selling the daiquiri dream.
+
+                                                              11
+                                   the unconventional guide to working for yourself
+
+Opportunities vs. Biz Building                                        1. Failing to Set a Schedule for Your Home-Work Life
+While setting up systems to bake pies (or whatever you                Glen Stansberry writes at LifeDev.net and recently
+do) is indeed a good strategy for the long-term, I also               published a nice report on improving productivity in
+think you should take advantage of a few good short-term              your office environment. The whole report is good, and I
+opportunities that come your way. This idea runs contrary             especially enjoyed Glen's introduction:
+to the idea of focusing on only one thing and ignoring
+anything that doesn't have to do with your core mission.                   "In the summer of 2006 I became a freelance
+                                                                           writer and web developer. I was stoked that
+I tend to think if you find something that can earn extra                  I'd finally be my own boss, and I could work at
+money and it doesn't take too much trouble, you might as                   home, any hour of the day, as long as I wanted.
+well spend a couple of hours setting it up. Obviously, if the
+time commitment increases to the point of distracting you                  Unfortunately, that couldn't be farther from the
+from your main work, that's a problem. But then again, if the              truth.
+short-term opportunity provides a good service and earns
+you more money than whatever else you do, maybe it's time                  I quickly found that the many alluring aspects
+                                                                           of the freelancer's life were nothing more than
+to make a bigger switch.                                                   myths. Working at home in my pajamas was a lot
+                                                                           harder than I'd imagined. I was getting next to
+You'll have to make your own decisions with this one, but                  nothing done, and my attention span shrank to
+I just wanted to say that I don't necessarily think it's a bad             the size of a 3-year old with ADD."
+thing to pursue short-term opportunities while building a
+lasting business. It all depends on your own working style            When I read that, I thought, "That sounds familiar!" In fact,
+and what you are trying to do.                                        I could have written almost exactly the same story.
+
+Top 6 BiG misTAkes oF                                                 It's not quite a disaster, but working for yourself can be
+new enTrepreneurs                                                     extremely challenging when you are first getting started.
+                                                                      There are a lot of myths and idealized images about working
+We all make exceptions, and if anything, entrepreneurs and            at home or setting off on any solopreneurial venture.
+new small business owners make more than usual. Here's a
+rundown on their / our top 6 big mistakes. Naturally, I've made       How to Slay the Dragon: If I am writing, or working on
+all of these mistakes myself, so at the end of the description, I've  an important project, I don't usually take part in a lot of
+included a few tips on "How to Slay the Dragon."                      unplanned social activities. I still make time for friends
+
+
+
+                                                                    12
+                                     the unconventional guide to working for yourself
+
+and activities I enjoy, but I keep a lot of my day to myself.    if you choose the right vendors, you have to be careful not
+Some people might find that extreme, but then again, some        to rely on them too much. You are the one responsible for
+people don't get much work done.                                 your business at all times.
+
+These tips are also helpful:                                     Slay the Dragon: Do due diligence before working with any
+                                                                 vendor, and have a backup plan for when (not if) something
+»        Set up your most important project the night before.    goes wrong. Sometimes a backup plan may not be
+         Have it set up and waiting on your desk when you go     possible, and in those cases, just be ready to get creative
+         in, and require yourself to work on it for at           if the dam breaks.
+         least 45 minutes before checking email and
+         your daily web sites.                                   3. Screwing Up the Customer Service
+                                                                 No one starts a business with the idea that they will provide
+»        Set two "most important" goals every day. I usually     bad customer service. In fact, it's usually the opposite ­
+         have a lot of things going on at once, but I force      people almost always think that one of the core principles of
+         myself to prioritize the two "most important" goals.    their business will be excellent customer service. After all,
+                                                                 they reason, if I provide fantastic service to the people who
+»        When done working, really stop working. I take a        buy from me, they'll want to come back over and over, right?
+         Sabbath day once a week, usually from Saturday
+         evening to Sunday evening. During that time I don't     Interestingly, the mistake becomes apparent more with
+         check email or do anything related to business.         successful businesses than with unsuccessful ones. Once
+         Sometimes I do some writing, but only if it's the kind  a business starts doing well, and the cash flow becomes
+         of writing I enjoy.                                     healthy, it turns out that there are a lot of things you need
+                                                                 to think about. If you're just a one-man or one-woman show,
+2. Choosing the Wrong Vendors                                    customer service can quickly fall behind.
+Later on in the guide (the second Personal Journey section),
+I'll tell you how I encountered a very challenging situation     In the beginning, you might not even notice much of a
+when a fulfillment vendor I relied on went out of business       drop in sales... which leads you to pay even less attention
+with no notice. It wasn't fun, and caused a lot of headaches.    to customer service. If you don't call people back or return
+                                                                 emails for a week and the sales don't suffer, why bother? Of
+Unfortunately, a lot of businesses have slowed down or even      course, sales usually do start suffering at some point, but then it
+failed as a result of choosing the wrong vendors. And even       may be too late since you've abused the trust of your customers.
+
+
+
+                                                               13
+                                    the unconventional guide to working for yourself
+
+Slay the Dragon: To avoid this mistake, you'll need to plan      mildly, it was a complete disaster. They did not understand
+for customer service the same way you plan for income-           my business, spent too much money, and neglected to make
+generating activities. If you're doing it all yourself, set      simple fixes that I knew would improve the account. I ended
+aside a specific time each day when you return emails            up doing the optimization myself, while continuing to pay them
+and phone calls. And if it gets too hectic, you'll have to       for two months. Long story short, I won't do that again.
+figure something else out. That something else could be
+outsourcing, but as the next section shows, you have to be       Slay the Dragon: Be very careful with outsourcing. If you
+very careful with that.                                          do it, start slowly and make sure your projects are clearly
+                                                                 defined for both you and the service provider you select.
+4. Misunderstanding Outsourcing                                  When the first project goes well, don't assume you can take
+You know all about outsourcing, right? How you can               your hands of the wheel.
+outsource your life, get a personal assistant in India, and
+run off to work in the Bahamas?                                  5. Making Mistakes with Domain Registration
+                                                                 If you're in business for yourself, you need your own
+Well, it's largely a myth. I mean, some people may have          domain, and maybe more than one. Thankfully, it's never
+mastered it to work with their business, but it is rarely an     been easier to register multiple domains for $5-10 each. You
+easy project. Contrary to how the whole concept is usually       have to pay this amount every year, but obviously, $5-10 is
+described, outsourcing requires a close monitoring of any        not much to pay for a branded name. I have dozens of them,
+work that is being done for you or in your name.                 and I know some people with hundreds.
+
+It is possible to outsource certain design and programming       However, do yourself a big favor from the beginning
+tasks with good results. For that I use elance, the standard-    ­ make a note of these three companies: Network Solutions,
+bearer in worldwide project-based outsourcing. I've had          Register.com, and GoDaddy. Never trust them with your
+good results with elance from time to time, whenever the         money or domains. All three have a history of either
+project is very clearly defined, and as long as I've taken the   charging too much money or setting up unreasonable
+time to work closely with the service provider from start to     barriers that prevent you from easily changing the hosting
+finish.                                                          provider or contact details of your domain.
+                                                                 You can also easily forget to renew your domain(s) at the
+On the other hand, I once tried to outsource my Google           end of the year. Normally you'll get a notice, and often
+Adwords account to a well-known (and well-meaning)               they'll be put on auto-renew, but lots of things can go wrong
+business that specialized in account optimization. To put it
+
+
+
+                                                               14
+                                    the unconventional guide to working for yourself
+
+with that, from bounced emails to expired credit cards. If         friends and acquaintances who expressed an interest in it. I kid
+you forget to renew and someone else takes your domain, it         you not, of the 10+ people I've bought it for, only two of them
+will be extremely difficult to get it back.                        ever let me know how it helped them or even thanked me later.
+
+Slay the Dragon: Create a simple spreadsheet to monitor            I think this is interesting because the heart of the GTD
+the domain names you own, including their expiration               system involves capturing your tasks and immediately
+dates. Put them in your online calendar, so that you'll get        doing things that can be done in less than two minutes. I
+a reminder a couple of weeks (or even months if you're             suppose the lesson is that great resources can only help
+paranoid like me) before they expire and then immediately          you if you do take the time to learn from them and give the
+renew them without waiting for the auto-renew to kick in.          ideas an honest try.
+
+Lastly, you may also want to pay an extra $5-10 a year             This is probably a reflection of the fact that most people say
+to make the business information associated with your              they want to improve their productivity skills, but when it
+domains private. It's probably not a big deal for personal         comes down to it, they aren't willing to really work on it. Sad
+sites, but before I used private registration, I got a lot of      but true ­ and the upside is that it makes life easier for those
+phone calls, unsolicited email, and even junk snail mail           of us who do work hard and like to learn new things.
+from companies who wanted to sell me something. You can
+cut down on this by having private registration.                   Lastly, check out some good productivity blogs ­ my
+                                                                   favorites are Zen Habits, LifeDev, and 43 Folders. A lot of
+6. Poor (or lack of) Productivity Skills                           what is published on the major productivity blogs ends up
+It's important to have some good (or at least decent)              repeating itself over and over in slightly different ways, but
+productivity skills when starting a new business. By far           I don't necessarily think that's a bad thing. Most of us (certainly
+the best reference for me has been David Allen's Getting           me) need to have good information repeated frequently.
+Things Done (GTD) book. It's a fantastic investment for the
+price of $9 ­ many people, including me, will tell you that        Slay the Dragon: Read Getting Things Done and implement
+their business and overall life significantly improved by          the parts of the system that fit you best. Occasionally read
+following even just a few parts of David's system.                 some good productivity blogs, but try to avoid getting
+                                                                   sucked in ­ ironically, you can end up wasting a lot of hours
+By the way, an interesting side-note about GTD: because            by reading about productivity all the time.
+I believe in it so much, over the past few years I have
+probably bought at least 10 copies of that book to give to
+
+
+
+                                                                 15
+                                          the unconventional guide to working for yourself
+
+oTher BAlls To keep in The Air                                    show up in the listings ­ so when people search for widgets
+                                                                  and you bid on that term, your ad will compete with other
+As mentioned, running a business is hard work. In addition        advertisers also bidding on the word or phrase.
+to the creation of products and services (covered more in
+the upcoming Tactics section), there are a number of other        If you want to use PPC, you'll want to take the time to
+things you need to be aware of and have some kind of plan for.    carefully research it before starting a campaign. Adwords
+                                                                  can deliver you a ton of qualified traffic (this is good), but it
+Search Engine Optimization (SEO)                                  can also take away your money without providing much in
+In short, SEO refers to how you structure your web site,          value in return (this is not good).
+mostly in terms of design and keywords, to target specific
+words and phrases in the search engines. For example, if          If you get serious about Google Adwords, I recommend
+you're selling widgets, you want people to see your site          Perry Marshall's free and paid materials. You can learn a lot
+when they type in widgets on Google.                              of information from Perry, and potentially save money while
+                                                                  bringing in more traffic at the same time.
+This is no small industry ­ there is an entire field of art and
+science devoted to studying it. To learn more about SEO,          Spending
+check out the bonus report from Naomi Dunford (who                One good thing about the ramping up of your business
+writes at ittybiz) that you should have also received with        is the ability to earn Frequent Flyer Miles for all your
+your order. I don't claim to be an SEO expert, so I asked         spending. I recommend the American Express Business
+Naomi if we could use some of her great material.                 Gold card for this, and once you have it, you can then enroll
+                                                                  in the Membership Rewards program. It's worth it as long as
+Because she is cool like that, she said yes, and even gave me     you can earn at least 6,000 points a year, and there are lots
+two whole chapters of her SEO Ninja ebook. She also threw         of bonuses that periodically come up.
+in a coupon code if you want to get the entire report, so
+check it out when you're ready to work on this.                   Overwhelmed? Don't Worry...
+                                                                  I realize we have covered a lot of information thus far. If
+Adwords & Other Pay-Per-Click                                     you think it will help, read over it again before going on
+I discuss more about getting traffic on one of the audio          and take notes on what you'd like to research further. We're
+segments, but in short, one of the most common methods            going to get right into specific tactics now, so it's good for
+for commercial websites to quickly gain traffic is through        you to at least have a general understanding of many of the
+Pay-Per-Click (PPC) advertising, and the most common              strategic concepts.
+platform by a wide margin is Google Adwords. The
+Adwords program allows you to pay for search terms to             OK... here we go.
+
+                                                                16
+                                   the unconventional guide to working for yourself
+
+                                                            starting or growing their online retail business;
+tActIcS                                                     some with eBay, and others through their own
+                                                            web sites. I also learned about lead generation
+                                                            and the idea of having an online portfolio
+                                                            ­ concepts that would help me later on as I
+ my Journey, sTAGe Two:                                     transitioned to Stage Three.
+ weB siTes, consulTinG, AnD
+ moonliGhTinG                                               I built web sites for eBay sellers looking to
+                                                            transition away from the auction site like I was,
+ After I had been an eBay PowerSeller for about             and that led to other contacts. After a while I
+ a year, I could tell that the road ahead would not         realized that I would never be a "real" designer ­
+ be as easy. More and more sellers were getting             I don't have the technical skills or background as
+ sophisticated and realizing that there was a lot           an artist ­ but I was good at thinking through the
+ of money to be made on the site. This led to a             business development side of things. I focused
+ natural rebalancing of the eBay community and              on that, building a few small projects for others
+ an increased efficiency in the market.                     while building several of them for myself.
+
+ When you're a buyer, efficiency is good. But               What Went Well
+ when you're a seller, increased efficiency                 I eliminated the dependency on eBay that
+ means that you lose a lot of your competitive              threatened my first business. I gained new skills
+ advantage.                                                 that allowed me to make a good income. Most
+                                                            importantly, I began to understand how to create
+ And besides, I get tired of doing the same thing           a sustainable business (although I lacked a few
+ all the time. I needed something new. Over the             things that prevented its full implementation).
+ course of the year as a full-time PowerSeller, I
+ had acquired a working knowledge of HTML and               Big Mistakes
+ a good knowledge of copywriting. With that, I              I once had a successful lead generation site up
+ set out to create a new small business.                    and running (I had even paid a few hundred
+                                                            dollars to get a good design) only to have
+ Consulting & Service Work                                  it stolen from me by a cybersquatter who
+ As I transitioned out of eBay, I started building          registered the domain a few hours after I
+ web sites and taking on some limited consulting            mistakenly let it lapse. Unfortunately, that's just
+ clients. Most of the clients needed help with              one example ­ I did a lot of things like that in
+                                                            those days.
+
+
+                                                       17
+                                the unconventional guide to working for yourself
+
+This section details several specific projects you can initiate           1. creATinG AnD sellinG
+to start your own microbusiness. You can also use these                   inFormATion proDucTs
+ideas to branch out into something that better suits you.
+Remember, it's your guide ­ use it as you see fit.                        More than any other opportunity, I am an advocate of
+
+There are a lot of different options for the ideas below, and             creating information products that can be resold again and
+
+two different approaches to applying them:                                again. When you take the time and do this well, you'll have
+                                                                          the beginning of a legacy project ­ something that can
+                                                                          live on its own without your regular input ­ and can also
+Option 1: Pick one thing and do it well.                                  expand as big as you can make it once you gain some initial
+This is the conventional advice ­ "find what works for you                traction.
+and stick with it. Ignore everything else."
+                                                                          First of all, what are information products?
+It's not bad advice. If that works for you, use it. But I have
+the classic ADD personality, and I've found that a second                 In short, information products facilitate the transfer of
+approach is better for some people.                                       specialized knowledge from the seller to the buyer. In other
+                                                                          words, books (real books and ebooks) are information
+Option 2: Start doing a lot of things, and see what ends up working.      products. So are instructional videos, audio teaching,
+Jim Collins wrote about this in Good To Great, calling it the             podcasts, computer software, teleseminars, and any other
+"throw a lot of darts at the wall and see which ones stick" tactic.       method or medium that involves the transfer of knowledge.
+
+As you can see, there is wisdom in each approach, so it's                 If you understand that, you can skip ahead to "Reasons
+probably best for you to make your own decision about                     Why Information Products Are So Awesome" on the next
+which is better for your own needs.                                       page. But if you're not perfectly, 100% clear on what an
+                                                                          information product is, consider these examples that you
+Also, some people believe that without the right strategy,                are probably familiar with:
+tactics won't take you very far. This is probably true in the
+long-run, and that's why I wrote a lot about strategy in the              Event Marketer - "He was a hard working farm boy. She was
+first section. However, if you're antsy to get something                  an Italian supermodel. He knew he would have just one
+going, you can usually set something up and start taking in               chance to impress her." If that doesn't sound familiar, here's
+revenue fairly soon.                                                      more about the ad and the marketing campaign behind it:
+                                                                          Rosetta Stone - These guys sell language learning
+Here are some specific Ideas, each with pros and cons:
+
+
+                                                                        18
+                                               the unconventional guide to working for yourself
+
+products by the millions, and have developed an                     Web Warrior Tools - Another publishing venture that
+insanely profitable business selling information.                   focuses more on shorter ebooks, especially related to
+                                                                    productivity.
+Teaching Company - You may have seen their ads in
+magazines like Newsweek or The Economist. Just like                 Havi and Naomi - These two small business bloggers, both
+Rosetta Stone, they sell teaching materials in the form of videos,  mentioned earlier, recently combined forces to create an
+DVDs, and CDs. Each "course" is expensive, and also has a long      interesting teaching product. The product is delivered over
+list of rave reviews.                                               six teleseminars each spaced a week apart. They also have
+                                                                    a good upsell option (the basic product is $205, and the
+Total Immersion - This company, the leading provider                premium one is $365).
+of products for "improvement minded swimmers," has
+developed a broad range of materials to teach people how            Reasons Why Information Products Are So Awesome
+to swim. Both my brother and my dad have learned through            High Margins - You're selling knowledge, not a widget
+their method, and I'm next ­ and I won't be paying $500 for         that has a high production cost. As such, the price for your
+a seminar, because thankfully Total Immersion also has a            knowledge is related more to how valuable the information
+cheap book and DVD set. (It's even cheaper since my dad is          is rather than how much it cost you to make it. Think about
+loaning me his copy ­ don't tell them!)                             how important this is ­ if you make a widget, your selling
+                                                                    price is usually compared to what people think it cost you
+WAIT ­ those are all Big Companies                                  to make it. Not so with information products, as least when
+                                                                    they are done well.
+Don't worry -- those examples are "benchmark" companies.
+I include them so you understand how far you can go with            Not Duplicable - No one can sell the same thing (at least,
+information products. To bring it down to a level most of us        not without stealing it). It's your product, not something you
+small business types are more comfortable with, here's a few        buy from a wholesaler or distributor who also sells to a bunch
+more examples.                                                      of other people. To a certain degree, you are protected from
+                                                                    competition.
+Unconventional Guides - My new business, of which you are
+now a part of. (Thanks again, by the way.) After a one-year         Natural Expansion - When you develop a winning
+development period, I now have 5+ high quality products             information product, it's natural to follow it up with
+that I offer to my site readers and select affiliate partners.      another.... and then another. Along the way, you can increase
+                                                                    prices to meet different needs in the marketplace. For more
+
+
+
+                                                                  19
+                                   the unconventional guide to working for yourself
+
+about this, check out the "Putting it All Together" section      As you can see, I have my ebooks professionally designed
+and read about creating a sales funnel.                          by an amazing designer (more on her at the end) because
+                                                                 I want all my materials to have a similar, high-quality
+This is what I'm pursuing with the development of the            look. But for an information product, the content is more
+Unconventional Guides series. You can watch over the             important than the design, so it's also appropriate to format
+next year and see how it develops. I'm not 100% sure which       your report nicely in Microsoft Word and then create a PDF
+direction I'll take with it, but I have a few ideas.             from it using free conversion software (PC) or directly from
+                                                                 Word (Mac). You can also use elance to hire someone for
+Easy Automation - You can't easily automate your                 a basic layout job, which should cost about $100-200 for a
+content creation process (I spent a lot of time writing          report of less than 50 pages.
+this guide, for example), but after that, the sales process
+can be totally automated from start to finish.                   Pros: Nice and easy. I kid you not, lots of people make six-
+                                                                 figure incomes doing nothing but selling ebooks. Even if
+(Note: Even though automation is helpful, I still think it's     that doesn't work out, many others earn significant extra
+good to show a personal touch whenever possible. For             income each month from an ebook they spent a week
+example, I usually try to send a short, individual note to       writing a long time ago.
+each person who buys something from me, in addition to
+the automated notices that go out. But that doesn't take         Cons: Some people won't buy ebooks. The price ceiling
+much time, and technically, it can be skipped if you want to     is set at around $50 (for most topics) and $99 for highly-
+be fully automated.)                                             specialized topics ­ it's hard to sell for more than that.
+
+Different Kinds of Information Products                          Audio & Video - To raise your information product business
+As you can see from the list above, information products         to the next level, you'll eventually want to do more than just
+can be diverse in style, method, and medium. I'll cover some     ebooks. Adding some audio or video materials (or both) is
+features of the most popular ones below.                         the next natural step.
+
+Ebooks - This is definitely the easiest kind of information      It takes some time to learn how to do this, but one resource
+product to create. You simply write out the information you      I can't recommend highly enough is Camtasia software.
+want to share in the form of a short to mid-length report,       This software package allows you to make high-quality
+then create a PDF out of it.                                     screen capture videos where you can present through a
+                                                                 PowerPoint, a series of mind maps, or showing things from
+                                                                 a variety of web pages.
+
+
+                                                               20
+                                        the unconventional guide to working for yourself
+
+To see it in action, check out these demos:                      2. BuilDinG An inFormATion porTAl
+Camtasia by Techsmith - I am not a highly-technical
+person, so if I can figure this out, you can too. Adding audio   An information portal is a web site that presents itself as an
+or video can allow you to create more products and               authority on a specific topic. Visitors to the portal come to
+dramatically improve sales for existing ones.                    learn more about the topic, and in some cases, to contribute
+                                                                 to the topic's overall knowledge base. The site owner
+Pros: Allows you to a) raise prices (since there is a higher     typically earns money by building a regular source of traffic
+perceived value for multimedia) and b) reach more people         to the site and then supporting it with ads, either through
+who have different learning styles.                              Google Adsense or third-party ad networks.
+
+Cons: Higher learning curve, and requires more work to           If all of that sounds confusing, let's look at a few examples.
+create.
+                                                                 BiddingforTravel.com -
+Action Plan (What to do next):                                   This site is a forum for users of Priceline.com, a travel
+                                                                 service that lets consumers purchase hotel rooms and plane
+»        Decide what kind of product to create (I'll help with   tickets by bidding on the maximum amount they are willing
+         this more later)                                        to pay. Priceline succeeds, in part, because they keep a lot
+                                                                 of information to themselves, and consumers usually end
+»        Create product ­ write the ebook, record the            up bidding too much. The Bidding for Travel site brings
+         audio, etc.                                             together Priceline users who lessen Priceline's advantage
+                                                                 by posting their successful bids.
+»        Write the sales letter (this is what prospects read
+         when deciding whether to buy your product, so it        I could say a lot about that from a traveler's perspective, but
+         needs to be good)                                       from a marketer's perspective, check out their site and you'll
+                                                                 notice that it doesn't look very nice. In fact, it looks pretty
+»        Set up order and payment logistics (more on this        bad. I go to Bidding for Travel not because it looks good,
+         later too)                                              but rather because of the information that is provided. The
+                                                                 administrator and site owner doesn't need to do very much,
+»        Begin marketing the product to prospects, readers,      because the content is generated by users. All she does is
+         and anyone who will listen                              moderate the forum from time to time and collect money from
+                                                                 advertisers. By all appearances, it works very well for her.
+
+
+
+                                                               21
+                                      the unconventional guide to working for yourself
+
+Here's another example that is more fully built out:           It's an insanely-productive business model.
+
+FlyerTalk.com                                                  Here are just a few of their sites:
+FlyerTalk, the go-to resource for frequent flyers and expert
+travelers, ended up doing so well that it was purchased by     Graph Jam - Music and culture for people who love charts
+a larger company for an undisclosed sum after many years.
+A great deal of work went into building the community          Engrish Funny - Funny English-language pictures
+over time, but it ended up paying off very well. And in
+addition to the money, of course, the creators and volunteer   Here's my personal favorite, which I have to ration myself to
+moderators of FlyerTalk have done a great job of providing     checking only once a week or else I'd waste countless time:
+access to information that a committed following (in this
+case, frequent flyers) benefits from.                          Fail Blog - Fail pictures and videos.
+
+Most portals exist to inform and educate. But some exist       If you've never seen these sites, they're hard to explain.
+primarily to entertain, and if you do that well, you can also  What's so funny about cat pictures and "fail" pictures?
+build significant, ongoing revenue. For example,
+                                                               You just have to, well, see them to get it. And when you
+I Can Has Cheeseburger                                         check them out, pay attention not only to the hilarious
+Seen any funny pictures of cats on the internet? Because       pictures (warning: addictive) but also to how popular the
+this site is one of the top 100 sites in North America, I      sites are. Every day they receive hundreds, if not thousands,
+suspect you have. ICHC provides a platform for people to       of submissions and comments. Most of that part of their
+upload pictures of cats and create funny captions for them.    community base goes to the site every day, and they are
+(I'm not making this up. They are phenomenally successful,     seriously raking in the advertising money from all the
+both financially and otherwise)                                eyeballs and clicks.
+
+But wait... the group at this Seattle-based company is         You know how sometimes you see something and wish you
+expanding far beyond cats. In addition to dogs (perhaps a      had done it? That's how I feel about ICHC. Who knew that
+natural expansion point), they have also created numerous      cat pictures would be so popular?
+other online communities that rapidly acquire an active,
+dedicated fan base to spread their message. They have even      Portal Templates
+created their own language called "LOLcat speak" which         There are countless "Adsense templates" you can use to get
+you can now find being used all over the internet.             started with this project. Just Google the term and you'll see
+                                                               a lot of results. Some of them are good and most of them are
+
+                                                              22
+                                    the unconventional guide to working for yourself
+
+useless ­ but even the good ones have a huge disadvantage           »      As soon as the initial content is ready to go, put it
+in that they are not unique.                                               online ASAP. When it comes to portals, I recommend
+                                                                           the Ready-Fire-Aim approach.
+From time to time, Google punishes sites like this that they
+do not believe are providing a good service to their visitors.      »      If you need a turnkey solution that does everything
+Even if you are providing good information, you may get                    for you, check out SiteBuildIt. I haven't used this
+caught up in the purge, and it is really difficult to get back             myself yet, but a lot of other people are building site
+in the rankings once that has happened.                                    templates through their service with good success.
+
+That's why I recommend creating your own basic site                 Wondering What to Create?
+instead of using a template, or at least heavily modifying          If you have no idea what kind of information product or
+the template prior to publishing the site. If you're not a web      portal to create, there are a few different theories about what
+designer, don't let this scare you ­ it's not that difficult, and   to do.
+if you're going to be in this business, you should probably
+learn some basic HTML anyway.                                       #1: Follow Your Passion
+                                                                    This long-standing belief suggests that you should build a
+Spend some time looking at the free Adsense templates               business around whatever you are passionate about. If you
+you like, and compile your information in a similar (but still      love dogs, do something with dogs. If you like jewelry, start
+unique) way. In the long-term, I believe this approach will         a jewelry-making business.
+serve you better than using the same kind of template than
+is potentially used by a large number of other sites.               It makes sense that you have a business based around
+                                                                    something you love, because doing something that you
+Action Plan (What to do next)                                       don't like every day kind of defeats the purpose of working
+                                                                    for yourself. But at the heart of this has to be a plan for
+»        Read up on Adsense, templates, and look at other           revenue... otherwise, you'll never get off the ground. Mignon
+         sites that are succeeding with this model                  Fogarty, the genius behind Grammar Girl and an entire
+                                                                    brand she has created around it, put it best in a round-up
+»        Decide on a niche market ­ the more specific and           response we published earlier this year:
+         hyperactive, the better.
+
+»        Create good, initial content that will give people a
+         reason to come to the portal
+
+
+                                                                  23
+                                   the unconventional guide to working for yourself
+
+   "I think it is much harder to be successful if you        #3: Ask Your Customers
+   aren't doing something you love because success           A nice combination of the Follow Your Passion and Sell
+   takes time and commitment, and those are easier           What People Buy is the third way of asking your customers
+   to give if you're happy and engaged in your job.          (or prospects) exactly what they want. You do this through a
+                                                             series of surveys (I use SurveyMonkey) where you find out
+   [But on the other hand,] before I launched the            what needs people have (related to your overall business)
+   successful Grammar Girl podcast, I was the host
+   of a science podcast called Absolute Science.             and then create products and services that meet those
+   I loved doing that show and I was passionate              needs.
+   about it. I actually put more effort into
+   promoting that show than I did for the Grammar            There is one danger in relying on this strategy exclusively.
+   Girl podcast, and although Absolute Science               The danger is that people don't always know what they
+   was well-received, after doing it for nearly a year       want, and sometimes what they say they want and what they
+   it was clear that the show was never going to             actually want are two different things. I think that surveying
+   make enough money to make it worth the time               customers and prospects and then creating a product that
+   required to produce it."                                  meets the needs they specify is great, but just keep this in mind.
+
+I talk more about Mignon's success in becoming an            3. BloGGinG For DollArs
+authority in the audio segments. Don't forget to listen to
+those to get the full value of the guide.                    I believe that if your primary motivation is to make money,
+#2: Sell What People Buy                                     then there are a lot easier ways to do it than by starting a
+                                                             blog. Some bloggers have indeed created very significant
+This strategy advocates that you should forget about         income directly from the advertising revenue received on
+yourself and focus on what your customers want. Customers    their blog... but usually this only comes together after a
+have needs, and it's your job to meet those needs through    great deal of initial work with little financial payoff.
+products and services.
+                                                             I started the AONC site because I wanted to work towards
+For more on this, check out the ebook Desperate Buyers       being a full-time writer, not because I wanted to make
+Only, which includes a detailed structure for creating an    money. At the request of my readers, I'm now creating a few
+offer and a sales letter.                                    specialized products (like the one you're reading), but the
+                                                             main motivation is to write for a broad community of like-
+                                                             minded readers.
+
+
+
+                                                            24
+                                    the unconventional guide to working for yourself
+
+None of that is to say that blogging and money can't go              If you're fairly established with good traffic to your blog,
+together at all. It is just to note that the blogosphere is          you can take this strategy to a higher level by contacting
+generally skeptical about bloggers who are viewed as                 the company marketing the product. Explain that you are
+explicitly commercial. You can usually tell what a blogger's         hoping to promote the product in an upcoming blog post
+motivations are by what kind of content they feature on              (or ad campaign, newsletter broadcast, etc.) and ask for a
+their home page. If the page is filled with banners and              coupon code or additional discount for your readers. This
+Adsense ads, many other bloggers are probably not going              will help you in more ways than one, because in addition
+to link to it no matter how great the content is, because it's       to the fact that you've acquired a discount, you have also
+clear that the blogger is just after money.                          established a real relationship with the company.
+
+I have no objection to advertising in general. I just prefer         Build your own products. Better than advertising, the
+that the placement of ads be a bit more subdued. When it is          creation of your own products or services will set you apart
+integrated with content in a way that is appropriate and not         as a blogger and get the focus on you. When you create
+pushy, it can even add value to the blog's content.                  something yourself, you'll probably a) make more money,
+                                                                     b) add more value to your brand, c) sell more copies (since
+Specific Tips for Blogging as an Income-Generating Activity:         people who read your blog are usually interested in other
+Think carefully before using Adsense, because it can                 stuff you do), and d) meet the needs of your readers better
+make a good site look bad. Yes, it's easy to set up and              than a third-party product can do.
+offers good payouts, but you'll lose control over the "first
+impression" of visitors and general readability of whatever          Consider BlogAds. Since 2002, BlogAds has facilitated
+you're posting.                                                      advertising for bloggers who want to create an income
+                                                                     source but don't want to work directly with advertising
+Avoid traditional affiliate programs that don't provide a            companies (a process that is difficult and time-consuming).
+good return-on-investment. Instead ­ see below.                      BlogAds now has 1,500 clients, and if you've been around
+                                                                     the blogosphere for a while, you've probably seen their ad
+Endorse specific stuff. A specific recommendation is                 format a few times.
+always better than general ads with no context. Instead of
+putting up random ads, spend a bit more time on deciding             Note: These tactics and ideas are not mutually exclusive.
+what you want to endorse. Then when you find a good                  While I believe that the creation of products and services
+match, write about it. Add value somehow ­ for example:              is ultimately in your best interest, this strategy can easily
+can you write a free bonus report for readers who purchase           combined with others. Not everyone will purchase your
+the product?                                                         products. In fact, most people won't--so it's not a bad idea to
+                                                                     have something else for the others.
+
+                                                                   25
+                                            the unconventional guide to working for yourself
+
+Action Plan (What to do next)                                     Note: as mentioned at the outset, blogging for dollars is not
+                                                                  easy. This process usually takes a long time before it will
+»        Subscribe to ProBlogger and read through all the         be profitable. It will be a lot easier if your motivations for
+         most popular posts                                       blogging are not primarily financial.
+
+»        Decide what kind of blog you want to have and what       Having said that, some sites have been able to be quite
+         you want to write about                                  successful with Adsense and BlogAds revenue. The best ones,
+                                                                  for example, earn more than $1,000 a day in profit. I include
+»        Choose a Wordpress theme and create your initial         this info because while it's true that blogging is not the path to
+         content, especially an About page and a                  riches for most people, some have been able to do it.
+         Welcome page
+                                                                  4. creATinG An immeDiATe
+»        Begin creating a series of posts (You need some good     income wiTh eBAy
+         content before launching, or no one will pay attention)
+                                                                  It is no exaggeration to say that the widespread adoption
+»        After creating a few posts and outlining a plan to       of eBay.com as the world's premier online auction site has
+         regularly create more, you can launch the blog by        changed the world's marketplace forever. There are at least
+         telling everyone you know about it. This includes        340 million users of the site, with tens of thousands being
+                                                                  added every day.
+     » All your friends and family
+     » Google and other search engines                            No one is certain how many people earn a full-time income
+     » Online Directories                                         by selling on eBay (eBay claims 1.3 million, but this article
+     » Related Sites                                              shows how that figure is likely exaggerated.) At any rate,
+     » Comments on Related Blogs                                  there are a lot of people doing very well with selling on
+     » Social media, especially Twitter, Facebook, LinkedIn       eBay as a part-time or full-time business.
+
+»        After building traffic, post ads through                 The success stories are real, and you can do this too... if
+         Google Adsense or BlogAds                                you're up for a bit of work.
+
+»        Think about creating products or other alternative       There are three very different strategies for starting an eBay
+         sources of income                                        business. All three of them have the potential to create serious
+                                                                  part-time (and even full-time) income. But as you'll see, the
+
+
+                                                                 26
+                                      the unconventional guide to working for yourself
+
+three strategies are different largely because of the amount of   given time, you can see what anyone else is selling, how
+work required by each and the potential for scalability.          many people are buying, and what the selling price is.
+
+Strategy #1: Buy low and sell high.                               Of course, many active sellers have more than one account,
+This is the basic method of becoming an eBay seller. It has       but nevertheless, you can still see what any one account is
+worked for tens of thousands of people, and can work for          doing whenever you want.
+you if it's all you want. I earned a full-time income from
+1999-2001 just from buying boxes of stuff from wholesalers        Importing ­ If you want to further optimize this strategy,
+and selling the items in individual units.                        you can do so by establishing relationships directly with
+                                                                  wholesalers or even ground-floor factories that produce
+This Squidoo lens provides some good, basic information if        goods for sale. Most often, these relationships lead to China,
+you're just getting started with Strategy #1:                     and if you haven't done business in China before, it's no
+                                                                  small project. Alternatively, there are usually several layers
+Pros: You can start right away.                                   of middlemen along the way to the consumer, so even if you
+                                                                  don't get all the way to the factory, you may still be ahead of
+Cons: Low profit margins, lots of competition, and it's           other sellers.
+hard to build a real business this way ­ you can only visit so
+many yard sales.                                                  Pros: By specializing and building a niche, you may be
+                                                                  able to optimize and work more efficiently. You can build a
+Strategy #2: Become a specialized dealer.                         nice small business by selling one or two product lines, and
+This is stage two of most successful eBay sellers' journey,       it can also be easier than trying to be all things to all people.
+where they stop selling random stuff all the time and start
+concentrating on one or more specialized areas. Over time,        Cons: You are still vulnerable to competition, and you still
+they establish relationships with wholesalers or just figure      might end up building yourself a job.
+out how to get deals on something that sells well (and with
+good markups).                                                    Competition - When you start to be successful on eBay,
+                                                                  other Powersellers will notice. You can count on at least
+Most eBay Powersellers, or sellers who sell more than             several of them to hunt down the same sources you have
+$2,000 a month, fit into this category. If you spend some         carefully acquired, and it's usually only a matter of time
+time surfing around the eBay site, you'll encounter a lot of      (weeks or months) before someone starts selling the same
+them. It's good to pay attention to what they do, because         thing as you. In some cases, this may not be a problem. But
+one of the most interesting characteristics of eBay is that
+it's difficult to maintain proprietary information. At any
+
+                                                                27
+                                     the unconventional guide to working for yourself
+
+in other cases, the market will become more efficient with        However, there is a third, far more effective strategy for
+the introduction of multiple sellers, and your profit margins    online auctions that can completely transform your entire
+will go down.                                                    business. This strategy consists of creating your own
+                                                                 information products in multimedia form and offering them
+Building a Job ­ Of course, if you pursue Strategy #2 to its     on a recurring basis through eBay.
+natural end, you may just end up building yourself a job.
+As I've mentioned before, building a job for yourself is only    Let's break that down a little:
+somewhat better than working at a job for someone else.
+                                                                 »      A) Create your own information products (we
+   What About Craig's List?                                             covered this in detail earlier)...
+   You can post an ad on Craig's List for free, and
+   offer to buy (or just remove) old stuff that no               »      B) ...in multimedia form (you can't sell ebooks
+   one wants anymore. It helps if you specialize a                      on eBay)
+   bit, i.e., "I'm buying baseball cards" or "children's
+   clothes" or something like that. I recently heard             »      C) Offering them on a recurring basis.
+   of a few people who are literally earning a full-
+   time income using only this strategy. Since                   And actually, there's more if you're up for it:
+   the ads are free, your cost is limited to the
+   transportation you use to get around town to
+   pick stuff up.                                                »      D) Sell backend products to existing customers (thus
+                                                                        avoiding eBay commissions and converting
+   For a long time, it was fairly profitable to do                      customers from eBay to your own site)....
+   something similar with old-fashioned newspaper
+   classified ads, but the biggest expense was the               »      E) Drive leads from the eBay site directly to your site
+   ads. With the modern version (Craig's List), you                     through Classified Ads and the "About Me" page that
+   have virtually no risk.                                              all eBay sellers get to create.
+
+                                                                 This is a pretty big topic ­ we could easily create an entire
+Strategy #3: Create products and own your own market.            Unconventional Guide devoted to it ­ but if you start with
+The vast majority of eBay sellers, even the ones who are         the broad outline above and then seek help with specific
+able to eke out a full-time living from the site, never get past actions as you start putting it into action, you can also
+strategy #2. This is because it works, for the most part ­ and   tweak things as you go along. Overall, this strategy will give
+as mentioned earlier, there's nothing wrong with a very
+small business that deliberately remains small.
+
+                                                                28
+                                    the unconventional guide to working for yourself
+
+you the most success at eBay. Among other advantages, by           you're serious about eBay, you should definitely
+creating your own products, you ensure that no one can sell        check those out. I don't receive any benefit from
+the same thing.                                                    the referral ­ they are just great resources for the
+                                                                   serious eBay seller.
+(If you end up creating a huge hit, then rest assured that
+suspiciously similar items will start showing up online,
+regardless of copyright laws... but they won't be the same as  Other Auction Sites
+your product, the original.)                                   By the way, you might wonder about other online auction
+                                                               sites. Can't you take what's working on eBay and transfer it
+Pros: No (or very little) competition and high profit          over to other venues? Well, not really. eBay is the 800-pound
+margins. Success can be duplicated over and over. You can      gorilla in the online auction business for a good reason. If
+sell to the whole world instead of just your local market.     you get something working elsewhere, good for you. But
+                                                               chances are that your time will be much better spent with
+Cons: More work in the beginning. Occasional                   the millions of active buyers on eBay.com.
+maintenance to deal with people who try to steal your work.
+                                                               Action Plan (What to do next)
+    Silent Sales Machine
+    For 10 years and counting, Jim Cockrum has                 »        Get your feet wet by selling stuff you don't need.
+    written a fantastic online newsletter about eBay                    eBay will walk you through how to do this step-by-
+    selling. I read it every week, even though I don't                  step when you click the huge `Sell' button on any
+    do much on eBay anymore. Almost every week,                         page of their site. Really, it's easy.
+    Jim has more great ideas that will work for lots
+    of people.                                                 »        Once your feedback is above 10, start branching out.
+                                                                        Go to yard sales, look on Craig's list, and slowly build
+    You can sign up here:                                               the business.
+
+    http://www.jimcockrum.com/blog/free-
+    newsletter/                                                »        Look for wholesale sources or think about creating
+                                                                        your own products ­ this is where the real
+    Jim also has some products for sale ­ a great                       business begins.
+    eBook called Silent Sales Machine, and a
+    membership program called My Silent Team. If
+
+
+
+
+                                                             29
+                                  the unconventional guide to working for yourself
+
+5. your own                                                      After creating an account, you can start uploading images that
+phoToGrAphy Business                                             you own. They need to be high-resolution and of professional
+(BuT noT whAT you Think)                                         quality. If you don't know what that means or don't have a good
+                                                                 camera, you may need to do some more research.
+No, I am not suggesting that you become a wedding
+photographer. There are people who are able to operate           I don't mean to insult any "real" photographers out there,
+successful businesses doing that, but it's not really an         but digital photography is now so advanced that almost
+online business... and it also lacks the key feature of creating anyone can learn to take good photos with just a few hours
+ongoing income when you're off doing something else.             of self-study. Again, I am not saying you will become the
+                                                                 next Ansel Adams, but it doesn't take a lot to be able
+Instead, I'm recommending that amateur photographers             to create some decent stock images that someone will
+consider contributing to the growing industry of cheap           need.
+(but high-quality) stock photos that other artists and web
+designers use for commercial images.                             The key to this working well is to match your images to
+                                                                 what people have a need for (remember: sell what people
+What if you could go around your neighborhood, or even           are buying) instead of uploading anything you can think of.
+around the world, and take photographs of cool stuff... and
+then when you get back, you upload your photographs to a         Take the time to label your images well and include highly-
+web site and start receiving royalty checks?                     specific keywords. The more, the better ­ but targeted
+                                                                 keywords are usually better than general ones, because as a
+Here's how it works, and here's a couple of options to get       new provider of images, you probably won't show up at the
+started with right away:                                         top of the listings for general terms.
+
+
+Take a look at 1stockphoto.com and similar sites (Fotolia,       (Note that if you are taking pictures of people, you may
+Crestock, istockphoto, etc. ­ there are many). These sites       need to submit a model release. That gets a bit more
+offer cheap stock photos to designers and businesses. Their      complicated, so many photographers stick to landscapes
+inventory comes from a combination of professional and           and still life images to start with.)
+amateur photographers, including many people who didn't
+know a lot about photography before getting started.             While the need for good quality is assumed, having
+                                                                 sheer quantity helps the most. The most successful
+Spend some time getting a feel for what the site's users are     photographers on 1StockPhoto make well over $100,000
+looking for ­ it's usually fairly clear what kind of photos are
+most popular, and which sell the best.
+
+                                                                30
+                                     the unconventional guide to working for yourself
+
+a year, but they also have tens of thousands of images             6. your own phoToGrAphy
+available for sale at any given time.                              Business (pArT ii)
+
+Obviously, the best thing about this kind of business is
+the fact that after the initial work is complete, it produces      If you like the idea of taking pictures for a living (or at least
+
+income without you needing to do anything.                         some additional income), you can expand beyond the stock
+                                                                   photo sites into selling your work for prints and canvases
+Pros: Great potential for long-term royalties.                     that are created on demand.
+
+
+Cons: Takes a while to get started (you'll need to upload a lot    A new service called ImageKind ­ recently bought by
+
+of images), and a certain amount of technical skill is required.   CafePress, which offers other customized items ­ offers you
+                                                                   the ability to upload your high-resolution images, which
+                                                                   are then printed on a variety of materials for display. The
+Action Plan (What to do next)                                      interesting part of this model is that no inventory is carried
+                                                                   ­ whenever someone buys something from you, their print
+»        Get an account at 1stockphoto (or a related site).        is uniquely created and shipped by ImageKind.
+
+»        Spend some time reviewing the best-selling photos         You choose the final price of your prints and canvases
+         and photographers on the site. See what they are          based on a markup system. For example, ImageKind may
+         doing that works well (some types of images are           set the initial price of a 4 by 6 print at $9.95, plus whatever
+         more commercially popular than others).                   kind of matting and frame is used. You can then choose to
+                                                                   add whatever profit margin you would like. If the print sells,
+»        Learn to take better photos. You can read up on this      ImageKind sends you the profits.
+         at Digital Photography School or through books at
+         your local library.                                       Pros: An attractive, unique revenue source for artists and
+                                                                   photographers.
+»        Upload your best photos, and start taking more.
+         Quantity is the secret here, although of course the       Cons: High price for ImageKind, limited customization of
+         photos have to be high quality as well.                   the storefront.
+
+»        Deposit royalty checks. Go on vacation and take
+         more photos.
+
+
+
+                                                                 31
+                                    the unconventional guide to working for yourself
+
+Action Plan (What to do next)                                     sellers a long time ago, I started out by pricing my time at
+                                                                  $45 an hour. I really had no idea what to charge; that just
+»        Get an account at ImageKind (or a related service).      seemed like a lot of money to me.
+
+»        Upload your best photos.                                 I started getting busy after a while, so I decided to double
+                                                                  the rate. My theory was that if I charged $90 an hour, I'd
+»        Set pricing and other options (make sure the profit      have less clients, and could serve them better. After I raised
+         margin is good enough).                                  the rates, though, only one client dropped out.
+
+»        Begin promoting your photo site through the              I suppose I could have raised the price again later, but I was
+         ImageKind interface and your own platform (blog,         new to the business and didn't really love the idea of being
+         newsletter, etc.).                                       a consultant. Before I got too sophisticated at it, I left the
+                                                                  U.S. to move to Africa, and then I had to think about a lot of
+7. consulTinG                                                     different things.
+
+I don't have much to say about consulting, because                Anyway, if you become a super consultant (or already are one),
+it's a murky kind of business. I've worked with a lot of          feel free to write the Unconventional Guide to Consulting.
+consultants, and there are very few generalizations that can
+be made across different industries.                              8. sTArT A conTinuiTy proGrAm or
+                                                                  memBership siTe
+In short, I'd say you should think about consulting if it's
+what you really want to do, not just an idea you have to          How would you like to get paid month after month, by the
+make money. While this maxim is probably true for most            same group of loyal customers who are automatically billed
+businesses, I think it's even more true for any kind of           for the service you provide? Continuity programs are the
+consulting work. This is because at its core, consulting is       secret of many successful online businesses, because they
+not that different from a regular job, and your income is usually have the potential to greatly contribute to cash flow.
+somewhat limited when you are trading time for money.
+
+There is one generalization that can be made, however
+-- most pricing for consulting services is somewhat random.
+In my own experience, when I started helping other eBay
+
+
+
+                                                                 32
+                                    the unconventional guide to working for yourself
+
+Note: Continuity programs are also called membership              Flash Publishers ­ offers all kinds of multimedia information
+programs, subscriptions, or membership sites. These               for Flash designers. They price at $19.95 a month.
+terms all refer to the same thing, which is an ongoing
+commitment by the customer to pay a set amount for access         Personal Trainer University ­ offers information to help
+to ongoing services.                                              personal trainers get more business. Prices at $19.99 a month.
+
+There are a few things to be aware of when setting up a           Some other continuity programs include a lot of online
+continuity program. First, some consumers perceive them           services like SurveyMonkey (I'll talk about this later),
+negatively, so you have to conduct a detailed education           iTunes subscriptions (Daily Show, Colbert Report, etc.), and
+campaign when first introducing one to an uncommitted             dating sites that charge a fee each month to access profiles
+audience.                                                         and contact other users.
+
+Also, you can't really start a continuity program from            Action Plan (What to do next)
+scratch. You have to have some kind of existing customer          You need to spend a fair amount of time planning out the
+base that is already familiar with your offerings. Only           logistics for your continuity program. Specifically, you need
+the most loyal members of your customer base will sign            to have clear answers for the following questions:
+up for the continuity program, so it's good to have a
+relatively large base to start with. (If your base is small but   »        What will you offer?
+exceptionally loyal, that can work as well.)
+                                                                  »        How will it be provided to the customer?
+Here's a few examples of different continuity programs from
+around the Internet. Keep in mind that if they look highly-       »        How can the customer sign up?
+professional to you, that's just because a lot of work has
+gone into the planning and set-up. You can start your own         »        How will the customer be billed every month?
+continuity program on a small scale (as long as you have
+the customer base) and gradually scale up.                        »        How can the customer cancel?
+
+ExpertFlyer ­ offers advanced airline information not             »        Will you offer a trial period?
+available through free travel web sites. They price on the
+low-end ­ either $5 or $10 a month depending on which
+option you need.
+
+
+
+
+                                                                33
+                                    the unconventional guide to working for yourself
+
+These questions are all logistical. On the marketing side,      interface, you simply check a box and fill in a couple forms
+you'll need to ask a number of questions as well:               (how much, how often, etc.) to make a regular product a
+                                                                recurring product.
+»       Why should customers sign up for this?
+                                                                As I said, if you spend some more time learning more
+»       How will it change their lives?                         before launching a continuity program, your results
+                                                                will probably be better. But if you want to get started
+»       What should the price be?                               immediately, there's nothing standing in your way.
+
+»       What is the unique selling proposition (USP)?            A Few Important Notes on Continuity Programs
+
+»       How can customers refer other customers?                 »      The more you can automate the creation of content,
+                                                                        the better. That way you can focus on other projects
+For full service of your continuity program, there are a                and let your continuity program earn money for you
+lot of vendors that offer sophisticated (but pricey) software.          while you sleep... or more likely, while you work on
+Membergate is known as one of the better programs for this.             other projects.
+
+On the low-end, both PayPal and the 1ShoppingCart service        »      It's hard to get people to join. Many people are
+I'll describe in the FAQ section allow for easy setup of                naturally resistant to continuity programs because
+continuity programs. If you use these options you'll be                 they don't want to pay on an ongoing basis. To
+facing a more manual operations process, but the price is               overcome this, you'll have to provide a clear
+much, much lower.                                                       "reason why" they should subscribe. Offering a very
+                                                                        easy cancellation policy is also a good idea, and use
+In your PayPal Business account, choose "Merchant                       this in your marketing copy. "You can cancel
+Services," then look under "Create Buttons" to the one that             anytime at the click of a button and never be billed
+says "Subscribe." The form that you see on the next screen              again" ­ something like that.
+is literally all that you need to set up a recurring payment
+from a customer. Get the HTML or email link code with the        »      Lots of people will sign up, kick the tires, and leave
+variables you select (price per month, optional trial period,           the program within a short time. BUT as a general
+etc.) and then use that on your sales page or email offer.              rule, after three months or three billing cycles, most
+                                                                        of them will stay around for a year or more. The trick
+In 1ShoppingCart, continuity programs are known as                      is to put some of your best material (or whatever you are
+"Recurring Products." When you set up a product in their
+
+                                                               34
+                                     the unconventional guide to working for yourself
+
+        providing) in the first couple of months of delivery.       they'll earn enough money to be cut a check at the end of
+        Obviously, you can't slack off too much after that, but     the pay period.
+        the point is not to save too much for later. If you hold
+        back good content, you'll lose a lot more customers.        What's not to like about this?
+
+»       Properly done, a continuity program can add up to           Well, several things, actually. In rough order:
+        thousands of dollars a month to a small business.
+        If you have some other products in place already            1) The commissions are too low
+        and are looking for your next big expansion, I highly
+        recommend it. It's hard to find something better than       2) Merchants are not always fair
+        a good, consistent continuity program. Good luck!
+                                                                    3) Affiliates don't usually do a good job of promoting
+Pros: Great potential to add serious cash flow to a business
+that is already successful ­ this can not be overstated. Gives      I have a secret to let you in on that relates to each of these
+your business a more professional, sustainable model.               problems--most affiliate marketing doesn't work.
+
+Cons: Moderate resistance from customers (only your                 The affiliate is either set up to fail by the merchant, or the
+most loyal will join), occasional chargebacks through your          affiliate doesn't do enough "value-added" promotion to
+merchant account when customers don't contact you to cancel.        make many sales. The ratio of inactive affiliates to active
+                                                                    affiliates in most major programs is well over 90/1. In some
+9. AFFiliATe income 2.0                                             cases, it can be as high as 98/1 or 99/1.
+
+You probably have some idea of how affiliate marketing              Granted, some of those affiliates ­ perhaps even a lot of
+is supposed to work ­ web sites with visitors refer those           them ­ don't have a real web site, don't have much traffic,
+visitors to big-name merchants who offer targeted products          or just signed up to see how it would work. But surely not
+and services. When the merchants sell something, the                90%. Somewhere in there, a lot of good affiliate partners are
+affiliate gets a commission ­ anywhere from 1% on up to 10-         getting lost in the cracks.
+20%, in most cases.
+                                                                    There is an answer to all of these problems, and the good
+The merchant supplies nice, pretty banners and other ads            news is that it requires some work. Why is this good news?
+that the affiliate can paste all over their site, hoping that       Because most of your competitors will not take the time to
+enough people will click-through and buy something that             do it. If you do take the time, you'll be far ahead of them...
+                                                                    and also make a lot more sales.
+
+                                                                  35
+                                     the unconventional guide to working for yourself
+
+Action Plan (What to do next)                                   10. usinG ADsense For scAlABiliTy
+Here is what you can do as an affiliate to achieve success      (or "The BesT $1.26 i ever mADe")
+all-around. Your visitors will be happy (this is the most
+important thing), your merchant partners will be happy, and     Since I've taken a somewhat negative view of Adsense in
+you'll earn more money.                                         other sections of this guide, I should be fair and tell you I
+                                                                wasn't always this critical. There are valid uses for Adsense
+»        Focus on building a brand and recommend stuff you      (in particular, when the placement of the ads is not overly
+         really like                                            intrusive), and if you have any sites with relatively high
+                                                                traffic, putting Adsense on them can be an easy way to
+»        Offer bonuses to your readers or customers for         generate passive income.
+         purchasing from affiliate links (this will add value
+         and increase sales)                                     My Own Experience
+                                                                In 2005 I attended a quick weekend conference in Chicago.
+»        Sign up with Hydramedia and carefully look for a       It's probably not unusual for most people to head to the
+         good program.                                          Midwest for a conference, but at the time I was living in
+                                                                Liberia, West Africa, so in fact it was quite a trip. In one of
+»        Sign up with Commission Junction and carefully         the first sessions I heard a speaker discuss creative uses of
+         look for a good program.                               Adsense ads as a secondary goal for site visitors.
+
+(With each of these networks, perhaps 1 in 20 offers will be    For those of us using traditional landing pages, where the
+a good match for your business. Focus on the select few and     primary (and often only) goal was to capture site visitors'
+ignore the general offers.)                                     email addresses, at least 75% of those visitors would take a
+                                                                look and then disappear forever. In my case, I was paying
+One final tip: be aware that some people will not buy           up to 50 cents each for those visitors to come to a site,
+through obvious affiliate links. Whenever they sense that a     decide it wasn't for them, and hit the back button. Fifty
+link is monetized, they will deliberately go to the merchant    cents over and over for someone to disappear right after
+directly. To offset this, provide the bonus mentioned earlier,  arrival really added up quickly.
+and require customers to send you their order receipt to
+receive the bonus.                                              Many of the visitors did sign up, but due to the high
+                                                                percentage of people who left without doing so, I was
+                                                                essentially paying a 40% premium on the ones who did.
+
+
+
+                                                               36
+                                     the unconventional guide to working for yourself
+
+The brilliantly simple advice I heard at this conference was     goes for 199, and has a nice business lounge that you can
+to use Adsense as a secondary goal, for all of the people        easily sneak into... not that I would know anything about
+who didn't want to join the newsletter. With this setup,         that.)
+you place Adsense ads at the top of the page in hopes of
+capturing people before they hit the `back' button. The idea     On the second day of the layover, I took off to visit
+is that Google will serve relevant ads based on the content      Luxembourg, a tiny city-state about three hours away by
+of the page, along with whatever term they were searching        train. Before I left, I spent an hour setting up an initial test
+for, so those same keywords will be displayed at the top.        of the alternative Adsense strategy. I wasn't sure it would
+When visitors click one of the keywords, they go straight to     work, but I knew it was at least worth a try.
+Adsense-sponsored Google results, and the site owner who
+sent them there gets paid.                                       After setting up the test, I took off for Luxembourg and
+                                                                 enjoyed walking around the busy streets for a few hours.
+Until I understood this, I had little interest in Adsense        Returning to Brussels later that evening, I eagerly logged on
+because I didn't have high-traffic sites, didn't use blogs, and  and checked the stats.
+otherwise really had no use for it. But once I understood
+this, everything changed. I still kept the primary goal of my    The Google Adsense page finally loaded, and I saw that
+landing pages--to get people to join a newsletter--but with      I had made a grand total of $1.26. That's right, a buck
+the Adsense ads at the top, I now had an alternative for the     and a quarter had trickled in via 10-cent and 25-cent
+ones who didn't.                                                 denominations throughout the day as visitors had clicked
+                                                                 the links.
+This eventually allowed me to recoup about 30% of my
+average ad cost, which was effectively a 30% cash rebate         I could not have been happier.
+since I had been paying for 100% of the cost prior to
+figuring this out. But it all started with $1.26 in Brussels,    I was thrilled by the small amount of money because I
+Belgium.                                                         was pretty sure I could apply the same strategy in other
+                                                                 places, and effectively scale up the $1.26 to $50-100 a day in
+In Between Jet Lag and Luxembourg                                completely passive income.
+On my way back to Liberia from the conference, I had a
+two-night layover in Brussels, the major European gateway        Over the next couple of months, I did just that, even
+to Africa. Thanks to the Priceline.com strategies I briefly      reaching a $120/day average. This was essentially free
+mentioned earlier, I was able to stay at the fantastic           money, since I did nothing for it and it reduced my overall
+Renaissance Hotel for just $40 a night. (This hotel normally     ad cost.
+
+
+                                                               37
+                                    the unconventional guide to working for yourself
+
+About a year or two later, I moved out of that business, and  4 hiGhly-overrATeD Businesses
+I don't do anything with Adsense anymore. But as far as I
+can tell from following the industry and closely watching     I wanted to give you at least eight specific action plans
+other publishers' pages, this strategy still works.           you could consider to get going on your very small, online
+                                                              business, and it looks like I've done that. We've covered:
+Pros: Very easy way to make money, if you have decent site
+traffic and many visitors who tend to quickly leave your site  »    Creating Information Products of All Kinds
+after arrival.
+                                                               »    Building an Information Portal
+Cons: Can be like crack cocaine, because once it
+works, you will be tempted to plaster it all over your site    »    Selling Digital Photographs (Parts I and II)
+and disrupt readability. (Don't do it!) Also, Google is
+temperamental and the rules can change at any time.            »    Building a Real eBay Business
+
+Action Plan (What to Do Next):                                 »    Creating a Continuity Program
+
+»        Use Adsense to offset Adwords spending of a           »    Blogging for Dollars
+         successful commercial site
+                                                               »    Setting up an Adsense-earning site
+»        Sign up for Adsense and install ads above the top
+         header of your site                                   »    + all the strategy behind these kinds of ideas
+
+»        Before scaling up, carefully test this ­ make sure   But this list would not be complete, however, without some
+         enough people are clicking and that you are          advice about what to stay away from. Unfortunately, some of
+         comfortable with the advertisers                     the most common business opportunities most people are
+                                                              familiar with have a very low success rate. In some cases,
+                                                              the business models are so flawed that new business owners
+                                                              in these fields are practically set up to fail.
+
+                                                              Here are a few of these "Overrated Businesses" that you
+                                                              should avoid unless you really know what you are doing.
+
+
+
+                                                             38
+                                    the unconventional guide to working for yourself
+
+#1: Franchising                                                       any blogger who has links to or pictures of Amazon books
+A while back I wrote a blog post about why franchise                  is an affiliate.
+businesses suck. The short version is that the primary goal
+of most franchises is to build the brand and expand. The              Yes, the Amazon affiliate program has been a huge
+franchise owner ends up making most of his or her money               success... for Amazon. The vast, vast majority of Amazon
+from the sale of new franchise units (and also the never-             affiliates earn less than $50 a month, and to even earn $50,
+ending royalties), and the franchisee is left at the end of the       they have to refer purchases of about $1,000. If you think
+month with little, if any profit.                                     that selling something for $1,000 and getting paid $50 is a
+                                                                      bad deal, you're on to something.
+Here's a few examples ­
+                                                                      Most big-name merchants have followed Amazon's model
+Coldstone Creamery ­ The franchise was set on expansion               of paying low commissions to a huge community that
+at all costs, and flooded the market with coupons that                helps them achieve saturation. Again, it's a great deal for
+franchisees were forced to honor. Read this Wall St. Journal          the merchants, and that's why they have little incentive to
+article for more.                                                     change the system.
+
+Quizno's ­ There's a Quizno's in every shopping center                If you want to do affiliate marketing, stick to companies
+these days, but the stores frequently close down and open             that pay real commissions. You should be looking for these
+a few weeks later with new owners. See this article and this          characteristics:
+forum of franchisees for more.
+                                                                      »       A) at least 30% commission, or a significant monetary
+Sadly, these kinds of experiences are the rule rather than the                commission for each sale
+exception to franchising. If you're curious about any specific
+franchise, just Google the name of the franchise along with           »       B) a commitment and ability to pay you quickly
+"franchise complaints." Granted, every business has its
+complainers, but with franchisees, you'll find a troubling            »       C) a good match for your market
+series of similar criticisms.
+                                                                      »       D) proven results
+#2: Traditional Affiliate Marketing (Amazon et al)
+If you spend any amount of time online, you've probably
+encountered legions of Amazon.com affiliates. Pretty much
+
+
+
+                                                                    39
+                                             the unconventional guide to working for yourself
+
+                                                               Some MLM marketers have indeed managed to be
+    A Brief Commercial Message                                 successful with this, but like successful franchisees, they are
+    I'm creating a strong affiliate program for the            definitely the exception to the rule. Instead, the business
+    Unconventional Guides. It is by application only,          "succeeds" mostly for the company that is running it, not
+    but I mostly do it that way to ensure that real            the sales reps themselves. My view is that if you want to
+    relationships are created. You can learn more              make money at MLM, you should probably start your own
+    here:                                                      MLM company and get other people to slave away for you.
+
+    http://unconventionalguides.com/affiliates.htm             MLM businesses you've probably heard of include Amway
+
+    If you're interested in promoting the guides for           (also known as Quixtar) and Mary Kay. These sites and
+    51% commission, read the info on that page and             forums contain some very good information (mostly
+    then send me a note.                                       critical) you should be aware of before you commit to
+                                                               something like this:
+
+But you don't have to choose mine ­ there are others           Merchants of Deception - This former Amway mega-seller
+out there that understand the win-win relationship that        turned against the company and wrote a book
+can be forged when a merchant and affiliate truly work
+together. Just remember to use the 80/20 rule ­ most of the    The Pink Truth - This site has facilitated the return of more
+opportunities you'll encounter aren't worth it, so stick with  than $2.5 million dollars in product to Mary Kay
+the few that are.
+                                                                #4: `How To Make Money' businesses
+(And if you're on the merchant side, remember that the         A great deal of information products deal with the subject
+80/20 rule is true for affiliates as well ­ many of them will  of "How to Make Money." Ironically, many of the people
+never produce a single sale. Focus on the ones who do sell.)   selling the products are not making a lot of money. You'd
+                                                               expect this fact would prevent them from selling a product
+#3: Amway, Mary Kay, and MLM                                   about the subject, but it doesn't.
+Some of the most common business opportunities are
+related to multi-level marketing, or MLM. In this kind of      If you haven't been successful making money somewhere
+business, you sell products and recruit other sales reps to    else, do everyone a favor and stay out of this niche. I have
+do the same... but mostly you recruit other sales reps, who    been in business for 10 years, and this is the first time I have
+also try to recruit people.                                    sold any kind of product that has to do with making money.
+
+
+
+                                                              40
+                                     the unconventional guide to working for yourself
+
+In some ways, I didn't want to do it, because I knew it would      3.Domain Name Retailing
+open me to criticism for selling a product in this crowded         Yes, you can buy and sell domain names ­ many people
+market. But in the end, people ask me every day how to do          do, and some have been very successful at it. A few of the
+stuff like this, so I felt I had an obligation to shed some light  big players have tried to capture most of the market and
+on my style and process.                                           squeeze out the hobbyists, but others believe that there are
+                                                                   plenty of domains to go around.
+miscellAneous (4 FinAl
+possiBiliTies ThAT require                                         For more information on this, read up on Afternic and
+ADDiTionAl reseArch)                                               NamePros.com. This is not for the faint of heart!
+
+
+1.Speaking on Cruise Ships                                         4.Coregistration and Lead Generation
+If you're an expert on "something interesting" (deliberately       If you become especially good at lead generation (acquiring
+broad), you may be a good fit for a cruise ship lecturer. This     customer's contact info who are interested in specific
+is usually not a paid opportunity, but the cruise line will        topics), you may be able to sell those leads to marketing
+cover the cost of a mid-range cabin for you and a guest.           companies. There are a couple of ways to do this: either
+                                                                   through a company like PostmasterDirect, which splits
+For more information on this, check out SpeakerNet News.           revenue with lead generators 50%, or by working directly
+                                                                   with companies who want to purchase the data. If "the
+2.Importing / Exporting                                            money is in the list," as they say, then in this case the money
+When people say they are doing import / export, they               is in topics like real estate, employment, and financial
+are mostly importing goods from other countries, usually           services. These topics offer the biggest payouts by far.
+poorer ones or ones where there is some kind of cost
+advantage. A lot of people have a vague desire to do this,         Again, this is a big field, so I don't devote a lot of time to
+but it takes a lot of work and perhaps more initial research       it here. For more information on coregistration and lead
+than other microbusinesses.                                        generation, Wikipedia has a nice overview that leads to
+                                                                   further resources.
+For more information on this, check out International
+Living's Import / Export Guide. It's not cheap, but the
+quality of the resources may be better than the free
+information you find online.
+
+
+
+
+                                                                 41
+                                     the unconventional guide to working for yourself
+
+                                                           I discovered information products, the
+my Journey, sTAGe Three:                                   third stage of my evolution as a renegade
+inFormATion proDucTs AnD                                   entrepreneur. As a result of this discovery, I
+The roAD AheAD                                             started working 2-3 hours every night and part
+                                                           of Saturday on the business.
+
+After a couple more years of running the                   There were some crazy things that happened
+business, I began looking for a new challenge.             during that time. One time, a fulfillment
+I worked as a jazz musician for a year and                 warehouse I was using in Michigan suddenly
+spent the majority of my time practicing and               closed with no notice, leaving me scrambling to
+rehearsing for gigs. That was fun ­ and definitely         fill $8,000 worth of orders. The sudden closure
+a great learning experience ­ but I was also               was hard for all their clients, but most of them
+looking for an even bigger challenge.                      were based in the U.S. or Canada. I was in Africa,
+                                                           and obviously couldn't come back to sort things
+The challenge I found had nothing to do with               out.
+business at first. Instead, the challenge involved
+Jolie and I moving to West Africa to volunteer             Somehow I survived that, and ended up using
+with a charity for two years. The two years                the business to help return to the U.S. and move
+turned into four, and for the whole time we                to Seattle after our four years overseas.
+were there, we never took any salary from the
+organization we worked for. Friends and family             I'm still selling information products today
+at home supported our work in part, but this               ­ this guide is one of them ­ and I'm convinced
+support was not enough to meet all of our                  that this is the best way for me to earn a living
+needs... so I moonlighted at night from a small            without a job and work towards my goal of
+office on a hospital ship.                                 financial independence. Since I formally set
+                                                           my goal of visiting every country in the world
+I spent the first couple of years working on               and taking 4-5 major trips a year, the financial
+entrepreneurial projects only about one hour               independence goal has pretty much been on
+a day. During most of that time, the six-hour a            hold. But I'm still convinced that in the end, this
+week job was all I needed to pay the bills ­ the           is the best way to go.
+cost of living is cheap in the poorest countries in
+the world. But after the first two years, I stumbled
+on a new opportunity that got me excited.
+
+
+
+
+                                                      42
+                               the unconventional guide to working for yourself
+
+                                                             mistake for many new business owners. Instead of being an
+   Even though it won't make me rich, the                    afterthought, you need to seriously consider this process
+   Unconventional Guides can produce passive                 before setting up shop.
+   income that arrives in my bank account when I
+   get up in the morning. The best part is getting           Here are a few notes on your different options.
+   emails from happy customers who have
+   benefited from the information.                           PayPal vs. Everything Else
+                                                             PayPal is the easiest and increasingly most common
+   And for you as well ­ there are a lot of different
+   opportunities you can take advantage of to                method of receiving payments online. It is currently
+   earn money without a job. I really want you to            available in 190 markets, and operating locally in 13
+   succeed, so be sure to pay close attention to the         countries. What this means is that people in all of those
+   next section, "Putting it all together."                  markets can send you money. (There are a few minor countries
+                                                             where PayPal doesn't work, and payments to and from China
+                                                             are also restricted--but otherwise, it's broadly international.)
+
+
+PuttInG It ALL                                               Even if you end up using another system of payment, which
+                                                             I recommend you consider, virtually all businesses should
+toGEtHEr                                                     also accept PayPal payments. Even big corporations like
+                                                             Dell and Northwest Airlines are now taking payments by
+                                                             PayPal. Simply by adding it to your list of options, you'll
+                                                             increase sales by an average of 7-10%.
+how To GeT pAiD
+                                                             There are a few theories as to why this happens, but the
+Note: This is very important!                                one I find most convincing is that many PayPal users will
+                                                             buy something from their online account that they would
+You might expect that the section on "How to Get Paid"       not spend cash or credit on. The speculation is that PayPal
+would be pretty short. A paragraph, perhaps, or something    money is sometimes considered to be "fun money," so
+to be covered in the FAQ.                                    PayPal users have less of an emotional attachment to it.
+                                                             Regardless of the reason, this is an interesting phenomenon
+I only wish it were that easy. Instead, failing to think     you can use to your benefit.
+carefully about how customers will pay you is a common
+
+
+
+                                                           43
+                                   the unconventional guide to working for yourself
+
+You probably know a little about PayPal already, but if not,      also other information products like MP3s or online videos.
+be sure to check out the Website Payments section.                Clickbank's rule is that all products for sale on their platform
+                                                                  must be delivered to the buyer instantly after purchase, so you
+What about other `PayPal-like' services?                          can't ship anything in the mail using this service.
+From time to time a new service launches that claims to be
+`just like PayPal, only better.' I'm all for fair competition,    I have used Clickbank for a few specialized products
+but the reality is that PayPal has achieved a scale that is       and have been pretty happy with them. They automate
+hard to beat.                                                     the customer interaction and troubleshoot any technical
+                                                                  problems that crop up. There are some restrictions to
+Most of these services have lasted only a few months before       the Clickbank service, and you probably don't want to be
+running out of steam and money. In some cases, account            a Clickbank-only merchant, but they're definitely worth
+holders (i.e., merchants) have lost the money that was in         checking out.
+their accounts. Most of the time, however, there wasn't'
+much money in the account to begin with... because buyers         One of the cool things about Clickbank is that every
+are skeptical of unknown payment systems.                         product you offer for sale on their service is automatically
+                                                                  ready for affiliate promotion. This means that there are
+For now, I recommend you stick with PayPal, unless of             no special steps or hoops to jump through for Clickbank's
+course you have a truly compelling reason to use one of the       army of affiliates to offer your stuff.
+PayPal clones.
+                                                                  (As explained earlier, successful affiliate marketing requires
+Pros: Easy, integrated with eBay, somewhat scaleable and          some real work, but nevertheless, it's good that Clickbank
+customizable as you grow your business.                           makes the logistics easy.)
+
+Cons: Historically bad customer service (although it's not        You just need to set the commission for your affiliates, and I
+as bad now), not as professional as a merchant account, and       recommend you put it as high as you can. Most power-user
+some buyers find it difficult or just don't like it.              CB affiliates (and this is where virtually all affiliate sales
+                                                                  come from) are good at judging how your product will sell
+Clickbank                                                         to their markets, and they will not promote your offer unless
+One alternative to PayPal that is worth checking out if           it generates at least 50% commission for them. Some clever
+you sell information products is Clickbank. This service
+is the ebook sellers' behemoth, and they make it very easy
+to set up and offer your own ebooks directly for sale ­ and
+
+
+                                                                44
+                                         the unconventional guide to working for yourself
+
+sellers even set their commission rates to 70% of more in         and accept credit cards directly. Some customers will
+an attempt to attract more affiliates. They then earn their       simply refuse to use PayPal ­ and depending on the market,
+money primarily through back-end selling. This is a very          this percentage can be significant.
+smart strategy, although of course it takes a fair amount of
+work to develop the back-end products.                            As another important benefit of the merchant account, you
+                                                                  can completely customize your order form and the entire
+Check out Clickbank's merchant info for more information.         order process. This usually leads to higher conversion rates
+                                                                  (and more money, better branding, etc.) when done properly.
+Pros: A virtual army of affiliates, ease of use, and
+automated service whenever customers want refunds or a            But as mentioned, this is not usually easy.
+new download link.
+                                                                  I've previously written about mediocrity in U.S. airlines,
+Cons: The approval process can take a while, the interface        arguing that airlines abuse the same consumers who keep
+is not highly customizable, you can only sell information         them in business. (Sad but true). The same principle
+products, and there is a maximum $49.99 limit on your             applies to most merchant account vendors, and they can be
+product prices at first.                                          more frustrating than airlines. Bizarrely, the same bank that
+                                                                  profits from accepting your customers' payments does not
+Merchant Accounts                                                 want you to have a lot of customers, and they get mad if you
+If you're just creating a part-time business or another           start making too much money.
+small source of income, you'll be just fine with PayPal or
+Clickbank. Many full-time business owners even continue           I'm not kidding ­ it's bizarre but completely true. As
+to use one of the services exclusively. But if you create a       incredible as this is, it is the industry norm. Depending on
+full-time business that keeps growing, you'll probably want       your credit rating, cash on hand, and the kind of product
+to look at opening a merchant account sooner or later.            you're selling, you may be asked to put down a deposit of
+                                                                  $10,000 or more before opening the account. (Seriously.)
+Be forewarned that this is not a project for the faint of heart.  But if your business is rapidly growing and you want a
+Dealing with a merchant account provider is time-intensive        professional image, it's probably worth it.
+and not nearly as easy as any other option.
+                                                                  Pros: Trust and authority, complete customization. (These
+So why do it? Simply put, you'll have much more trust and         are big positives.)
+authority as a seller if you have your own merchant account
+
+
+
+                                                                45
+                                   the unconventional guide to working for yourself
+
+Cons: Hassles with account reps who don't understand                 numbers on your web site, but you will need to send them to
+your business. Dealing with chargebacks becomes more                 anyone who is paying you through a bank transfer.
+difficult and expensive. (These are also big negatives.)
+                                                                     Just include a note in your FAQ or order page that says you
+My Recommendations                                                   accept transfers for orders over $500 or whatever amount
+I do have a merchant account, although my experience                 you choose. Anyone who is interested can then contact you
+with them has been fairly typical. They are a "good enough"          for details, and you can then decide whether to send them
+provider, but dealing with them over the past year has reminded      the numbers or steer them to another order method if you
+me many times over why PayPal is a good company.                     feel uncomfortable.
+
+Anyway, here's who I use:                                            Be sure to tell customers there will be a delay in processing
+                                                                     their order due to the 48-72 hours it takes most banks to
+Humbolt Merchant Services                                            display the transfer in their records. It doesn't always take
+                                                                     this long, but to be safe it's better to advise of the delay.
+In addition to the merchant account, you need a separate
+arrangement with a shopping cart company. In this case, I            Pros: A good additional option for large payments,
+can say I'm happier. I use 1shoppingcart.com and have had            especially from international buyers.
+a good relationship with them for nearly two years now.
+                                                                     Cons: Most people won't use bank transfers, so this should
+(These are not affiliate links.)                                     not be your primary method. You'll have to call the bank to
+                                                                     verify the transfer is complete, and it may take a couple of
+Bank Transfers (also known as Wire Transfers)                        days to go through.
+If you're selling anything that costs more than $500, it's
+usually worth offering a bank transfer option. These take            (International readers, this information on transfers should
+a bit of work from the buyer's side, so most people will             be true in most places, but you should check with your bank
+choose another payment method. But once in a while, an               to make sure before giving the info to customers.)
+international buyer will want to do a bank transfer, so you
+might as well allow them to send you money.
+
+As long as you have a bank account, it's usually very easy
+to receive transfers. All you need is the routing number and
+account number(s). I don't recommend you publish these
+
+
+                                                                   46
+                                            the unconventional guide to working for yourself
+
+Checks and Money Orders in the Mail                             On the AONC site, I am pretty low-key with product
+Depending on the market, about 1-3% of buyers still like        launches, because the focus of that site is more on the
+to send money in the mail. As with customers who prefer         essays and posts which are free to everyone. But even
+bank transfers, you might as well let them give you money       though it's low-key, I'll still build a series of small mentions
+however they want to. If you've been in business for a while,   and email announcements to let people know something is
+you probably have some kind of post office box or private       on the way.
+mail box. Give them that address and check in once in a
+while to see if anything has arrived.                           Here is a very simplified (but quite effective) sequence of
+                                                                events to use for pretty much any launch:
+The only thing to watch out for with this is the classic
+money order fraud, where someone sends you a money              »      Pre-Launch #1
+order for several hundred dollars in excess of the amount
+you charge. They usually ask you to send back the extra         »      Pre-Launch #2
+funds, and after you do so, you find out that the money
+order was a fake. It seems strange that people fall for this,   »      Launch
+but apparently it's still happening.
+                                                                »      Day 2 or Day 3 Update
+Pros: Free money once in a while
+                                                                »      "Last Day" of Sale or Offer Update
+Cons: Not nearly as convenient as online payment, and
+most customers won't do this.                                   You can use these announcements through an email list
+                                                                (most common) but also on your site directly. Assuming
+puTTinG ToGeTher A lAunch evenT                                 that the product you launched isn't a one-time event, then
+                                                                you can also build a series of reminders and updates a long
+No matter what you are selling and what method you use to       way into the future.
+sell, I recommend you put together a launch event for your
+product instead of just uploading a sales page one day. In      Here's a few examples:
+the long-term, building a series of launch events will train
+your customers to buy from you and create a great deal          "New Update" Reminder
+more revenue than simply putting things up for sale.            This reminder goes out whenever you have significantly
+                                                                updated the product. Obviously, you'll send the update
+                                                                to your customer list, so they can take advantage of the
+
+
+                                                              47
+                                     the unconventional guide to working for yourself
+
+new information, but you'll also send the update to your               (Note: if you're using PayPal, you'll need two accounts to do
+prospects list (people who haven't purchased), so they can             this, since PayPal doesn't allow you to purchase something
+take another look at the product.                                      sold by the same account doing the purchasing. This isn't
+                                                                       usually a problem, since you're allowed to have both a
+"Testimonial" Reminder                                                 personal and a business account.)
+I call this the "Here's what people are saying"
+announcement. This is great for social proof, which is one of          Every single time I've done this, I've always found at least
+the most important factors in whether someone will buy. If             one problem or action step that could be made more
+a potential customer has been sitting on the fence, debating           efficient. Don't forget it ­ it's tremendously important,
+whether or not to purchase your product, this reminder will            and since you're effectively buying from yourself, the only
+often push them into the buyers' column.                               cost is the merchant fee you pay for processing. You can
+                                                                       also issue a refund later if you prefer, although since that
+1 Year Later Reminder (or six months later, etc.)                      complicates the bookkeeping, I don't do that unless it's a
+This time-based reminder goes out to celebrate a birthday              large purchase.
+or anniversary of your product, i.e., "Can you believe it's
+been one year since we launched the Great Widget Maker?"               As usual, I have learned to do this by mistake. I once sent
+Then you explain what's happened since then, and include               the wrong order link out on a large mailing, and didn't
+stories of people who have improved their lives through the            check in for several days. (Yes, I know ­ it's shameful.)
+use of your Widget Maker.
+                                                                       When I finally did check-in, I realized that I had sent the
+You can also put together an entire re-launch with a 2.0               wrong link. How completely moronic, I thought ­ so to fix
+version of the product or simply some new features using a             it, I sent an update to the same list with the subject, "Sorry,
+series of these kinds of reminders.                                    I am a complete idiot." The message explained the mistake
+                                                                       and what I did to correct it.
+Launch Event Actions
+Before you launch your product, you need to take the time              A lot of people said they got a laugh out of the title, and in
+to do some important planning.                                         the end, my response to the campaign wasn't lowered too
+                                                                       much. But still ­ save yourself the trouble and test all the
+
+Purchase your own product                                              links several times to avoid this.
+A great many mistakes can be avoided if you simply follow
+your own order system flow and purchase the product yourself.
+
+
+
+                                                                     48
+                                              the unconventional guide to working for yourself
+
+Clear out the email queue                                         more personal interaction from you. This is the point
+If a bunch of email (or voicemail) messages have built up         where you can develop full-on seminars, coaching, or other
+during the pre-launch, take the time to answer them all           individualized services ­ for a high but fair price, of course.
+before the launch. If your launch is going well, you'll have
+a lot of other mail to deal with, and it's much better to start   By building out the funnel from lead generation to high-end
+the launch phase off with a clean Inbox and voicemail box.        products or services, you'll create options for customers at
+                                                                  all levels and price sensitivity points. Most of them won't
+Prepare for the follow-up                                         go through the whole funnel, and this does not mean you
+The follow-up to the launch is almost as important as the         have failed as a marketer. Instead, it may mean that the
+launch itself. What comes next? How will you prepare the          customer's needs have already been met through one of the
+customer base for the future? Spend some time on this             offerings along the way, and at the present time, that's all
+before you launch, not afterwards.                                they need.
+
+The ulTimATe scAlinG up                                           This is a success. You can continue to contribute something
+(seminArs, hiGh-enD consulTinG,                                   meaningful to that customer's life through your additional
+empire BuilDinG)                                                  free resources (product updates, blog posts, newsletter,
+                                                                  etc.), and perhaps sometime in the future they'll purchase
+
+This guide is designed to help you get started; not to take       something else from you.
+
+you fully along the road to self-employment. But I want
+you to know that once you get one small project going,            The point of having some higher-priced offerings is not to
+
+especially something with information products, the path          meet the needs of each and every consumer ­ it is to meet
+
+you can take to go further is endless.                            the needs of a few. Keep this in mind as you are building out
+                                                                  the funnel.
+
+The best analogy for a fully-developed information
+business is a funnel. You start out with something small          Note: This is a rough snapshot of what a fully developed
+and entry-level: an ebook, for example, or a very basic           information business can look like. If you're planning to
+
+information portal. After that's working well and you've          do this, you'll probably need more resources than just this
+
+recruited a decent customer base, you move up a level. You        report. I'll tell you about some of them in the FAQ and free
+
+start doing teleseminars or webinars for your customers, or       updates, and of course you'll also find others along your
+
+you create an audio or video series. The audio and video
+series eventually becomes a whole home study course.
+Somewhere along the way, some customers will long for
+
+
+                                                                49
+                                   the unconventional guide to working for yourself
+
+way. But don't discount the ready-fire-aim approach. You       But you know what? In some ways, those people who
+can start building your own empire right now. What are you     "don't get it" are right ­ even though you have just as much
+waiting for?                                                   responsibility, if not more, by working for yourself, it's
+                                                               also true that you have a lot more freedom. For most self-
+The End Is in Sight                                            employed people, freedom is what it's all about. Freedom is
+Before we go to the FAQ, the survey, and final notes, here's   the goal, and everything comes back to that.
+a question to think carefully about, and also a word of
+encouragement.                                                 And now, a Word of Encouragement
+
+First, do you really want your own business?                   If you're currently working at a job, think about your total
+                                                               salary. Your total salary is whatever you're paid for a year's
+I believe that almost anyone who wants to create freedom       work, including the cash benefits your employer pays for
+for themselves through online business can do so. But I also   (health insurance, retirement contribution, workman's
+know that working for yourself is not for everyone. Here's a   compensation, etc.). That is the total cost of you as an
+quick test:                                                    employee.
+
+Does all of this information make you excited about            Most businesses will not hire employees if they do not
+learning more, or do your eyes glaze over at the possibility   expect to receive 3-5 times the cost of that employee in added
+of starting your own project?                                  revenue. In some situations, it may be closer to 10 times.
+
+From the outside, building a business is a lot like working    I mention that because I passionately believe in
+in the arts, which I why I frequently make comparisons         entrepreneurship, and a lot of would-be entrepreneurs are
+between the two fields. Most people who have regular jobs      currently working at jobs where they are worth a lot more
+will never really understand what you do, and they'll likely   than what they are currently being paid.
+have an entire range of misconceptions about how you
+spend your time.                                               I also believe that anyone who really wants to can escape
+                                                               the tyranny of depending on someone else for their income.
+It's also kind of like traveling around the world. Yes, it's   Some people feel like a "real job" is their security against
+cool and I love it, but not necessarily in the way that other  a weak economy. Entrepreneurs know the opposite: their
+people imagine it.                                             competence is their security.
+
+
+
+
+                                                              50
+                                    the unconventional guide to working for yourself
+
+Will that be you? I sincerely hope so. But even if not, I hope        Discipline yourself to not leave the desk or wherever you
+you're able to create a new, "small but significant" source           are until you've come up with at least 5 additional ways to
+of income that was kick-started by the information in this            make money with your project. Then start working on the
+guide. Please let me know what happens.                               first steps for them right away.
+
+FrequenTly AskeD quesTions                                            A few ideas could be:
+
+Starting a business for the first time, even a very small             »       Adding an upsell 30-minute phone conversation to
+one, can seem overwhelming if you're not used to all of the                   any product (personalized tech support)
+terminology and resources. In the section below I'll share
+my own opinions about specific questions that came in                 »       Creating a "Gold" or "Platinum" version of the
+during the preparation of this product. I'll answer some                      product (a surprisingly high number of people will
+others in the final audio segment, so be sure to check that                   go for it)
+out too.
+                                                                      »       Developing a 2.0 or otherwise new version of your
+Which skills should I focus on developing the most?                           product (2009 edition, etc.)
+Overall, I think the most important skills for running an
+online business are revenue strategy and copywriting. For             »       Having a "customers-only" sale to reward people who
+more on copywriting, check out the great CopyBlogger who                      have purchased from you before
+provides all kinds of great, free info and tutorials.
+                                                                      »       Setting up a webinar for sale on a highly
+For revenue strategy, here's a quick exercise that will help.                 specific topic
+Get a piece of paper and think about your existing business or
+the business you want to start. You probably already know 2-3         »       and so many more... what are your ideas?
+ways you make money (or will make money), right?
+                                                                      I'm new to all of this. What should I do first?
+Here is the thing: 2-3 ways aren't good enough ­ or at least,         I generally recommend the Ready-Fire-Aim approach. Read
+they could be a lot better.                                           the tactics section again and see which ideas are most
+                                                                      interesting to you. Do some more online research and
+                                                                      complete the "Next Action" steps. If you have enough time,
+                                                                      do this for two or three different ideas, then see which one
+                                                                      has the most potential. Pursue that one.
+
+
+                                                                    51
+                                             the unconventional guide to working for yourself
+
+How much should I spend on site design?                              Alternatives, if you want them, include ConstantContact,
+It depends on what you are trying to do. But here are some           iContact (the Obama campaign chose this one), JangoMail,
+guidelines:                                                          and GetResponse.com.
+
+If you can do some simple work yourself and just need a              Bluehost and Cedant ­ These are the two web hosting
+logo, header, or overall identity, you're in luck ­ those can        companies I use. I'm not in love with either one... but
+easily be acquired on elance for around $200-250.                    they work. Both of them have U.S.-based support, which is
+                                                                     important to me.
+If you want a quick-and-dirty 3-page site design based on
+an existing template or theme, with a logo and good header,          Some other people recommend SliceHost, but I have not
+expect to pay around $500.                                           had personal experience with them.
+
+Decent site with unique design, a better logo and                    For basic web design and maintenance I use the good old
+branding materials, and ongoing (basic) support, you're              Microsoft Frontpage, which is really difficult to buy now
+looking at $1500.                                                    that it is no longer being made. Look for it on eBay, and the
+                                                                     2003 version is better than the 2007 one (seriously). For my
+Super high-quality design work is more expensive. If                 blog at the AONC site, I use Wordpress, which is free.
+you want that kind of work, be prepared to invest in a
+relationship and pay more. However, a lot of projects don't          Survey Monkey for eliciting customer feedback is great.
+need that ­ in fact, I tend to think that most microbusiness         It costs $19.95 a month. There are also some free services
+projects can stick with the $500 or less price.                      out there ­ see FreeOnlineSurveys.com, for example. Be
+                                                                     aware that the free services have some limitations. If you
+What services do you use for domain registration, hosting, etc.?     want to do it without cost and have a relatively small sample
+Here's what I use, but be aware that I'm not necessarily             size (say less than 1,000), I'd do it all manually by sending
+endorsing each of these companies. Note also that there are          and responding to emails. It doesn't take that much work and
+no affiliate links here.                                             presents a nice touch. But otherwise... Survey Monkey is great.
+
+Aweber ­ For all newsletters and everything related, Aweber          You need a good credit card to run almost any kind of
+is a great investment. The price starts at $19.95 and goes           business, and I use the American Express Business Gold card.
+up ­ way up ­ once you start building big lists. But to get          I also have a United Business Card (currently offering a 20,000
+started, it's not bad, and you can do a lot with this service.       mile bonus!) for the few vendors that don't take AmEx.
+
+
+
+
+                                                                    52
+                                            the unconventional guide to working for yourself
+
+I used to pay about $100 a month for a web analytics              Reese Spykerman does all of my design work. I have
+service, but now Google Analytics does it for free. Like all      worked with a lot of designers over the years, and Reese is
+things Google, in return for giving you great services, they      definitely at the top of the list. For the Brief Guide to World
+acquire an incredible amount of knowledge about your              Domination manifesto, Reese suggested a landscape design
+business and your life. If you're not comfortable with this,      (similar to what we use in this guide) that I believe made a
+you can pay another company to do your tracking. I have           big difference in how the report was received.
+already given my life over to Google thanks to Gmail
+and Gdocs, so adding the Analytics in wasn't that big of          More than 100,000 people downloaded the manifesto in
+a step for me.                                                    the first six months, resulting in hundreds of emails, site
+                                                                  comments, and trackbacks from other bloggers. I credit a
+As I said, that's exactly what I use to do everything I need      lot of this success to Reese. A number of people mentioned
+to earn a living. If you are in love with another service, tell   that the great design of the report encouraged them to start
+me about it and perhaps I'll include it in a future update.       reading right away, and to keep going when they otherwise
+But most importantly, be sure that your tools and resources       might have stopped.
+serve you instead of the other way around.
+                                                                  All that to say if you need a designer, I recommend you
+If something is too complicated, my philosophy is to drop         contact Reese for a quote request. (I don't get paid for the
+it as quickly as possible. It is all too easy to spend hours      referral ­ she just does good work and I hope she gets more
+and hours learning how to use some cool new software that         business from it.)
+looks nice but doesn't really contribute to the bottom line.
+                                                                  whAT Do you Think ABouT The
+Design Work                                                       GuiDe? i'D love To know
+By the way, if you've followed the AONC site or read any of
+my longer writing projects before, you may have noticed a         This is the second in a series of Unconventional Guides,
+consistent design theme. This is all the result of one person     and I'd like to know if it has helped you. Please take a
+­ and it's not me.                                                moment to complete a short survey at the link below. It's
+                                                                  quick and painless, and will help me improve the guide in
+
+
+
+
+                                                                53
+                                      the unconventional guide to working for yourself
+
+the future. (All updates will be free for you for one year, so
+be sure to let me know what you'd like more information
+on.)
+
+http://www.surveymonkey.com/ug-freedom
+
+Lastly, thank you again for your purchase. I hope this really
+helps you. No matter what, remember to take concrete
+action steps towards your goals.
+
+Keep rocking the universe,
+
+
+
+
+                                                               54
+                                    the unconventional guide to working for yourself
+

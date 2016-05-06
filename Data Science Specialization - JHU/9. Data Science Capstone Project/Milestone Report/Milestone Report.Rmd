@@ -1,0 +1,252 @@
+---
+title: "Natural Language Processing Project - Milestone Report"
+author: "Stephanie"
+date: "March 2016"
+output:
+  html_document:
+    highlight: pygments
+    theme: readable
+    toc: yes
+    toc_depth: 4
+  pdf_document:
+    latex_engine: xelatex
+    toc: yes
+    toc_depth: 4
+  word_document:
+    highlight: pygments
+---
+
+##Overview
+
+This Milestone report is part of the Data Science Capstone from Johns Hopkins University and SwiftKey, a company building smart keyboards that use predictive text analytics to predict the next word a user types.
+
+The objective of this Capstone is to build a predictive text app such as SwiftKey. To build this app, we will use a large corpus of text from [HC Corpora](www.corpora.heliohost.org) and **Natural Language Processing** methods. In this report, we will **clean the data**, perform an **exploratory analysis** and **plan further analysis** for building our predictive text app.
+
+##Understanding the data
+
+###Data origin
+
+We will use an **corpus** from [HC corpora](http://www.corpora.heliohost.org/). The data has been collected by a web crawler from numerous different webpages (from publicly available sources): newspapers, magazines, (personal and professional) blogs and Twitter updates. The corpus, written in **English**, is composed of **three text files**: 
+
+- **en_US.blogs.txt** (blog)
+- **en_US.news.txt** (news)
+- **en_US.twitter.txt** (twitter)
+
+You can download the dataset [here](https://eventing.coursera.org/api/redirectStrict/6HCIfOK0o8LnXTP9nyT2ZqnZJCxgLbR12QuESWxoLNSQWqc8U2RTJ6vik4IuM9zQtUihO7pYzlCieY70-ZbUyQ.GsA5J0TubEMNOhV8ea-zVA.bwOrx4_-IpYgFmg4Z6ZyTQG74RpCIQ3ce32C51EJE6mFQ1U_FnFLahVtswWWdQx-74gMVw53clBPo-8hwnrqo6X59tmz9Jyo6hRSEHBfcAAvIcx5m81thI_QOzdqy6skgp0nABqQP69YoVX7mg8FKAO9M08ML3j_S9032WuiecaaTKG518dPxdeUNI_md7sF4qvmFl3qmcd8hDsnNCVTMnMU5XexE84yDLWAC6b4k9mtNG-AY6ZzInggw4HIgDCG2jP_FCsoZrfqDHxdaLI_TV0OUHJWH5yMa-V4kRhbZkQOiMLKcT_27kEp6u-qLisYZGT1XUo6vjXW2zq1aNNgPJnQEd9_CMozvTnJ-3Y8p1t5YHFapey9Lo7ixrjT-dfiCIcC3mwQQkatHTVYG1JkLVQhgtzSfvc1O2amsv-khR0) (*the dataset contains text files in other languages but in this project we will focus on the English files*)
+
+###Data characteristics
+
+To understand data contained in the three files, we will **load the data in** and **compute basic summaries**: *file size*, *line counts* and *word counts*.
+
+```{r, warning=FALSE, cache=TRUE}
+#Loading the data in
+lines_blog <- readLines("C:/Users/steph_000.STEPHANIE/Documents/Moocs 2/Data science spe - JHU/10. Data science capstone/Coursera-SwiftKey/final/en_US/en_US.blogs.txt", -1, encoding = "UTF-8", skipNul = TRUE)
+
+lines_news <- readLines("C:/Users/steph_000.STEPHANIE/Documents/Moocs 2/Data science spe - JHU/10. Data science capstone/Coursera-SwiftKey/final/en_US/en_US.news.txt", -1, warn = FALSE, encoding = "UTF-8",skipNul = TRUE)
+
+lines_twitter <- readLines("C:/Users/steph_000.STEPHANIE/Documents/Moocs 2/Data science spe - JHU/10. Data science capstone/Coursera-SwiftKey/final/en_US/en_US.twitter.txt", -1, encoding = "UTF-8", skipNul = TRUE)
+```
+
+```{r, echo=FALSE, cache=TRUE}
+#Calculating number of lines for each file
+lines_nb_blog <- length(lines_blog)
+lines_nb_news <- length(lines_news)
+lines_nb_twitter <- length(lines_twitter)
+
+#Calculating the number of words of shortest line for each file
+char_blog <- nchar(lines_blog)
+min_blog <- which.min(char_blog)
+words_min_blog <- char_blog[min_blog]
+
+char_news <- nchar(lines_news)
+min_news <- which.min(char_news)
+words_min_news <- char_news[min_news]
+
+char_twitter <- nchar(lines_twitter)
+min_twitter <- which.min(char_twitter)
+words_min_twitter <- char_twitter[min_twitter]
+
+#Calculating the number of words of longest line for each file
+char_blog <- nchar(lines_blog)
+max_blog <- which.max(char_blog)
+words_max_blog <- char_blog[max_blog]
+
+char_news <- nchar(lines_news)
+max_news <- which.max(char_news)
+words_max_news <- char_news[max_news]
+
+char_twitter <- nchar(lines_twitter)
+max_twitter <- which.max(char_twitter)
+words_max_twitter <- char_twitter[max_twitter]
+
+#Calculating total number of words for each file
+total_blog <- sum(char_blog)
+total_news <- sum(char_news)
+total_twitter <- sum(char_twitter)
+```
+
+####Basic data summaries
+
+File    | Size (Mo) | No. of Lines          | Mininum no. of Words  | Maximum no. of Words  | Total no. of Words
+------  | --------- | -----------------     | --------------------- | --------------------- | -----------------
+Blog    | 200       | `r lines_nb_blog`     | `r words_min_blog`    | `r words_max_blog`    | `r total_blog`
+News    | 196       | `r lines_nb_news`     | `r words_min_news`    | `r words_max_news`    | `r total_news`
+Twitter | 159       | `r lines_nb_twitter`  | `r words_min_twitter` | `r words_max_twitter` | `r total_twitter`
+
+
+##Cleaning the data
+
+In order to clean the data for our analysis, we are going to **subset our data** (the data size is too large), **preprocess it** (remove what is useless) and **filter profanity** (we don't want profanity here!).
+
+###Data subsetting
+
+Given that our data is extremely large and our computational resources are limited, we are going to randomly sample our data and keep 15 000 lines per file. We will gather the three sampled files into one and store it as a separate file for reproducibility and efficiency purpose.
+
+```{r, eval=FALSE}
+#Data sampling
+set.seed(1)
+subset_blog <- lines_blog[sample(1:length(lines_blog),15000)]
+subset_news <- lines_news[sample(1:length(lines_news),15000)]
+subset_twitter <- lines_twitter[sample(1:length(lines_twitter),15000)]
+
+#Sampled data stored as a separate file
+subset_data <- c(subset_blog, subset_news, subset_twitter)
+writeLines(subset_data, "./subset/subset_data.txt")
+
+#Clear the memory
+rm(subset_blog, subset_news, subset_twitter, lines_blog, lines_news, lines_twitter)
+```
+
+###Data preprocessing
+
+We want to remove what is useless for our future prediction analysis in our data by:
+
+- **Removing punctuation**
+- **Converting all data to lowercase**
+- **Removing numbers**
+- **Removing whitespaces**
+- **Profanity filtering**
+
+***Important note:*** In Natural Language Processing analyses, we usually perform **stemming** (reduce words to their root word, such as  "fishing", "fished", and "fisher" to the root word, "fish") and **remove stop words** (like "the" or "a"). However, I decided NOT to perform these tasks as I think these words and characters will be useful for our prediction task.
+
+```{r, warning=FALSE, cache=TRUE, message=FALSE}
+#Loading tm package for preprocessing
+library(tm)
+
+#Creating corpus (required for tm package)
+corpus_data <- Corpus(DirSource("C:/Users/steph_000.STEPHANIE/Documents/Moocs 2/Data science spe - JHU/10. Data science capstone/Coursera-SwiftKey/final/en_US/subset", encoding = "UTF-8"))
+
+#Removing punctuation, numbers, whitespaces
+corpus <- tm_map(corpus_data, removePunctuation)
+corpus <- tm_map(corpus, removeNumbers)
+corpus <- tm_map(corpus, stripWhitespace)
+
+#Converting to lowercase
+corpus <- tm_map(corpus, content_transformer(tolower))
+```
+
+```{r, eval=FALSE}
+#Profanity filtering (using Google's 'badwords': https://badwordslist.googlecode.com/files/badwords.txt)
+profanity <- readLines("C:/Users/steph_000.STEPHANIE/Documents/Moocs 2/Data science spe - JHU/10. Data science capstone/Coursera-SwiftKey/final/en_US/profanity.txt", encoding="UTF-8", warn=FALSE, skipNul=TRUE)
+corpus <- tm_map(corpus, removeWords, profanity)
+```
+
+###Comparing before and after preprocessing
+
+**Sample data before preprocessing**
+
+```{r, echo=FALSE, cache=TRUE}
+corpus_data[[1]]$content[2]
+```
+
+**Sample data after preprocessing**
+
+```{r, echo=FALSE, cache=TRUE}
+corpus[[1]]$content[2]
+```
+
+##Tokenization and N-gram
+
+**Tokenization** is the process of breaking a stream of text up into words, symbols, or other meaningful elements called tokens. Sentences are an ordered sequence of tokens.
+
+
+An **n-gram** is a contiguous sequence of n items (here *word tokens*) from a given sequence of text. We will create **unigrams** (n-grams of size 1), **bigrams** (size 2) and **trigrams** (size 3).
+
+```{r, warning=FALSE, cache=TRUE}
+#Loading RWeka package for tokenization
+library(RWeka)
+
+#Creating our unigrams, bigrams and trigrams
+UnigramTokenizer <- function(x) NGramTokenizer(x, Weka_control(min = 1, max = 1))
+unigrams <- DocumentTermMatrix(corpus, 
+                          control = list(tokenize = UnigramTokenizer))
+
+BigramTokenizer <- function(x) NGramTokenizer(x, Weka_control(min = 2, max = 2))
+bigrams <- DocumentTermMatrix(corpus, 
+                             control = list(tokenize = BigramTokenizer))
+
+TrigramTokenizer <- function(x) NGramTokenizer(x, Weka_control(min = 3, max = 3))
+trigrams <- DocumentTermMatrix(corpus, 
+                             control = list(tokenize = TrigramTokenizer))
+```
+
+##Exploratory Data Analysis
+
+We are now going to visualize the **frequency** of our unigrams, bigrams and trigrams, showing the Top 20 of each.
+
+```{r, warning=FALSE, echo=FALSE, message=FALSE, cache=TRUE}
+#Preparing data frame of unigrams based on their frequency
+uni <- sort(colSums(as.matrix(unigrams)), decreasing=TRUE)
+uni_freq <- data.frame(word=names(uni), freq=uni)
+
+#Loading ggplot2 package for plottig
+library(ggplot2)
+
+#Plot Top 20 unigrams
+ggplot(uni_freq[1:15,], aes(x= reorder(word, -freq), y=freq)) + 
+    geom_bar(stat = "identity", fill = "darkblue") +
+    ggtitle("Top 15 unigrams") + 
+    xlab("Most frequent unigrams") +
+    ylab("Frequency (total count)") +
+    theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
+```{r, echo=FALSE, cache=TRUE}
+#Preparing data frame of unigrams based on their frequency
+bi <- sort(colSums(as.matrix(bigrams)), decreasing=TRUE)
+bi_freq <- data.frame(word=names(bi), freq=bi)
+
+#Plot Top 20 unigrams
+ggplot(bi_freq[1:15,], aes(x= reorder(word, -freq), y=freq)) + 
+    geom_bar(stat = "identity", fill = "darkblue") +
+    ggtitle("Top 15 bigrams") + 
+    xlab("Most frequent bigrams") +
+    ylab("Frequency (total count)") +
+    theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
+```{r, echo=FALSE, cache=TRUE}
+#Preparing data frame of unigrams based on their frequency
+tri <- sort(colSums(as.matrix(trigrams)), decreasing=TRUE)
+tri_freq <- data.frame(word=names(tri), freq=tri)
+
+#Plot Top 20 unigrams
+ggplot(tri_freq[1:15,], aes(x= reorder(word, -freq), y=freq)) + 
+    geom_bar(stat = "identity", fill = "darkblue") +
+    ggtitle("Top 15 trigrams") + 
+    xlab("Most frequent trigrams") +
+    ylab("Frequency (total count)") +
+    theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
+##Further Analysis for building our predictive app
+
+1. **Modeling**
+    - Build a basic n-gram model (with unigrams, bigrams and trigrams)
+    - Build a model to handle unseen n-grams
+2. **Prediction Models**
+    - Build a predictive model and evaluate it for efficiency and accuracy
+    - Explore new models and data to improve the first one and evaluate them
+    - Minimize both the size and runtime of the model in order to provide a reasonable experience to the user
+3. **Build a data product**
+    - Shiny app that runs the best prediction model and predicts the next word
