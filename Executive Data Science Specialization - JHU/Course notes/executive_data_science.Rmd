@@ -1,0 +1,1101 @@
+---
+title: "Executive data science"
+author: "Stephanie Canovas"
+date: "February 2016"
+output:
+  html_document:
+    highlight: pygments
+    theme: readable
+    toc: yes
+    toc_depth: 4
+  pdf_document:
+    latex_engine: xelatex
+    toc: yes
+    toc_depth: 4
+  word_document:
+    highlight: pygments
+---
+
+##What is data science?
+
+**Data science** is using data to answer specific questions.
+Data Science is an interdisciplinary field about processes and systems to extract knowledge or insights from data in various forms, either structured or unstructured, which is a continuation of some of the data analysis fields such as statistics, data mining, and predictive analytics.
+
+###Statistics 
+
+Statistics is the discipline of analyzing data. As such it intersects heavily with data science, machine learning and traditional statistical analysis.
+
+Key activities that define the field:
+
+- **Descriptive statistics**
+    - includes exploratory data analysis, unsupervised learning, clustering and basic data summaries
+    - Many uses: get familiar with a data set, starting point for any analysis, arrive at hypotheses to be tested later with more formal inference.
+- **Inference**
+    - process of making conclusions about populations from samples
+    - includes most of the activities traditionally associated with statistics such as: estimation, confidence intervals, hypothesis tests and variability
+    - forces us to formally define targets of estimations or hypotheses and to think about the population that we're trying to generalize to from our sample.
+- **Prediction**
+    - overlaps with inference, but modern prediction tends to have a different mindset
+    - process of trying to guess an outcome given a set of realizations of the outcome and some predictors
+    - Machine learning, regression, deep learning, boosting, random forests and logistic regression are all prediction algorithms. 
+    - If the target of prediction is binary or categorical, prediction is often called classification
+    - In modern prediction, emphasis shifts from building small, parsimonious, interpretable models to focusing on prediction performance, often estimated via cross validation. 
+    - Generalizability is often given not by a sampling model, as in traditional inference, but by challenging the algorithm on novel datasets
+    - Prediction has transformed many fields include e-commerce, marketing and financial forecasting.
+- **Experimental Design**
+    - act of controlling your experimental process to optimize the chance of arriving at sound conclusions
+    - Example: randomization. A treatment is randomized across experimental units to make treatment groups as comparable as possible. Clinical trials and A/B testing both employ randomization. In random sampling, one tries to randomly sample from a population of interest to get better generalizability of the results to the population. Many election polls try to get a random sample.
+
+###Machine learning
+
+**Machine learning** is a set of algorithms that can take a set of inputs (data) and return a prediction.
+Machine learning has been a revolution in modern prediction and clustering. It has become an expansive field involving computer science, statistics and engineering. Some of the algorithms have their roots in artificial intelligence (like neural networks and deep learning).
+
+For data scientists, we decompose **two main activities of machine learning** (non-exhaustive):
+
+1. Unsupervised learning
+    - trying to uncover unobserved factors in the data. There is no gold standard outcome to judge against. Some example algorithms including hierarchical clustering, principal components analysis, factor analysis and k-means.
+2. Supervised learning
+    - using a collection of predictors, and some observed outcomes, to build an algorithm to predict the outcome when it is not observed. Some examples include: neural networks, random forests, boosting and support vector machines.
+
+**Machine learning vs. statistics**
+
+Traditional statistics has a great deal of overlap with machine learning, including models that produce very good predictions and methods for clustering. However, there is much more of an emphasis in traditional statistics on modeling and inference, the problem of extending results to a population. Modern machine learning was somewhat of a revolution in statistics not only because of the performance of the algorithms for supervised and unsupervised problems, but also from a paradigm shift away from a fpcis on models and inference.
+
+**Characteristics of machine learning:**
+
+- the emphasis on predictions
+- evaluating results via prediction performance
+- having concern for overfitting but not model complexity per se
+- emphasis on performance
+- obtaining generalizability through performance on novel datasets
+- usually no superpopulation model specified
+- concern over performance and robustness
+
+**Characteristics of traditional statistics:**
+
+- emphasizing superpopulation inference
+- focusing on a-priori hypotheses
+- preferring simpler models over complex ones (parsimony), even if the more complex models perform slightly better
+- emphasizing parameter interpretability
+- having statistical modeling or sampling assumptions that connect data to a population of interest
+- having concern over assumptions and robustness
+
+Both approaches (statistics and machine learning) are valuable. The amount of tolerable model/algorithm complexity changes dramatically between them. The goals of the approaches are often different. Challenge for machine learning: be more interpretable. Challenge for statistics: make better predictions. Both approaches are working towards common areas however.
+
+In recent years, the distinction between both fields have substantially faded. Machine learning researchers have worked tirelessly to improve interpretations while statistical researchers have improved the prediction performance of their algorithms.
+
+###Software engineering for data science
+
+Software engineering for data science allows the **standardizing** and **systematizing** of a procedure that different people can use at any given time and understand what it does. Software engineering is used to generalize data analyses into software so that they can be applied in different situations. Software provides a well-defined interface that can abstract low-level technical details of data analysis routines.
+
+####Types of software
+
+1. Just some code (first step)
+    - encapsulate automation with a loop or similar
+2. Some sort of function
+    - first level of abstraction, defined "interface"
+3. Software package
+    - API + convenience for users (documentation)
+
+####Applying software engineering to Data Science projects
+
+- When do you need to systematize common tasks accross projects vs. creating new code each time?
+- Answering this question require communication within team and maybe outside
+- Will you build on this work for future projects? Or is it a one-shot deal?
+- Probably sooner than you think because things will likely be done more than once
+- Initial investment for developing formal software is higher but saves time later
+
+####Rule of thumb
+
+**If you are going to do something...**
+
+- once: write some code and document it well
+- twice: write a function (or equivalent)
+- three times: write a package with documentation
+
+You should consider developing a software package if members of another team/group wish to apply your same analysis to their own datasets or when an analysis or a part of an analysis must be done more than once or twice.
+
+###Structure of a data science project
+
+1. **Define the question (most important)**
+    - Specifying the question and refining it over time guide the data that you obtain and the type of analysis that you do
+    - About 6 types of question: descriptive, exploratory, predictive, mechanistic...
+2. **Get the data**
+3. **Exploratory data analysis**
+    - Two main goals: are the data suitable for the question? Develop a sketch of the solution
+4. **Formal modeling**
+    - Specifically write down the question, the parameters you are looking for and challenge the results (from exploratory data analysis sketch). Developing a formal framework is important to develop robust evidence.
+5. **Interpretation**
+    - How to interpret the results?
+    - Compare your results and what you expected when specifying the question.
+    - Evaluate the evidence
+6. **Communication**
+    - different audience: internat/external to the company...
+7. **Decision and action**
+    - May require action from other stakeholders
+    
+```{r echo = FALSE, fig.width = 5, fig.height = 3, fig.align = 'center', message=FALSE, warning=FALSE}
+library(png); library(grid)
+grid.raster(readPNG("figures/1.png"))
+```
+
+**Secondary approach of a data science project**
+
+```{r echo = FALSE, fig.width = 5, fig.height = 3, fig.align = 'center', message=FALSE, warning=FALSE}
+library(png); library(grid)
+grid.raster(readPNG("figures/2.png"))
+```
+
+###The outputs of a data science experiment
+
+The potential set of outputs of a data science experiment are pretty much limitless. Four general **types of outputs** pop up most frequently:
+
+1. **Reports**
+2. **Presentations**
+3. **Interactive web pages**
+4. **Apps**
+
+Interactive graphics are important enough to merit their own category. However, they're usually embedded in a web page.
+
+**Reports** are easily the **most common output** of a data science experiment. Since the goals of reports varies wildly across settings. Overall, it should:
+
+- Be clearly written
+- Involve a narrative around the data
+- Discuss the creation of the analytic dataset
+- Have concise conclusions
+- Omit unnecessary details
+- Reproducible
+
+Reproducible reports have mechanisms under the hood to recreate the data analysis. The benefits include: getting the data scientist to think about the output of the process (since the code is embedded in the eventual output), very clear documentation that extends beyond code commenting, automation of the report generation process and reproducibility. The main tools for producing reproducible reports are **kntir** and **ipython notebooks**. You should create a culture of using these tools, or similar ones, in your organization, as they will dramatically improve reproducibility.
+
+The same rules apply to **presentations**, though reproducible presentation software is less well adopted. For R, there's **slidify** and **rStudio's presenter**. These tools automate presentations.
+
+**Interactive web pages** and **apps** should have:
+
+- Good ease of use / design
+- Good documentation
+- Code commented (code easy to return to for new employees)
+- Code version controlled (return to any checked in version of the project) - Git/GitHub
+
+###The four secrets of a successful data science experiment
+
+Some aspects of success
+
+1. New knowledge is created
+2. Decisions or policies are made based on the outcome of the experiment
+3. A report, presentation or app with impact is created
+4. It is learned that the data can't answer the question being asked of it
+    - It can save time and money to realize that the data is not appropriate
+
+Some negative outcomes include: decisions being made that disregard clear evidence from the data, equivocal results that do not shed light in one direction or another, uncertainty prevents new knowledge from being created.
+
+###Data scientist toolbox
+
+The data scientist toolbok is the set of tools used to store, process, analyze and communicate the results of a data science experiments.
+
+1. Store and backup the data in a database
+    - for a small company: **database** such as **MySQL**
+    - for a big company: large database distributed accross multiple servers
+    - Two main languages to pull data out of the database: **R** and **Python** that are run on a different server (e.g. Amazon Aurora to rent computing resources). They are often used on a small sample of the data for analysis
+2. Scale up the analysis
+    - **Hadoop** and **Spark**: ways to analyze data at a very large scale (after having done first analysis with R or Python)
+3. Communication (in a rapidly evolving field)
+    - Open and quick communication: **Slack** (chat tools), **Stackoverflow** (help website). Data science tools are constantly updating, so keeping in touch with your data science colleagues is essential for success
+4. Reproducibility
+    - **R Markdown**, **IPython notebook**
+5. Data visualization and results communication
+    - the end user is often not a data scientist: **Shiny**
+
+###Separating hype from value
+
+**Questions to ask to separate hype from value:**
+
+- What is the question you are trying to answer with data? That filters a lot of hype and technology that wouldn't add value
+- Do you have the data to answer that question? Can we get the data in a shape to answer that question? The answer might be no and you then have to give up
+- If you could answer the question, could you use the answer? (e.g. Netflix prize solution that couldn't be implemented)
+
+```{r echo = FALSE, fig.width = 5, fig.height = 3, fig.align = 'center', message=FALSE, warning=FALSE}
+library(png); library(grid)
+grid.raster(readPNG("figures/3.png"))
+```
+
+##Building a data science team
+
+###Defining the data science team
+
+Data science is a team sport. It takes a large group of people working together on projects.
+
+- **Data scientist**
+    - data cleaning, analysis, model/algorithm building and communication
+- **Data engineer**
+    - skills in data architecture and infrastructure (both hardware and software)
+    - construct database, pull out data from database, implement algorithm so they can run at scale...
+- **Data scientist manager**
+    - manage people, make sure everybody interact with each other
+    - recruit the team
+    - is the link between upper level and data science team
+- Other professionals
+
+The data science team often work as an unit. Each team member might be working on a different project, sub problem of a data science problem. They meet regularly to discuss projects and issues. They might interact with outside professionals.
+
+```{r echo = FALSE, fig.width = 5, fig.height = 3, fig.align = 'center', message=FALSE, warning=FALSE}
+library(png); library(grid)
+grid.raster(readPNG("figures/4.png"))
+```
+
+**When do you need data science?**
+
+- **startup**
+    - focus on infrastructure
+- **mid-size organization**
+    - infrastructure
+    - data science
+    - data products
+- **large organization**
+    - infrastructure
+    - data science
+    - data products
+    - data coordination
+
+###Qualifications and skils
+
+####Data engineer
+
+- **What does a data engineer do?**
+    - Build data infrastructure
+    - Manage data storage and use 
+    - Implement production tools
+- **What skills do they need?**
+    - Hardware knowledge 
+    - Databases
+    - Data processing at scale
+    - Software engineering
+- **Background of data engineers**
+    - Computer science and engineering 
+    - Quantitative + computer science 
+    - Information technology
+- **Key characteristics** 
+    - Willing to find answers on their own 
+    - Knows a bit of data science 
+    - Works well under pressure 
+    - Friendly but relentless
+    
+####Data scientist
+
+- **What does a data scientist do?**
+    - Design experiments 
+    - Pull and clean data 
+    - Analyze data Communicate results
+
+- **What skills do they need?**
+    - Statistics (inference) 
+    - Machine learning (prediction) 
+    - Data analysis 
+    - Data communication
+
+- **Background of data scientists** 
+    - Statistics + application + engineering 
+    - Quantitative + data science transition 
+    - Software engineering + statistics
+
+- **Key characteristics**
+    - Willing to find answers on their own 
+    - Unintimidated by new data 
+    - Willing to say I don't know (Be sure he will tell you the truth because sometimes the data cannot answer a question)
+    - Friendly but relentless (Sometimes we focus more on technical skills but the data scientist needs to be able to communicate and team easily)
+    
+####Data science manager
+
+- **What does a data science manager do?** 
+    - Builds a data team 
+    - Sets goals and priorities 
+    - Manages data science process 
+    - Interacts with other groups
+
+- **What skills do they need?**
+    - Knowledge of software/hardware 
+    - Knowledge of roles
+    - Knows what can and can't be achieved 
+    - Strong communication
+
+- **Background of data managers**
+    - Data science + management 
+    - Data engineering + management 
+    - Management + training in data science
+
+- **Key characteristics** 
+    - Knowledgeable 
+    - Supportive 
+    - Thick skinned 
+    - Polite but relentless
+    
+###Assembling the team
+
+####Where to find the data team
+
+- **General purpose websites**
+    - LinkedIn
+    - Monster.com
+- **Dedicated websites**
+    - Kagge 
+    - Insight 
+    - Hired
+- **Online**
+    - Coursera 
+    - Udacity
+
+####Interviewing for data science
+
+**Structure of an interview**
+
+- Individual meetings 
+    - Focus on projects 
+    - Interpersonal skills are critical 
+    - Focus on global evaluation of skills 
+    - Conceptual understanding
+- Demonstration or presentation 
+    - Opportunity to show creativity 
+    - Communication skills check 
+    - Opportunity to interact
+- Evaluation of technical skill
+    - Focused practical problem 
+    - Follow up discussion
+
+###Management strategies
+
+####Onboarding the data science team
+
+1. **Initial meeting**
+    - Overview 
+    - Expectations 
+    - Policies
+2. **Human resources**
+    - Payroll 
+    - Benefits 
+    - Documentation
+3. **Introductions**
+    - Data science team 
+    - Other teams
+4. **Equipment and communication**
+    - Hardware 
+    - Software 
+    - Communication channels
+5. **Initial problem**
+    - Something to get started 
+    - Short duration 
+    - Concrete
+
+####Managing the data science team
+
+- **Individual meetings**
+    - Regular 
+    - Updates problems and goals
+- **Data science team meetings**
+    - Regular 
+    - Updates problems and goals 
+    - Peer review 
+    - Team priorities and motivation
+- **Monitoring interactions**
+    - Actively 
+    - Passively
+- **Keeping things running** 
+    - Open door policy 
+    - Quick questions via chatemail
+- **Managing growth**
+    - Introduction to new tools 
+    - Introduction to new interactions 
+    - Opportunities for advancement
+
+####Evaluating success of the team
+
+- **Group success**
+    - Solving organization problems 
+    - Solving internal problems 
+    - Metrics
+- **Individual success**
+    - Completion of projects 
+    - Personal improvement
+- **Examine failure**
+    - Take responsibility 
+    - Identify the problem 
+    - Concrete steps toward a solution
+- **Celebrate success**
+    - Important to make your team known 
+    - Keeps people motivate
+
+###Working with other teams
+
+####Embedded teams vs. dedicated groups
+
+**Embedded data scientist:** Sits with a diverse team
+
+```{r echo = FALSE, fig.width = 5, fig.height = 3, fig.align = 'center', message=FALSE, warning=FALSE}
+library(png); library(grid)
+grid.raster(readPNG("figures/5.png"))
+```
+
+**Dedicated group data scientist:** Sits with a group of data scientists
+
+```{r echo = FALSE, fig.width = 5, fig.height = 3, fig.align = 'center', message=FALSE, warning=FALSE}
+library(png); library(grid)
+grid.raster(readPNG("figures/6.png"))
+```
+
+**Keys**
+
+- Close communication 
+    - Know what the problems are 
+    - Know the quirks of the data
+- Support 
+    - Data science is frustrating 
+    - Access to knowledge/advice
+- Empowerment
+    - Data is not political 
+    - Supported to report accurately
+    
+**Optimal compromise**
+
+- Sits with manager and team 
+- Regular meetings with "clients"
+
+```{r echo = FALSE, fig.width = 5, fig.height = 3, fig.align = 'center', message=FALSE, warning=FALSE}
+library(png); library(grid)
+grid.raster(readPNG("figures/7.png"))
+```
+
+####How does data science interact with other groups?
+
+**Consulting**
+
+```{r echo = FALSE, fig.width = 5, fig.height = 3, fig.align = 'center', message=FALSE, warning=FALSE}
+library(png); library(grid)
+grid.raster(readPNG("figures/8.png"))
+```
+
+**Collaborating**
+
+```{r echo = FALSE, fig.width = 5, fig.height = 3, fig.align = 'center', message=FALSE, warning=FALSE}
+library(png); library(grid)
+grid.raster(readPNG("figures/9.png"))
+```
+
+**Teaching**
+
+```{r echo = FALSE, fig.width = 5, fig.height = 3, fig.align = 'center', message=FALSE, warning=FALSE}
+library(png); library(grid)
+grid.raster(readPNG("figures/10.png"))
+```
+
+**Proposing new ideas**
+
+```{r echo = FALSE, fig.width = 5, fig.height = 3, fig.align = 'center', message=FALSE, warning=FALSE}
+library(png); library(grid)
+grid.raster(readPNG("figures/11.png"))
+```
+
+####Empowering others to use data
+
+**Data science training**
+
+- Internal talks 
+- Internal training sessions
+
+**Interactive documents**
+
+- Data apps 
+- Interactive visualization
+
+**Data idea evaluation**
+
+- Data science is hard 
+- Peer review from data team & you
+
+###Common difficulties
+
+####Common interaction difficulties
+
+**Lack of interaction**
+
+- Identify the prolem 
+- Take a more active role 
+- Move personnel if necessary
+
+**Lack of empowerment**
+
+- Understand both sides 
+- Take the heat 
+- Provide internal support
+
+**Lack of understanding**
+- More interactions with other groups 
+- Presentations to the organization 
+- Advertising the data team
+
+####Common internal difficulties
+
+**Code of conduct**
+
+- Have a policy 
+- Open communication 
+- Quick, impartial, enforcement
+
+**Inter-meeting slowdowns**
+
+- Identify core issues 
+- Increase interaction 
+- Evaluate motivation
+
+**Frustration**
+
+- Remember to motivate 
+- Positive reinforcement 
+- Impartial feedback
+
+##Managing data analysis
+
+
+###Data analysis as art
+
+Data analysis can be considered as an **art**. Data analysis is a complex process that can involve many pieces and tools. The process of data analysis is not one that we have been able to write down effectively. In 1991, Daryl Pregibon (statistician at Google) said that "statisticians have a process that they espouse but do not fully understand".
+
+
+*How can one effectively generalize across many different data analyses, each of which has important unique aspects?*
+
+
+We will describe the process of data analysis to better manage it. It is not a specific "formula" for data analysis but rather is a general process that can hopefully be applied in a variety of situations. 
+
+###The data analysis iteration
+
+To the uninitiated, a data analysis may appear to follow a linear, one-step-after-the-other process which at the end, arrives at a nicely packaged and coherent result. In reality, data analysis is a highly iterative and non-linear process, better reflected by a series of epicycles (see figure), in which information is learned at each step, which then informs whether (and how) to refine, and redo, the step that was just performed, or whether (and how) to proceed to the next step.
+
+An epicycle is a small circle whose center moves around the circumference of a larger circle. In data analysis, the iterative process that is applied to all steps of the data analysis can be conceived of as an epicycle that is repeated for each step along the circumference of the entire data analysis process. Some data analyses appear to be fixed and linear, such as algorithms embedded into various software platforms, including apps. However, these algorithms are final data analysis products that have emerged from the very non-linear work of developing and refining a data analysis so that it can be "algorithmized."
+
+**There are 5 core activities/steps of data analysis:**
+
+1. Stating and refining the question
+2. Exploring the data
+3. Building formal statistical models
+4. Interpreting the results
+5. Communicating the results
+
+These 5 activities can occur at different time scales: for example, you might go through all 5 in the course of a day, but also deal with each, for a large project, over the course of many months. 
+
+For each of the five core activities, it is critical that you engage in the following steps ("epicycle of data analysis"/data analysis iteration):
+
+1. **Setting Expectations**
+    - process of deliberately thinking about what you expect before you do anything (inspect data, perform a procedure...)
+    - important to have a sharp expectation (not diffuse) that allow to easily determine whether the expectations match the data collected
+2. **Collecting information (data)**
+    - compare the data to your expectations, and if the expectations match or don't
+3. **Revising your expectations or fixing the data so your data and your expectations match**
+
+Iterating through this 3-step process is what we call the "**epicycle of data analysis**." As you go through every stage of an analysis, you will need to go through the epicycle to continuously refine your question, your exploratory data analysis, your formal models, your interpretation, and your communication.
+
+The repeated cycling through each of these five core activities that is done to complete a data analysis forms the larger circle of data analysis. 
+
+```{r echo = FALSE, fig.width = 5, fig.height = 3, fig.align = 'center', message=FALSE, warning=FALSE}
+library(png); library(grid)
+grid.raster(readPNG("figures/12.png"))
+```
+
+```{r echo = FALSE, fig.width = 5, fig.height = 3, fig.align = 'center', message=FALSE, warning=FALSE}
+library(png); library(grid)
+grid.raster(readPNG("figures/13.png"))
+```
+
+###Six types of question
+
+Doing data analysis often requires more thinking than doing. Many of the "fatal" pitfalls of a data analysis can be avoided by expending the mental energy to get the question right. Understanding the type of question you are asking may be the most fundamental step you can take to ensure that, in the end, your interpretation of the results is correct. 
+
+Each type of questions has very different characteristics and ways to interpret your data analysis findings.
+
+1. **Descriptive**
+    - summarize a characteristic of a data set (proportion, averages, mean)
+    - focus on the dataset at hands and its features without looking outside
+2. **Exploratory**
+    - look for patterns, trends, or relationships between variables in a data set
+    - also called "hypothesis-generating" analyses because rather than testing a hypothesis as would be done with an inferential, causal, or mechanistic question, you are looking for patterns that would support proposing a hypothesis
+    - focus on the dataset at hands ans its characteristics
+3. **Inferential**
+    - often the result of an exploratory data analysis
+    - make a statement about a quantity or pattern that cannot be observed, outside the dataset. You want to know if what you observed in the data set (e.g. relationships observed after EDA) holds somewhere else in another data set. 
+    - More difficult question as you concern about what is outside the data set. You need to be careful about the methods/approaches you use.
+4. **Predictive**
+    - predict a feature given a set of features of a unit of analysis
+    - at a large scale it is looking at the correlation between features of a dataset
+    - Focus on the accuracy of prediction and often lead to solutions that don't say how things work or explain the mechanism.
+5. **Causal**
+    - how average changes in a given feature/set of features will change when we modify another feature. 
+    - directly addressed via experiments (randomized control trials...)
+    - indirectly addressed by using observational data when we can't design experiment
+6. **Mechanistic**
+    - identify deterministic relationships between two sets of features. If we change one measurement on one hand, does it always result in a specific outcome on a different measurement?
+    - this type of relationship is difficult to identify outside of highly controlled environments (e.g. engineering)
+
+Many data analyses answer multiple types of questions. The type of question you ask is determined in part by the data available to you (unless you plan to conduct a study and collect the data needed to do the analysis).
+
+
+The type of question directly informs how you interpret your results. It often happens to mistake one type of question for another and therefore give wrong interpretations.
+
+```{r echo = FALSE, fig.width = 5, fig.height = 3, fig.align = 'center', message=FALSE, warning=FALSE}
+library(png); library(grid)
+grid.raster(readPNG("figures/14.png"))
+```
+
+###Characteristics of a good question
+
+1. **Of interest to your audience**
+    - find your audience
+    - the identity of the audience depends on the context and environment in which you are working with data (scientific community when being in academia, boss when working at a start-up...)
+2. **Not already answered**
+    - do some research: with the recent explosion of data and endless scientific literature, plausible that someone has already answered the question/related questions
+    - related questions may have been answered and this can be informative for deciding if or how you proceed with your specific question
+3. **Plausible**
+    - Ensure that the question is grounded in a plausible framework by using your own knowledge of the subject area and doing a little research
+    - you should be able to explain the mechanism for how things work. If not, it can be a sign of a bad question, leading to collect bad data, waste time...
+    - if you ask a question whose framework is not plausible, you are likely to end up with an answer that's difficult to interpret or have confidence in
+4. **Answerable**
+    - some of the best questions aren't answerable, either because the data don't exist or there is no means of collecting the data because of lack of resources, feasibility, or ethical problems (e.g. health field)
+5. **Specific**
+    - Often lead to better data collection, simpler experiments & data analysis, and a well-defined intervention or change of behavior (action to take after the findings)
+    - plan of attack will be much clearer and the answer of the data analysis will be more interpretable
+
+###Exploratory data analysis checklist
+
+1. **Formulate your question**
+    - guide the exploratory data analysis process and limit the exponential number of paths that can be taken with any sizeable dataset. A *sharp* question/hypothesis can serve as a dimension reduction tool that can eliminate variables that are not immediately relevant to the question
+2. **Read in your data...**
+3. **... and check the packaging**
+    - Look at basic characteristics of the data set (e.g. `str()` in R) to identify potential problems before diving into the data analysis, check that the dataset has the right shape/size (check rows/columns, known or key variables, metadata or codebook)
+4. **Look at the edge: top and bottom of your data**
+    - foolproof approach: make sure that the data looks as it should look (formatted correctly, check time series correctness, data read properly, no junk...)
+5. **Check your "n"s**
+    - number/count of columns, rows, features...
+6. **Validate with at least one external data source**
+    - external validation can often be as simple as checking your data against a single number (average, check reality of the data...)
+7. **Make a plot to lok at your data**
+    - allow one to see summaries of the data (create expectations) as well as deviations that may be unexpected (deviations from expectations: positive/negative values, skewness...)
+8. **Try the easy solution first**
+    - What is the most obvious?
+    - "*primary model*"
+    - if you do not find evidence of a signal in the data using just a simple plot or analysis, then often it is unlikely that you will find something using a more sophisticated analysis
+9. **Goal of EDA: Follow up questions**
+    1. *Do you have the right data?* Sometimes at the conclusion of an exploratory data analysis, the conclusion is that the dataset is not really appropriate for this question
+    2. *Do you need other data?*
+    3. *Do you have the right question?*
+
+The **goal** of exploratory data analysis is to determine if the data you have are appropriate for answering your question. At this point, we can refine our question or collect new data, all in an iterative process to get at the truth.
+
+###Using models to explore your data
+
+A model is a construct we build to help us understand the real world, describe the population (e.g. use of an animal which mimics a human disease to help us understand, and hopefully, prevent and/or treat the disease, predicting results of an election...). The population is too complex so the model will stand in for the population. It imposes structure to the population even if it isn't completely right.
+
+
+George Box: *All models are wrong, but some are useful.*
+
+
+**Use different types of models:** They can tell you very different things about the population and result in very different predictions. They help to refine your model and choose the best.
+
+Depending on the context, sometimes you just need a simple model to make a decision such as fixing prices.
+
+###Exploratory data analysis: when to stop
+
+When you do exploratory data analysis, you usually iterate a few times.
+
+- **Are you out of data?**
+    - EDA raise questions that simply cannot be answered with the data at hand
+    - need to collect additional data to determine whether what you observe is real or simply a fluke or statistical accident. More data analysis with the same datais unlikely to bring these answers
+    - when you've completed the data analysis and come to satisfactory results. It can be very important to **replicate your findings** using a different, possibly independent, dataset. Such independent confirmation can increase the strength of evidence and can play a powerful role in decision making. 
+- **Do you have enough evidence to make a decision?**
+    - Data analysis is often conducted in support of decision-making, whether in business, academia, or government
+    - Doing data analysis to make a decision is very different from achieving other goals, such as writing a report, publishing a paper, or putting out a finished product
+    - keep in mind the purpose of the data analysis. It may change over time and there may in fact be multiple parallel purposes
+    - keeping track of the purposes and the "*why your are analyzing the data*" will keep you focus on how much you can iterate the data analysis to get the proper answer
+- **Can you place your results in any larger context?**
+    - Or *Do the results make some sort of sense?*
+    - search literature in the area, people inside or outside the organization and check if they have come to a similar conclusion
+    - if your findings fit what others have found, it may or may not be a good thing. That may be a sign that you need to refine your question (not sharp enough)
+    - if your findings don't fit/are odds, it may be because you made a mistake or it can lead down a path of new discovery. In this case, check every step of your analysis to find any mistake and replicate your analysis in an independant dataset to get confidence
+- **Are you out of time?**
+    - related question: *Are you out of money?*
+    - when time/money budget, keep track of your progress
+
+###Making inference about data
+
+Inference is the task of making statement about something you can't really observe directly (population).
+
+####Ingredients to make inference
+
+1. **Identify the population**
+    - *Can we characterize the population?*
+    - most important. If you can't characterize the population, you can't make inference
+2. **Describe the sampling process**
+    - *Do we understand the sampling process?*
+    - how the population has been sampled
+3. **Diagnose your model**
+    - *Do you have an appropriate model for the population?*
+    - use a flexible method
+4. **Require a measure of uncertainty**
+    - sample variability
+
+```{r echo = FALSE, fig.width = 5, fig.height = 3, fig.align = 'center', message=FALSE, warning=FALSE}
+library(png); library(grid)
+grid.raster(readPNG("figures/15.png"))
+```
+
+You don't always need to make inference: if you have all the information you need in your dataset, if you don't care of what is outside your data. Then it simplifies the analysis.
+
+####What can go wrong with inference
+
+1. **Population not well-defined**
+    - vague population = vague inferences
+    - difficult to interpret
+2. **Incorrect sampling process**
+    - convenience sample, selection bias...
+3. **Incorrect model**
+    - incertitude, difficult to interpret, poor prediction, higher error rate...
+
+###Formal modeling
+
+Formal modeling: process of precisely specifying statistical model for your data and for providing a rigourous framework for challenging and testing those models.
+
+After EDA, you have a reasonable sketch of the solution of your question but you may not be sure if it will go through further challenges. Formal modeling will challenge this sketch by precision and rigourous framework.
+
+**Parameters:** characteristics of the population. They are considered to be unknown. We have to estimate them from the data. Formal modeling helps to define what type of parameters you want to estimate (e.g. coefficients in linear regression models)
+
+####General framework for formal modeling
+
+1. **Setting expectations**
+    - primary model is your best sense of what the answer to your question is
+    - summarizes your results and matches current expectations
+    - based on currently available information such as EDA process
+    - not necessarily final model, helps to structure the analysis, may be updated or changed
+2. **Collecting information**
+    - given a primary model, develop a series of secondary models
+    - challenge the primary model and test its limits 
+    - generate evidence against the primary model 
+    - sensitivity analysis: how sensitive is the primary model to various changes you introduced in secondary models?
+3. **Revising expectations**
+    - secondary models are largely consistent with primary models (meaning of "consistent" depends on context). You can move on to the next phase/report the result
+    - secondary models successfully challenge primary model and put conclusions in doub: adjust or modify primary model to better reflect additional evidence
+    
+####Two basic situations for using formal modeling
+
+1. **Associational analyses**
+    - goal: look at the association between two or more features
+    - e.g. linear model
+    - 3 classes of variables:
+        1. outcome: feature that changes when key predictor changes, whether it is causal or not
+        2. key predictor: explain some variation in the outcome. Usually one key predictor but there might be several
+        3. potential confounders: things that are associated both with outcome and key predictor. Usually confuse the association outcome/key predictor
+2. **Prediction analyses**
+    - goal: use all available information to predict an outcome
+    - don't care about any mechanism/how things work/how variables are related to each other or the outcome. You just want to build a solid prediction so any variable that can play a role in that is useful
+    - no distinction between key predictor and other predictors. The model will define which feature is more significant than others
+    - prediction approaches are algorithmic and do not result in math formulations, no parameters of interest
+    - often classification problem where outcome takes only 2 values 
+
+###Inference vs. Prediction: Implications for Modeling Strategy
+
+The type of question you're answering (inferential vs. prediction) can greatly influence the modeling strategy you pursue. If you do not clearly understand, you may end up using the wrong type of modeling approach and ultimately make the wrong conclusions from your data. 
+
+- **Inferential questions**
+    - make a statement about something that you don't observe
+    - ***goal:*** estimate an association between a key predictor and the outcome while adjusting for confounders
+    - single or small number of predictors
+    - many potential confounding variables to consider
+    - sensitivity analyses conducted to see if associations of interest are robust to different sets of confounders
+- **Prediction questions**
+    - produce a very good prediction of a given feature, given a set of other features
+    - ***goal:*** identify a model that best predicts the outcome with high accuracy and low error
+    - use all available information
+    - no predictors favored over the others, so long as they are good at predicting the outcome
+    - no notion of "confounder" or "predictors of interest" because all predictors are potentially useful for predicting the outcome
+    - little focus on mechanism/"how the model works" or telling a detailed story about the predictors
+
+###Interpretation of results
+
+Interpretation is happening continuously throughout an analysis. The third step of the analysis epicycle, "matching expectations to the data" is itlself interpretation.
+
+
+Principles of interpreting results:
+
+1. **Revisit the original question**
+    - making sure you are still on track
+    - remember the type of question: modeling approach should match
+    - check potential bias
+2. **Primary result**
+    - focus on the nature of the results (rather than on a binary assessment of the result e.g. statistically significant or not). Its characteristics
+        - *directionality*: positive or negative association (quick check to see if results match expectations)
+        - *magnitute*: size of association/effect. Does it make sense/meaningful? Who will be affected?
+        - *uncertainty*: assessment of how likely the result was obtained by chance. If it blows up when adding new factors in the model, that may be because you don't have the right estimate...
+    - assess the totality of the evidence
+3. **Context**
+    - overall interpretation based on the totality of your analysis (models & results) and the context of what is already known about the subject (independent results/literature/research)
+4. **Implications**
+    - guide in determining what action(s), if any, sbould be taken as a result of the answer to the question
+    - different groupes of people will interpret evidence differently (not because they are incorrect) because their decision to act on evidence will be based on a variety of factors that are outside the dataset/not part of the analysis
+    - keep in mind the ultimate goal of the analysis, the decision that might need to be made, the stakeholders
+
+###Communication
+
+Communication is fundamental for a good data analysis, both *formal* and *informal*. Communication is both a tool and a product for data analysis. A good data analyst communicates informally multiple times during the data analysis process (*communication as a tool*) and communicate the final results to a wider audience (*communication as a product*).
+
+####Routine communication
+
+The **purpose** of a routine (= informal) communication is to **gather information** by communicating the results and collecting the responses from the audience. It will inform the next step of the data analysis.
+
+The form that a routine communication takes depends on its goal (what kind of information needs to be collected). You might an answer to:
+
+1. **Focused and technical question**
+    - factual knowledge or clarification of a dataset/model
+    - gather a single fact
+    - *Example:* clarify coding of a variable - single person
+2. **Feedbacks on unexpected results**
+    - help you work through some results that are not quite what you expected
+    - *Example:* results of EDA unexpected - informal meeting, small group
+3. **Get feedback or first impressions on overall process**
+    - no defined question, get general impressions and feedback as a means of identifying issues that had not occurred to you so that you can refine your data analysis
+    - *Example:* milestone/primary model to challenge - team or group meeting
+
+Concepts to help achieve communication objectives:
+
+1. **Audience**
+    - can be selected or pre-determined (e.g. when working in a company)
+    - may be composed of: other data analysts, individual(s) who initiated the question, boss and/or other managers or executive team members, non-data analysts who are content experts, and/or someone representing the general public
+    - select the right audience for the kind of feedback you are looking for
+2. **Content**
+    - be prepared
+    - be focused and concise
+    - provide sufficient information for the audience to understand the information you are presenting and question(s) you are asking
+3. **Style**
+    - avoid jargon. Unless you are communicating to a small and technical audience, use language and visualization that can be understood by a more general audience
+4. **Attitude**
+    - have an open & collaborative attitude to fully engage the audience
+    - do not "defend" your work but rather get their input to get the most
+
+####Data analysis presentations
+
+Key component of a good data analysis presentation:
+
+1. **State the question**
+    - everyone knows what the goal is
+2. **Describe what type of question**
+    - inform any discussion that can happen
+3. **Show the data**
+    - tempting to just show summaries
+    - people love to talk about data so they might have an interesting discussion
+4. **Make plot**
+    - better than table
+    - show deviations and produce discussion
+5. **Show a measure of uncertainty**
+    - richer discussion
+    - people get the full picture (primary and secondary models)
+6. **Separate evidence, interpretation, decision**
+    - evidence = results of the analysis
+    - engage discussion, different opinions
+    
+##Data science in real life 
+
+**Atributes of data science in an ideal life**
+
+- Clearly defined hypotheses of interest, specified a priori
+- Experimental design available
+    - Randomization used across a treatment of interest
+    - Stratification on nuisance variables
+- Random sample from a population of interest
+- Data directly able to interrogate hypotheses
+- Dataset creation/merging goes smoothly
+- No missing data or dropout
+- Analysis is robust without need for advanced modeling
+- Conclusions are clear
+    - Parsimonious knowledge gained via the experiment
+- Decision is obvious given the data
+
+**Atributes of data science in real life**
+
+- Data is needed to inform hypotheses and interrogate them
+- Multiple comparisons are an issue
+- Experimental design options are limited. Or, data is observational
+    - Randomization is not available
+    - Data is retrospective
+- The population being studied isn't the population of interest
+- The data don't have the exact measurements that you need to evaluate the hypotheses - Dataset is problematic
+    - Merging is problematic with multiple matches, no matches
+    - Data entry errors
+- Missing data
+- Advanced modeling is required, similarly advanced computing needed to fit the model, issues with robustness and bugs
+- Conclusions are indeterminant
+- Decision is not substantially further informed by the data
+
+###Managing the data pull
+
+In almost every data science project, there is a large effort in organizing an analytic data set. This often requires data munging, web scraping, pulling data from a larger more complex dataset, merging datasets and formatting changes. In the ideal, this process goes very smoothly and the analytic dataset is a clean representation of the desired process. In real life, this process is fraught with errors.
+
+As a manager, you will manage this process. How do you help managing this process?
+
+**Strategies for analytic data quality:**
+
+1. **Construction of summary tables**
+    - **Summary tables:** useful for catching data errors, keeping track of units and recording several summaries (means, medians, maxima, minima and other quantiles and standard deviations)
+        - Compare across reports over time, checking if things are changing in the processing that shouldn't be.
+2. **Regression diagnostics**
+    - Universal first step in analyzing data
+    - useful for **catching data quality errors** that manifest themselves in your analysis. Some useful regression diagnostics are:
+        1. **Residuals:** difference between the response and the fitted value. Residual plots shouldn't have systematic patterns 
+        2. **Hat diagonals:** consider how variable a data row is among the space of predictors
+        3. **DF fits, DF betas, Cook's distance:** consider how much do fitted values and coefficients change when a point is not included in the fit? 
+        4. **PRESS residuals:** leave one out residuals. How much do predictions change when a point is left out of an analysis
+3. **Benford's law**
+    - also called the First-Digit Law
+    - phenomenological law about the frequency distribution of leading digits in many (but not all) real-life sets of numerical data
+        - You can't check every data point
+        - However, you can query and check some
+        - Use statistical sampling logic to estimate the proportion of bad data in your sample
+
+###The experiment is carefully designed, concepts
+
+The ideal is to have an experiment carefully designed but the reality is often having observational data. A large dichotomy in analysis comes from having **experimental data** versus **observational data**.
+
+**Good experimental design can help**
+
+- Account for known important factors (blocking, stratification)
+- Account for unknown factors (randomization)
+- Get an unbiased sample (random sampling)
+- Eliminate the need for complex analyses
+- Isolate effects of interest
+
+**Observational experiments**
+- Often feasible when designed experiments are not
+- Have large sample sizes
+- Cheaper to execute
+- Often require more complex modeling
+
+**Causality**
+
+- How do we define causality?
+    - "We may define a cause to be an object followed by another, and where all the objects, similar to the first, are followed by objects similar to the second. Or, in other words, where, if the first object had not been, the second never had existed.", *David Hume*
+- The causal effect of a treatment on  a subject is the change in the outcome:
+    - from the treatment the subject actually received and
+    - what would of occurred had she or he received the other treatment
+- The average causal effect is the average of the subject-specific causal effects
+- Think about these study designs in the light of counterfactuals
+    - Crossover trials: Give a subject a treatment, then after a suitable washout period, give the other
+- Randomization is our most effective tool for estimating average causal effects 
+
+**Confounding**
+
+- occurs when you want to compare two things and a third gets in the way
+    - ***Example:***you want to look at ad performance and purchases. However, the ads ran on different sites, so were thus seen by a different audience. The different audiences may have different purchasing patterns, so any difference seen may not be due to the ad campaign but instead may be due to the audience.
+- [More about confounding](https://en.wikipedia.org/wiki/Confounding)
+
+###The experiment is carefully designed, things to do
+
+**Randomization:**  using random assignment of a  treatment to create balanced comparisons with high probability
+
+
+**A/B testing:** implementation of randomization in an experiment to make the groups being compared (A versus B) as comparable as possible. [More information](https://en.wikipedia.org/wiki/A/B_testing)
+
+**Blocking and adjustment**
+
+- Address the following questions:
+    - *What can we do when we don't have randomization?*
+    - *If we know and collect a variable that clearly will be a confounder, shouldn't we incorporate that into our design rather than leave its balance across treatment groups up to chance?*
+    - It is generally a good idea to consider possible confounders when considering a significant effect
+- **Blocked experiment:** we randomize within levels of a potential confounding variable. [More about blocking](https://en.wikipedia.org/wiki/Blocking_(statistics))
+- **Adjustment:** strategy used after the data has been collected. We look at the relationship between the predictor and outcome with levels of the confounding variable held fixed. We look at the relationship within the confounding variable. Regression models do this sort of adjustment for us automatically, with some assumptions. It's possible for a regression effect to reverse itself after the inclusion of another variable into the model. [More about regression adjustment](http://oem.bmj.com/content/62/7/500.full)
+
+**Sampling**
+
+- Use random sampling to obtain a sample that, with high probability, is a good representation of the population
+- Often, however, it's impossible to have control over the sampling process of an experiment. 
+    - **Sampling bias** occurs when the sample is not indicative of the target population resulting in inferences that are off. three strategies to work around issues with the sample:
+        - *Random sampling*
+        - *Weighting:* process of allowing certain observations to carry more influence in models
+        - *Modeling:* trying to model the process that are biasing the sample
+    - [More about sampling bias](https://en.wikipedia.org/wiki/Sampling_bias)
+
+###Results of analyses are clear
+
+Ideal results of analysis require that the effects are large and hypothesis test is significant. However, results often are not clear but there are some ways to combat that.
+
+
+**Hypothesis testing:** use of a statistic to decide between two hypotheses. We set one as the default hypothesis (null hypothesis) and the other as the alternative. We make it difficult (requiring lots of evidence) to reject the null hypothesis and conclude the alternative. This is done by setting the chance that we reject the null and conclude the alternative by mistake is low (usually 5%). Often, the result of a hypothesis test is summarized with a p-value. A small p-value (close to 0) supports the alternative while a large one (close to 1) supports the null. We reject the null if our p-value is less than 0.05 if we want to control the probability of incorrectly rejecting the null at 5%.
+
+**Effect:** If we're testing whether the means between two groups are different the result of the hypothesis test would be the p-value or the conclusion of the test while the effect is the difference between the means. A confidence interval is an estimate of the effect that incorporates uncertainty.
+
+####Multiple comparisons
+
+If one performs lots of hypothesis tests, either from fitting a lot of models or because a lot of things are of interest, then the probability that we see apparently significant findings simply by chance even though they're not actually significant increases. [xkcd comic strip](https://xkcd.com/882/)
+
+
+**Solution: the Bonferroni correction.** Multiply your p-values by the number of tests you performed and then consider the p-values.
+
+
+####Effect size and comparison
+
+When we don't really know how to interpret the significance of an effect or its magnitude.
+
+
+**Solution:** Compare it to other variables with known effects. Comparing your effects to familiar ones is useful for mentally calibrating the size of an effect or its significance when a variable under study is not well understood.
+
+####Negative controls
+
+Negative control analyses are useful as a validity check of an effect of interest by looking to see if similar effects occur with the same analysis on variables where an effect is known not to be present and for evaluating processes to see if spurious effects are obtained. A good negative control will have a negative control that is known not to have an effect but is otherwise similar to the variable under study.
+
+Learn more [here](http://study.com/academy/lesson/negative-control-definition-experiment-quiz.html)
+
+
+###The decisions are obvious
+
+Ideally, when one is done with an analysis, the decision to be made from the data is obvious. **Two common instances where the decision is far from obvious:**
+
+1. **When the results are equivocal** (p-values are around 0.05 where a 5% error rate is the standard)
+
+There is no universal consensus on the role of sample size in the significance of a statistical finding. *Does a marginally significant finding gain credibility from a large sample size or does it suffer because it should have been more clear with this much data to interrogate hypotheses?*
+
+**Power** is the probability of rejecting the null hypothesis when it's false. You want more power. If you get a null result it may be due to low power or that the null hypothesis is actually correct. A study with a very low sample size will likely have low power. Low powered studies are likely not going to reject regardless of whether the null is true, just because of variability. Power is under control at the time of design of an experiment via the sample size. However, after the experiment is performed, there isn't much to be done about power. Often people get the idea of calculating power after the experiment has been done to try to differentiate between non-significant results due to lack of power or true non-significance. This is a bad idea. Potentially at your disposal, however, is conducting new studies, or getting more data for the existing study.
+
+
+[See this manuscrit](http://amstat.tandfonline.com/doi/abs/10.1198/000313001300339897)
+
+2. **Even if the decision is clear, the outcome can't be measured** so that the analysis was performed on a surrogate variable
+
+This is extremely common (BMI for body fat percentage, GDP for economic health...). The use of a surrogate can occur for the outcome or the predictors or both. If the surrogate variable is used as a predictor, the field of measurement error has several tools available. A particularly useful one is called SimEx. As an outcome, the problem is called surrogate outcomes. Ideally, you'll know that the surrogate is unbiased around the true outcome and know the variance. This could occur if you could do a gold standard study. If you don't know it, the second best case would be to have the data to estimate it. For example, in our BMI example, you could measure body fat percentage and BMI on a subset of your sample.
+
+
+In the absence of any calibration data to evaluate your surrogate, you are left with either modeling via assumptions or sensitivity analyses.
+
+
+Finally, if your surrogate variable is such an unreliable of an estimate of your actual outcome, one must come to the conclusion that it's better to not conduct the study at all.
+
+**More information:** [Book](http://www.amazon.com/Measurement-Error-Nonlinear-Models-Perspective/dp/1584886331) and [Notes](http://depts.washington.edu/ssbiost/PRESENTATIONS/DeMets.pdf)
+
+###The analysis product is awesome
+
+The products of the analysis is usually some sort of report, presentation, app or web page. **Two components that make for good final products:** making the report **reproducible** and making the report and code **version controlled**.
+
+####Reproducible analysis
+
+**Analysis reproducible:** if we ask people to replicate others' analyses, they often get different results. That's why it is important to make the analysis reprodcible. Benefits of using the right tools for reproducible reports: help achieve the goal of reproducibility, help organize ones thinking by blending the code and the narrative into a single document, help document the code in a way that commenting doesn't achieve and help automate the report writing process. **Two recommended tools:**
+
+- [knitr](http://yihui.name/knitr)
+- [ipython notebooks](http://ipython.org/notebook.html)
+
+
+It is also important to:
+
+- **Check the signs:** checking that your effects are in the direction that you expect. It helps enforce asking the people that you manage to do more than just reporting coefficients
+- **Magnitudes:** by comparison with other known effects
+- **Units:** put units on everything (graph axes, coefficients, means...) and make sure to understand them
+
+
+It's also important to get the data scientists and analysts out of technical jargon speak and into interpretation and interpretability (premium on simplicity).
+
+####Version control
+
+Version control is general good practice. It is the **process of keeping versions of your software, code, data and reports**. 
+
+
+Modern version control software makes this process easy. Using good version control, the project can be reverted to any previous step, and all of the steps are commented. Tools like [git](https://git-scm.com/book/en/v2) make this possible in massively distributed settings where lots of people are working on the same project. Git is the version control software, and a git repository is the actual version control database. Collaboration on a git repository occurs on a server. There are tons of hosted git servers out there for general and business use that offer nice web interfaces to the server: [github](https://github.com/) or [bitbucket](https://bitbucket.org/).
