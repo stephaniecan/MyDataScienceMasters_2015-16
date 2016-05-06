@@ -1,0 +1,281 @@
+---
+title: "Creativity and fulfillment"
+author: "Stephanie Canovas"
+date: "10/31/2015"
+output:
+  html_document:
+    theme: cerulean
+---
+
+## Introduction
+
+*Research question:* **Does there appear to be a relationship between the time spent on creative activities and people's feeling of fulfillment when creating things?**
+
+I am convinced that creativity can strongly benefit people in their work and personal life. Here, I would like to encourage people in developing their creative capabilities by demonstrating a relationship between creativity time and fulfillment.
+
+## Data
+
+I collected the data here (read the "erratum"): http://news.eyeka.net/2012/07/eyeka-creativity-survey-dataset/.
+
+- csv format: http://s3-ie.news.eyeka.net.s3.amazonaws.com/wp-content/uploads/2012/07/eYeka-creativity-survey-data-CSV.csv
+
+- xlsx format (more information about variables): http://s3-ie.news.eyeka.net.s3.amazonaws.com/wp-content/uploads/2012/07/eYeka-creativity-survey-data-XSLX.xlsx
+
+
+The **cases** are individual people from USA, UK and France who answered a survey conducted by eYeka (company that connects brands and creators).
+
+I created (*with R coding available in the "Reference"" part of this analysis*) two variables suitable and interesting for the project, based on & faithful to the information provided by the original dataset.
+
+**The two variables that I created for this analysis are:**
+
+**1. "fulfillment".** Ordinal categorical variable with 5 levels : "not at all" (not fulfilled at all), "not f." (not fulfilled), "neutral", "fulfilled" and "totally f." (totally fulfilled). It corresponds to the level of fulfillment of individual people when they create something.
+
+**2. "timespentcreativity".** Ordinal categorical variable with 4 levels: "none", "btw 1 and 3 days", "btw 3 and 7 days", "> 7 days". It corresponds to the average time spent per month by individual people on creative activities.
+
+It is an **observational study** because eYeka used a random sampling method without experimental design. Therefore, the findings can be generalized to the population of interest which is the population of three countries: USA, UK and France. According to eYeka there shouldn't be any sources of bias. However, these data cannot be used to establish causal links.
+
+## Exploratory data analysis
+
+```{r echo=FALSE, results='hide'}
+# read and subset data
+eyeka = read.csv(file = "eYeka-creativity-survey-data-CSV.csv")
+subset = eyeka[,c(7:14,22)]
+
+# Rename columns to make things easier
+names(subset) = c("time1", "time2", "time3", "time4", "time5", "time6", "time7", "time8", "motivation")
+
+# Create a new variable summarizing the 8 variables "time".
+
+subset$timespentcreativity = seq(from=0, to=0)
+
+for (i in 1:nrow(subset)) {
+        for (j in 1:8) {
+                if ((subset[i,j] == 5)==TRUE){
+                        subset$timespentcreativity[i] = "> 7 days"
+                        }
+                else if ((subset[i,j] == 4)==TRUE & (subset$timespentcreativity[i] == "> 7 days")==FALSE) {
+                        subset$timespentcreativity[i] = "btw 3 and 7 days"
+                        }
+                else if ((subset[i,j] == 1 | subset[i,j] == 2 | subset[i,j] == 3)==TRUE & (subset$timespentcreativity[i] == "> 7 days")==FALSE & (subset$timespentcreativity[i] == "btw 3 and 7 days")==FALSE){
+                        subset$timespentcreativity[i] = "btw 1 and 3 days"
+                        }
+                else if ((subset[i,j] == 0)==TRUE & (subset$timespentcreativity[i] == "> 7 days")==FALSE & (subset$timespentcreativity[i] == "btw 3 and 7 days")==FALSE & (subset$timespentcreativity[i] == "btw 1 and 3 days")==FALSE){
+                        subset$timespentcreativity[i] = "none"
+                        }
+        }}
+sum(subset$timespentcreativity == "> 7 days")
+# [1] 348
+sum(subset$timespentcreativity == "btw 3 and 7 days")
+# 292
+sum(subset$timespentcreativity == "btw 1 and 3 days")
+# 1035
+sum(subset$timespentcreativity == "none")
+# 314
+
+# Build the data set with 2 variables for Duke's project
+creativity = subset[,9:10]
+colnames(creativity)[1] = "fulfillment"
+
+# Deal with NA values
+sum(is.na(creativity$fulfillment)==TRUE) 
+# There are 11 missing values so we can delete the rows with missing values
+complete = complete.cases(creativity)
+creative = creativity[complete,]
+nrow(creativity) - nrow(creative) # 11
+
+# Change output of the fulfillment variable
+for (i in 1:nrow(creative)) {
+        if ((creative$fulfillment[i] == 1)==TRUE){
+                creative$fulfillment[i] = "not at all"
+        }
+        else if ((creative$fulfillment[i] == 2)==TRUE){
+                creative$fulfillment[i] = "not f."
+        }
+        else if ((creative$fulfillment[i] == 3)==TRUE){
+               creative$fulfillment[i] = "neutral"
+        }
+        else if ((creative$fulfillment[i] == 4)==TRUE){
+                creative$fulfillment[i] = "fulfilled"
+        }
+        else if ((creative$fulfillment[i] == 5)==TRUE){
+                creative$fulfillment[i] = "totally f."
+        }
+}
+
+# Make variable as factor variables and define their levels
+creative$timespentcreativity = factor(creative$timespentcreativity, levels = c("none","btw 1 and 3 days","btw 3 and 7 days", "> 7 days"))
+creative$fulfillment = factor(creative$fulfillment, levels = c("not at all", "not f.", "neutral", "fulfilled", "totally f."))
+
+#summary statistics
+creatable = table(creative$fulfillment, creative$timespentcreativity)
+tablecreate = round((addmargins(creatable, margin = 2)/rowSums(creatable))*100)
+tablecreate2 = round((addmargins(creatable, margin = 2)/rowSums(creatable))*100)
+tablecreate = as.character(tablecreate)
+tablecreate = paste(tablecreate, "%")
+attributes(tablecreate) = attributes(tablecreate2)
+library(pander)
+```
+  
+#### Mosaicplot  
+
+```{r echo=FALSE}
+# Explore data with graphics
+par(mar=c(2,4,3,0))
+mosaicplot(fulfillment ~ timespentcreativity, data = creative, main = "Relation between time spent on creativity and fulfillment", color = TRUE, xlab = "Levels of fulfillment", ylab = "Time spent on creativity", las = 1)
+```  
+
+The plot shows a correlation between the two variables. It looks like when people feel fulfilled when creating things, they tend to spend more time each month on creative activities.  
+
+#### Contingency table
+```{r echo=FALSE}
+pandoc.table(tablecreate, style = "rmarkdown", "Distribution in % of time spent on creative activities in terms of fulfillment", split.table = Inf, emphasize.rownames = FALSE)
+
+```    
+  
+The contingency table confirms what we have noticed in the mosaicplot.  
+
+There is a distinct increase in time spent each month on creative activities as the level of fulfillment increases. For example, we can see that among people not fulfilled at all ("not at all") when creating things, about 60% don't spend time at all each month on creative activities and very little (5%) spend more than 3 days. On the opposite, among people totally fulfilled, about 97% of people spend at least 1 day per month on creative activities (39% more than 7 days).  
+
+**Therefore, it appears that there is indeed a relationship between the time spent on creative activities and people's feeling of fulfillment when creating things.**
+
+## Inference
+
+#### Hypotheses 
+
+**H0 (nothing going on):** Time spent on creative activities and people's feeling of fulfillment when creating things are **independent.**  
+The time spent each month on creative activities does not vary by the levels of fulfillment felt when creating things.
+
+**HA (something going on):** Time spent on creative activities and people's feeling of fulfillment when creating things are **dependent.**  
+The time spent each month on creative activities does vary by the levels of fulfillment felt when creating things.  
+
+#### Method used: chi-squared test of independence
+
+We are evaluating the relationship between two categorical variables with more than 2 levels. Therefore we will use the **chi-squared test of independence** for which there is no associated confidence interval. No other methods are applicable and hence there's nothing to compare.  
+
+#### Conditions for the chi-square test
+
+**1. Independence:** Sampled observations must be independent.  
+- Random sampling (without replacement) has been used for the survey  
+- The total number of individual people from UK, France and USA represents less than 10% of the population of interest  
+- Each case only contributes to one cell in the table  
+
+**2. Sample size:** Each particular scenario (i.e. cell) has at least 5 expected cases.  
+I created a table with the expected cases (if H0 is true) calculated as per the required expected counts formula :  
+*expected count = (row total) x (column total) / table total*  
+As we can see in the table below, there is always more than 5 expected cases for each scenario (minimum being 11).  
+
+
+```{r, echo=FALSE}
+
+rowtotals = c(169,75,335,846,553)
+a = round((rowtotals/1978)*313)
+b = round((rowtotals/1978)*1028)
+c = round((rowtotals/1978)*289)
+d = round((rowtotals/1978)*348)
+expected = data.frame(a,b,c,d, row.names = c("not at all","not f.","neutral","fulfilled","totally f."))
+colnames(expected) = c("none", "between 1 and 3 days", "between 3 and 7 days", "> 7 days")
+expected
+```  
+
+#### Perform inference
+
+We will **test the hypothesis HA** that the time spent on creative activities and people's feeling of fulfillment when creating things are associated at the **5% significance level**.  
+For that, we will use the **inference function** with the following arguments:
+
+```{r}
+source("http://bit.ly/dasi_inference")
+inference(y = creative$timespentcreativity, x = creative$fulfillment, est = "proportion", type = "ht", alternative = "greater", null = 0, method = "theoretical")
+```  
+
+#### Interpret results
+
+The p-value (< 2.2e-16) is very small and lower than 5.  
+Therefore, **we reject H0 (null hypothesis) and favor of HA (the alternative).**  
+
+**These data provide convincing evidence that the time spent each month on creative activities and people's feeling of fulfillment when creating things are associated.**  
+
+## Conclusion
+
+When people feel fulfilled when creating things, they tend to spend more time each month on creative activities.  
+It appears that spending time on creative activities is something that people do according to their choice and feeling.  
+
+However, many other surveys show that lots of people are not happy with their job but keep it and spend lots of time doing it anyway.
+
+What can be interesting is to find or undertake a study on how people would feel if there were doing more creative activities within their work time (mostly in jobs considered "less creative").
+
+## References
+
+Here I will print out my R code that processed the original data set in order to create two variables interesting for the project.
+
+```{r, results='hide'}
+
+# read and subset data
+eyeka = read.csv(file = "eYeka-creativity-survey-data-CSV.csv")
+subset = eyeka[,c(7:14,22)]
+
+# Rename columns to make things easier
+names(subset) = c("time1", "time2", "time3", "time4", "time5", "time6", "time7", "time8", "motivation")
+
+# Create a new variable summarizing the 8 variables "time".
+subset$timespentcreativity = seq(from=0, to=0)
+
+for (i in 1:nrow(subset)) {
+        for (j in 1:8) {
+                if ((subset[i,j] == 5)==TRUE){
+                        subset$timespentcreativity[i] = "> 7 days"
+                        }
+                else if ((subset[i,j] == 4)==TRUE & (subset$timespentcreativity[i] == "> 7 days")==FALSE) {
+                        subset$timespentcreativity[i] = "btw 3 and 7 days"
+                        }
+                else if ((subset[i,j] == 1 | subset[i,j] == 2 | subset[i,j] == 3)==TRUE & (subset$timespentcreativity[i] == "> 7 days")==FALSE & (subset$timespentcreativity[i] == "btw 3 and 7 days")==FALSE){
+                        subset$timespentcreativity[i] = "btw 1 and 3 days"
+                        }
+                else if ((subset[i,j] == 0)==TRUE & (subset$timespentcreativity[i] == "> 7 days")==FALSE & (subset$timespentcreativity[i] == "btw 3 and 7 days")==FALSE & (subset$timespentcreativity[i] == "btw 1 and 3 days")==FALSE){
+                        subset$timespentcreativity[i] = "none"
+                        }
+        }}
+
+# Build the data set with 2 variables for Duke's project
+creativity = subset[,9:10]
+colnames(creativity)[1] = "fulfillment"
+
+# Deal with NA values
+sum(is.na(creativity$fulfillment)==TRUE) 
+
+# There are 11 missing values so we can delete the rows with missing values
+complete = complete.cases(creativity)
+creative = creativity[complete,]
+nrow(creativity) - nrow(creative) # 11
+
+# Change output of the fulfillment variable
+for (i in 1:nrow(creative)) {
+        if ((creative$fulfillment[i] == 1)==TRUE){
+                creative$fulfillment[i] = "not at all"
+        }
+        else if ((creative$fulfillment[i] == 2)==TRUE){
+                creative$fulfillment[i] = "not f."
+        }
+        else if ((creative$fulfillment[i] == 3)==TRUE){
+               creative$fulfillment[i] = "neutral"
+        }
+        else if ((creative$fulfillment[i] == 4)==TRUE){
+                creative$fulfillment[i] = "fulfilled"
+        }
+        else if ((creative$fulfillment[i] == 5)==TRUE){
+                creative$fulfillment[i] = "totally f."
+        }
+}
+
+# Make variable as factor variables and define their levels
+creative$timespentcreativity = factor(creative$timespentcreativity, levels = c("none","btw 1 and 3 days","btw 3 and 7 days", "> 7 days"))
+creative$fulfillment = factor(creative$fulfillment, levels = c("not at all", "not f.", "neutral", "fulfilled", "totally f."))
+```  
+
+
+## Appendix
+
+The 30 first rows of my data set with both columns (1978 rows in total):
+
+```{r, echo=FALSE}
+creative[1:29,]
+```
