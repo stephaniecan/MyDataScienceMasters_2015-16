@@ -11,7 +11,7 @@ I ended up studying Data Science related MOOCs until early April 2016 and creati
 - ***free*** (or financial aid available)
 - ***foundational knowledge & skills***
 - ***practical projects***
-- ***attractive format*** (I prefer video & pdf based courses)
+- ***attractive format*** (I prefer video based courses)
 
 ## Repository content
 
