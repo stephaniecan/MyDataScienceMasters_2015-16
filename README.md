@@ -18,12 +18,15 @@ I ended up studying Data Science related MOOCs until early April 2016 and creati
 In this repository you will find:
 
 - **assignments & projects** I've done for completing Data science related MOOCs requiring code writing
-- **some course notes** that helped me learn, mostly taken by hand & ***useful to myself only however***
-- **2 reports related to Big Data**, written for my Master in Management (end 2014), with other student team members
-- **my certificates** for MOOCs that were giving free certificates (+ financial aid) and with an active session still running
 - **my Data Science Masters program** below
+- **some data analyses & presentations** I've made: [my RPubs profile](http://rpubs.com/Stephaniecnvs)
+- **2 reports related to Big Data**, written for my Master in Management (end 2014), with other student team members
+- **some course notes** that helped me learn, mostly taken by hand & ***useful to myself only however***
+- **my certificates** for MOOCs that were giving free certificates (+ financial aid) and with an active session still running
 
-Some codes & documents might be missing, incomplete or a complete disaster :p. As it was my very first coding experience, I include them in this repo to make sure I can check them in a few years and laugh of my beginnings :)
+
+Some of the codes, apps & documents might be missing, incomplete or simplistic for 2 reasons: 1. it was my very first coding experience 2. when I didn't have enough time before the deadline, I chose to build something simple to complete the project on time.
+
 
 **Below are all the softwares & tools I've used as of April 2016:**
 
