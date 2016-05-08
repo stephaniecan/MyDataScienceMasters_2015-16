@@ -25,7 +25,7 @@ In this repository you will find:
 - **my certificates** for MOOCs that were giving free certificates (+ financial aid) and with an active session still running
 
 
-Some of the codes, apps & documents might be missing, incomplete or simplistic for 2 reasons: 1. it was my very first coding experience 2. when I didn't have enough time before the deadline, I chose to build something simple to complete the project on time.
+* *Some of the codes, apps & documents might be missing, incomplete or simplistic for 2 reasons: 1. it was my very first coding experience 2. when I didn't have enough time before the deadline, I chose to build something simple to complete the project on time.*
 
 
 **Below are all the softwares & tools I've used as of April 2016:**
