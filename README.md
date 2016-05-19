@@ -1,12 +1,12 @@
 # My self-created Data Science Masters 2015-16
 
-The aim of this repository is to organize and **keep track of my beginnings in Data Science** (from March 2015 to April 2016). I've created it for myself but if it can **provide some information or motivation to other newbies willing to learn Data Science**, I would be happy :). As of April 2016, I didn't complete all my program as *I'm taking a break to work on new projects and find inspiration to build cool & useful data products*.
+The aim of this repository is to organize and **keep track of my beginnings in Data Science** (from March 2015 to April 2016). I've created it for myself but if it can **provide some information or motivation to other newbies willing to learn Data Science**, I would be happy :). As of April 2016, I didn't complete all my curriculum as *I'm taking a break to work on new projects and find inspiration to build cool & useful data products*.
 
 ## My story
 
 I started thinking of studying Data Science end of 2014 as I became fascinated by this field. After some research, I discovered MOOCs (Massive Open Online Courses) and really began self-studying Data Science around March 2015 in my free time. I had absolutely no related background whatsoever. I didn't even know how to write a single line of code. **I started from ground zero**.
 
-I ended up studying Data Science related MOOCs until early April 2016 and creating my own Data Science Masters program. **This program is made of MOOCs** I have chosen relative to the following factors: 
+I ended up studying Data Science related MOOCs until early April 2016 and creating my own Data Science Masters curriculum. **This curriculum is made of MOOCs** I have chosen relative to the following factors: 
 
 - ***free*** (or financial aid available)
 - ***foundational knowledge & skills***
@@ -18,7 +18,7 @@ I ended up studying Data Science related MOOCs until early April 2016 and creati
 In this repository you will find:
 
 - **assignments & projects** I've done for completing Data science related MOOCs requiring code writing
-- **my Data Science Masters program** below
+- **my Data Science Masters curriculum** below
 - **some data analyses & presentations** I've made: [my RPubs profile](http://rpubs.com/Stephaniecnvs)
 - **2 reports related to Big Data**, written for my Master in Management (end 2014), with other student team members
 - **some course notes** that helped me learn, mostly taken by hand & ***useful to myself only however***
@@ -47,9 +47,9 @@ In this repository you will find:
 - I have so much more to add but I will probably share it little by little on my [blog](http://stephaniecanovas.com/)
 
 
-## My self-created Data Science Masters program
+## My self-created Data Science Masters curriculum
 
-Below is the program I've followed from March 2015 (one course end of 2014) to April 2016. If I had to start over again, I would organize it a bit (A LOT :) differently.
+Below is the curriculum I've followed from March 2015 (one course end of 2014) to April 2016. If I had to start over again, I would organize it a bit (A LOT :) differently.
 
 ### 1. Getting started and understanding what a Data scientist do & use
 
